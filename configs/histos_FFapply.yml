@@ -1,0 +1,145 @@
+#jet multiplicities
+'h_ncleanjetspass_S5':
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+
+#b jet multiplicities
+'h_ncleanbjetspass_S5':
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+
+#PV
+'h_nvtx_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#MET pt
+'h_met_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [200, 399]
+
+
+#MET phi
+'h_met_phi_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#Muon pt
+'h_muon1_pt_S5':
+  save-extensions: ['pdf','png']
+  blinded-range: [250, 599]
+
+
+#Muon eta
+'h_muon1_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#Muon + MET MT
+'h_muMET_mt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [200, 399]
+
+
+#tau pt
+'h_tau1_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [200, 399]
+
+
+#tau eta
+'h_tau1_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+#tau decayMode
+'h_tau1_decayMode_S5':
+  save-extensions: ['pdf', 'png']
+
+#Muon tau dR
+'h_mutau_dR_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [0, 1.9]
+
+
+#Muon tau mass
+'h_mutau_mass_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [400, 999]
+
+
+#jet ht for bSF check
+'h_jet_ht_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet1 pt
+'h_jet1_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [300, 399]
+
+
+#jet1 eta
+'h_jet1_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet1 btag
+'h_jet1_btag_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet2 pt
+'h_jet2_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [300, 399]
+
+
+#jet2 eta
+'h_jet2_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet2 btag
+'h_jet2_btag_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 pt
+'h_jet3_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 eta
+'h_jet3_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 btag
+'h_jet3_btag_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#bjet at step5
+'h_bjet1_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [300, 399]
+
+'h_bjet1_eta_S5':
+  save-extensions: ['pdf', 'png']
+
+#reco
+'h_chi2_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [0, 40]
+
+'h_chi2_SMTop_mass_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [100, 240]
+
+'h_chi2_SMW_mass_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [50, 130]

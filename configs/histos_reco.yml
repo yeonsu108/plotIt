@@ -1,0 +1,11 @@
+'h_chi2_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [0, 40]
+
+'h_chi2_SMTop_mass_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [100, 240]
+
+'h_chi2_SMW_mass_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [50, 130]

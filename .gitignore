@@ -1,0 +1,14 @@
+plotIt/external/include
+plotIt/external/lib
+plotIt/external/share
+plotIt/external/tclap-1.2.1
+plotIt/external/yaml-cpp-yaml-cpp-0.6.2
+plotIt/plotIt
+
+*pdf
+*png
+*.slo
+*.lo
+*.o
+*.obj
+*.so
