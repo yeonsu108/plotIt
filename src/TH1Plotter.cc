@@ -215,6 +215,8 @@ namespace plotIt {
 
       // Key is systematics name, value is the combined systematics value for each bin
       std::map<std::string, std::vector<float>> combined_systematics_map;
+      std::map<std::string, std::vector<float>> combined_systematics_map_up;
+      std::map<std::string, std::vector<float>> combined_systematics_map_dn;
 
       for ( auto& file: m_plotIt.getFiles([this,index] ( const File& f ) {
             return ( f.type != DATA ) && ( ! f.systematics->empty() )
@@ -224,13 +226,29 @@ namespace plotIt {
           for (auto& syst: *file.systematics) {
 
               std::vector<float>* combined_systematics;
+              std::vector<float>* combined_systematics_up;
+              std::vector<float>* combined_systematics_dn;
               auto map_it = combined_systematics_map.find(syst.name());
+              auto map_it_up = combined_systematics_map_up.find(syst.name());
+              auto map_it_dn = combined_systematics_map_dn.find(syst.name());
 
               if (map_it == combined_systematics_map.end()) {
                   combined_systematics = &combined_systematics_map[syst.name()];
-                  combined_systematics->resize(stack.syst_only->GetNbinsX(), 0);
+                  combined_systematics->resize(stack.syst_only->GetNbinsX(), 0.);
               } else {
                   combined_systematics = &map_it->second;
+              }
+              if (map_it_up == combined_systematics_map_up.end()) {
+                  combined_systematics_up = &combined_systematics_map_up[syst.name()];
+                  combined_systematics_up->resize(stack.syst_only->GetNbinsX(), 0.);
+              } else {
+                  combined_systematics_up = &map_it_up->second;
+              }
+              if (map_it_dn == combined_systematics_map_dn.end()) {
+                  combined_systematics_dn = &combined_systematics_map_dn[syst.name()];
+                  combined_systematics_dn->resize(stack.syst_only->GetNbinsX(), 0.);
+              } else {                  
+                  combined_systematics_dn = &map_it_dn->second;
               }
 
               TH1* nominal_shape = static_cast<TH1*>(syst.nominal_shape.get());
@@ -240,32 +258,83 @@ namespace plotIt {
               if (! nominal_shape || ! up_shape || ! down_shape)
                   continue;
 
+
               float total_syst_error = 0;
+              float total_syst_error_up = 0;
+              float total_syst_error_dn = 0;
+
+              // First, calculate up/down yield variation
+              // here, up is defined by the integram of (var-nom) > 0
+              // If one-sided, uncs are square-summed
+              float temp_total_syst_error_up = up_shape->Integral() - nominal_shape->Integral();
+              float temp_total_syst_error_down = down_shape->Integral() - nominal_shape->Integral();
+              if (temp_total_syst_error_up * temp_total_syst_error_down <= 0) {
+                  total_syst_error_up = temp_total_syst_error_up;
+                  total_syst_error_dn = temp_total_syst_error_down;
+              } else {
+                  total_syst_error_up = temp_total_syst_error_down;
+                  total_syst_error_dn = temp_total_syst_error_up;
+              }
+
               // Systematics in each bin are fully correlated, as they come either from
               // a global variation, or for a shape variation. The total systematics error
               // is simply for sum of all errors in each bins
               //
               // However, we consider that different systematics in the same bin are totaly
               // uncorrelated. The total systematics errors is then the quadratic sum.
+              // Thus, first calculate linear sum of variation per systematic source,
+              // then square sum by looping over combined_systematics_map
+              //
+              // In addition, we take only larger variation in the case of one-sided unc.
               for (uint32_t i = 1; i <= (uint32_t) stack.syst_only->GetNbinsX(); i++) {
-                  float syst_error_up = std::abs(up_shape->GetBinContent(i) - nominal_shape->GetBinContent(i));
-                  float syst_error_down = std::abs(nominal_shape->GetBinContent(i) - down_shape->GetBinContent(i));
 
-                  // FIXME: Add support for asymetric errors
-                  float syst_error = std::max(syst_error_up, syst_error_down);
+                  float syst_error_up = 0.;
+                  float syst_error_dn = 0.;
+                  float temp_syst_error_up = up_shape->GetBinContent(i) - nominal_shape->GetBinContent(i);
+                  float temp_syst_error_dn = down_shape->GetBinContent(i) - nominal_shape->GetBinContent(i);
+
+                  // Remove very small variations by hand - not applied for now
+                  //if (std::abs(temp_syst_error_up) < 1e-07) temp_syst_error_up = 1e-07;
+                  //if (std::abs(temp_syst_error_dn) < 1e-07) temp_syst_error_dn = 1e-07;
+
+                  // Normal case, double-sided
+                  if (temp_syst_error_up * temp_syst_error_dn <= 0) {
+                      if (temp_syst_error_up >= 0 and temp_syst_error_dn < 0) {
+                          syst_error_up = temp_syst_error_up;
+                          syst_error_dn = temp_syst_error_dn;
+                      } else {
+                          syst_error_up = temp_syst_error_dn;
+                          syst_error_dn = temp_syst_error_up;
+                      }
+                  // One-sided.
+                  } else {
+                      if (temp_syst_error_up > 0) {
+                          syst_error_up = std::max(temp_syst_error_up, temp_syst_error_dn);
+                          syst_error_dn = 0.0;
+                      } else {
+                          syst_error_up = 0.0;
+                          syst_error_dn = std::max(temp_syst_error_up, temp_syst_error_dn);
+                      }
+                  }
+                  float syst_error = std::max(syst_error_up, syst_error_dn);
 
                   total_syst_error += syst_error;
+                  //std::cout << "per bin " << syst.name() << " " << syst_error << " " << syst_error_up << " " << syst_error_dn << std::endl;
 
                   // Only propagate uncertainties for MC, not signal
-                  if (file.type == MC)
+                  if (file.type == MC) {
                       (*combined_systematics)[i - 1] += syst_error;
+                      (*combined_systematics_up)[i - 1] += syst_error_up;
+                      (*combined_systematics_dn)[i - 1] += syst_error_dn;
+                  }
               }
-
 
               SummaryItem summary_item;
               summary_item.process_id = file.id;
               summary_item.name = syst.prettyName();
               summary_item.events_uncertainty = total_syst_error;
+              summary_item.events_uncertainty_up = total_syst_error_up;
+              summary_item.events_uncertainty_down = total_syst_error_dn;
 
               summary.addSystematics(file.type, file.id, summary_item);
           }
@@ -280,11 +349,30 @@ namespace plotIt {
           }
       }
 
+      for (auto& combined_systematics_up: combined_systematics_map_up) {
+          for (size_t i = 0; i < (size_t) stack.syst_only->GetNbinsX(); i++) {
+              float total_error_up = stack.syst_only_asym->GetErrorYhigh(i);
+              stack.syst_only_asym->SetPointEYhigh(i, std::sqrt(total_error_up * total_error_up + combined_systematics_up.second[i] * combined_systematics_up.second[i]));
+          }
+      }
+
+      for (auto& combined_systematics_dn: combined_systematics_map_dn) {
+          for (size_t i = 0; i < (size_t) stack.syst_only->GetNbinsX(); i++) {
+              float total_error_down = stack.syst_only_asym->GetErrorYlow(i);
+              stack.syst_only_asym->SetPointEYlow(i, std::sqrt(total_error_down * total_error_down + combined_systematics_dn.second[i] * combined_systematics_dn.second[i]));
+          }
+      }
+
       // Propagate syst errors to the stat + syst histogram
       for (uint32_t i = 1; i <= (uint32_t) stack.syst_only->GetNbinsX(); i++) {
           float syst_error = stack.syst_only->GetBinError(i);
           float stat_error = stack.stat_only->GetBinError(i);
+          float syst_error_up = stack.syst_only_asym->GetErrorYhigh(i-1);
+          float syst_error_dn = stack.syst_only_asym->GetErrorYlow(i-1);
+          //std::cout << "syst_error " << syst_error << " stat_error " << stat_error<< " syst_error_up " << syst_error_up << " syst_error_dn " << syst_error_dn << std::endl;
           stack.stat_and_syst->SetBinError(i, std::sqrt(syst_error * syst_error + stat_error * stat_error));
+          stack.stat_and_syst_asym->SetPointEYhigh(i-1, std::sqrt(syst_error_up * syst_error_up + stat_error * stat_error));
+          stack.stat_and_syst_asym->SetPointEYlow(i-1, std::sqrt(syst_error_dn * syst_error_dn + stat_error * stat_error));
       }
   }
 
@@ -332,10 +420,13 @@ namespace plotIt {
         summary.process_id = file.id;
 
         double rescaled_integral_error = 0;
-        double rescaled_integral = h->IntegralAndError(h->GetXaxis()->GetFirst(), h->GetXaxis()->GetLast(), rescaled_integral_error);
+        //double rescaled_integral = h->IntegralAndError(h->GetXaxis()->GetFirst(), h->GetXaxis()->GetLast(), rescaled_integral_error);
+        double rescaled_integral = h->IntegralAndError(0, h->GetNbinsX() + 1, rescaled_integral_error);
 
         summary.events = rescaled_integral;
         summary.events_uncertainty = rescaled_integral_error;
+        summary.events_uncertainty_up = rescaled_integral_error;
+        summary.events_uncertainty_down = rescaled_integral_error;
 
         // FIXME: Probably invalid in case of weights...
 
@@ -488,9 +579,24 @@ namespace plotIt {
         // Prepare systematics histograms
         std::for_each(mc_stacks.begin(), mc_stacks.end(), [&no_systematics](TH1Plotter::Stacks::value_type& value) {
 
-            value.second.stat_and_syst.reset(static_cast<TH1*>(
-                    value.second.stat_only->Clone()));
+            value.second.stat_and_syst.reset(static_cast<TH1*>(value.second.stat_only->Clone()));
             value.second.stat_and_syst->SetDirectory(nullptr);
+
+            uint32_t nbins = value.second.stat_only->GetNbinsX();
+            float xbins[nbins];
+            float xbins_err[nbins];
+            float ybins[nbins];
+            float zeros[nbins];
+
+            for (uint32_t i = 0; i < nbins; i++) {
+              xbins[i] = value.second.stat_only->GetBinCenter(i+1);
+              xbins_err[i] = value.second.stat_only->GetBinWidth(i+1) / 2.0;
+              ybins[i] = value.second.stat_only->GetBinContent(i+1);
+              zeros[i] = 0.0;
+            }
+
+            auto gr_stat_and_syst = new TGraphAsymmErrors(nbins, xbins, ybins, xbins_err, xbins_err, zeros, zeros);
+            value.second.stat_and_syst_asym.reset(gr_stat_and_syst);
 
             if (! no_systematics) {
                 value.second.syst_only.reset(static_cast<TH1*>(value.second.stat_only->Clone()));
@@ -500,6 +606,9 @@ namespace plotIt {
                 for (uint32_t i = 1; i <= (uint32_t) value.second.syst_only->GetNbinsX(); i++) {
                   value.second.syst_only->SetBinError(i, 0);
                 }
+
+                auto gr_syst_only = new TGraphAsymmErrors(nbins, xbins, ybins, xbins_err, xbins_err, zeros, zeros);
+                value.second.syst_only_asym.reset(gr_syst_only);
             }
 
         });
@@ -695,8 +804,14 @@ namespace plotIt {
                 value.second.stat_and_syst->SetFillStyle(m_plotIt.getConfiguration().error_fill_style);
                 value.second.stat_and_syst->SetFillColor(m_plotIt.getConfiguration().error_fill_color);
 
-                value.second.stat_and_syst->Draw("E2 same");
-                TemporaryPool::get().add(value.second.stat_and_syst);
+                //value.second.stat_and_syst->Draw("E2 same");
+                //TemporaryPool::get().add(value.second.stat_and_syst);
+
+                value.second.stat_and_syst_asym->SetFillStyle(m_plotIt.getConfiguration().error_fill_style);
+                value.second.stat_and_syst_asym->SetFillColor(m_plotIt.getConfiguration().error_fill_color);
+
+                value.second.stat_and_syst_asym->Draw("2");
+                TemporaryPool::get().add(value.second.stat_and_syst_asym);
             }
         });
     }
@@ -747,7 +862,7 @@ namespace plotIt {
 
         float lm = gPad->GetLeftMargin();
         float rm = 1. - gPad->GetRightMargin();
-        float tm = 1. - gPad->GetTopMargin();
+        //float tm = 1. - gPad->GetTopMargin();
         float bm = gPad->GetBottomMargin();
 
         x_start = (rm - lm) * ((x_start - gPad->GetUxmin()) / (gPad->GetUxmax() - gPad->GetUxmin())) + lm;
@@ -915,36 +1030,78 @@ namespace plotIt {
       // See https://sft.its.cern.ch/jira/browse/ROOT-8808 for more details
       h_systematics->SetBinErrorOption(TH1::kNormal);
 
+      // Asymmetric unc band
+      uint32_t nbins = h_systematics->GetNbinsX();
+      float xbins[nbins];
+      float xbins_err[nbins];
+      float ybins[nbins];
+      float yerrup[nbins];
+      float yerrdn[nbins];
+      float zeros[nbins];
+
+      for (uint32_t i = 0; i < nbins; i++) {
+        xbins[i] = h_data->GetBinCenter(i+1);
+        xbins_err[i] = h_data->GetBinWidth(i+1) / 2.0;
+        ybins[i] = 1.0;
+        yerrup[i] = 0.0;
+        yerrdn[i] = 0.0;
+        zeros[i] = 0.0;
+      }
+
       bool has_syst = false;
       if (! no_systematics) {
         for (uint32_t i = 1; i <= (uint32_t) h_systematics->GetNbinsX(); i++) {
 
-          if (mc_stack.syst_only->GetBinContent(i) == 0 || mc_stack.syst_only->GetBinError(i) == 0)
+          if (mc_stack.syst_only->GetBinContent(i) == 0)
             continue;
 
-          // relative error, delta X / X
-          float syst = 0.;
           const auto& config = m_plotIt.getConfiguration();
-          if (plot.ratio_draw_mcstat_error or !plot.post_fit)
-            syst = sqrt(pow(mc_stack.syst_only->GetBinError(i),2) + pow(mc_stack.stat_only->GetBinError(i),2)) / mc_stack.syst_only->GetBinContent(i);
-          else if (config.syst_only) syst = mc_stack.syst_only->GetBinError(i) / mc_stack.syst_only->GetBinContent(i);
-          else syst = mc_stack.stat_and_syst->GetBinError(i) / mc_stack.syst_only->GetBinContent(i);
 
-          //std::cout << mc_stack.stat_and_syst->GetBinError(i) - mc_stack.syst_only->GetBinError(i) << std::endl;
+          if (mc_stack.syst_only->GetBinError(i) != 0) {
+            // relative error, delta X / X
+            // Post-fit unc is computed with stat+syst together from the fit.
+            // MC stat unc must be removed, total postfit unc includes it.
+            float syst = 0.;
+            if (config.syst_only or plot.post_fit) syst = mc_stack.syst_only->GetBinError(i) / mc_stack.syst_only->GetBinContent(i);
+            else syst = mc_stack.stat_and_syst->GetBinError(i) / mc_stack.syst_only->GetBinContent(i);
 
-          h_systematics->SetBinContent(i, 1);
-          h_systematics->SetBinError(i, syst);
-          //if (h_data.get()->GetBinContent(i) > 0) h_systematics->SetBinError(i, syst);
+            //std::cout << mc_stack.stat_and_syst->GetBinError(i) - mc_stack.syst_only->GetBinError(i) << std::endl;
+            //std::cout << "old    " << mc_stack.stat_and_syst->GetBinError(i) << "/" << mc_stack.syst_only->GetBinContent(i) << std::endl;
+            //std::cout << "new up " << mc_stack.stat_and_syst_asym->GetErrorYhigh(i) << "/" << mc_stack.syst_only->GetBinContent(i) << std::endl;
+            //std::cout << "new dn " << mc_stack.stat_and_syst_asym->GetErrorYlow(i) << "/" << mc_stack.syst_only->GetBinContent(i) << std::endl;
 
-          has_syst = true;
+            h_systematics->SetBinContent(i, 1);
+            h_systematics->SetBinError(i, syst);
+            //if (h_data.get()->GetBinContent(i) > 0) h_systematics->SetBinError(i, syst);
+
+            has_syst = true;
+          }
+
+          if (mc_stack.syst_only_asym->GetErrorYhigh(i-1) != 0 or mc_stack.syst_only_asym->GetErrorYhigh(i-1) != 0) {
+            if (config.syst_only or plot.post_fit) {
+              yerrup[i-1] = mc_stack.syst_only_asym->GetErrorYhigh(i-1) / mc_stack.syst_only->GetBinContent(i);
+              yerrdn[i-1] = mc_stack.syst_only_asym->GetErrorYlow(i-1) / mc_stack.syst_only->GetBinContent(i);
+            } else {
+              yerrup[i-1] = mc_stack.stat_and_syst_asym->GetErrorYhigh(i-1) / mc_stack.syst_only->GetBinContent(i);
+              yerrdn[i-1] = mc_stack.stat_and_syst_asym->GetErrorYlow(i-1) / mc_stack.syst_only->GetBinContent(i);
+            }
+            has_syst = true;
+          }
         }
       }
+
+      std::shared_ptr<TGraphAsymmErrors> graph_systematics(new TGraphAsymmErrors(nbins, xbins, ybins, xbins_err, xbins_err, yerrdn, yerrup));
 
       if (has_syst) {
         h_systematics->SetFillStyle(m_plotIt.getConfiguration().error_fill_style);
         h_systematics->SetFillColor(m_plotIt.getConfiguration().error_fill_color);
         setRange(h_systematics.get(), x_axis_range, {});
-        h_systematics->Draw("E2 same");
+        //h_systematics->Draw("E2 same");
+
+        graph_systematics->SetFillStyle(m_plotIt.getConfiguration().error_fill_style);
+        graph_systematics->SetFillColor(m_plotIt.getConfiguration().error_fill_color);
+        setRange(graph_systematics.get(), x_axis_range, {});
+        graph_systematics->Draw("2");
       }
 
       h_low_pad_axis->Draw("same");
@@ -1022,8 +1179,9 @@ namespace plotIt {
 
       TemporaryPool::get().add(h_low_pad_axis);
       TemporaryPool::get().add(ratio);
-      TemporaryPool::get().add(h_systematics);
+      //TemporaryPool::get().add(h_systematics);
       TemporaryPool::get().add(h_mcstat);
+      TemporaryPool::get().add(graph_systematics);
       TemporaryPool::get().add(hi_pad);
       TemporaryPool::get().add(low_pad);
     }

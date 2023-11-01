@@ -10,6 +10,8 @@ namespace plotIt {
                 std::shared_ptr<TH1> stat_only;
                 std::shared_ptr<TH1> syst_only;
                 std::shared_ptr<TH1> stat_and_syst;
+                std::shared_ptr<TGraphAsymmErrors> syst_only_asym;
+                std::shared_ptr<TGraphAsymmErrors> stat_and_syst_asym;
             };
 
             using Stacks = std::vector<std::pair<int64_t, Stack>>;

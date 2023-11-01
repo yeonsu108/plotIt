@@ -12,6 +12,7 @@
 #include <THStack.h>
 #include <TStyle.h>
 #include <TChain.h>
+#include <TGraphAsymmErrors.h>
 
 #include <vector>
 #include <string>

@@ -1680,10 +1680,31 @@ namespace plotIt {
         double
     > process_systematics;
 
+
+    std::map<
+        std::tuple<Type, std::string, std::string>, // Type, category, systematics name
+        double
+    > process_systematics_up;
+
+    std::map<
+        std::tuple<Type, std::string, std::string>, // Type, category, systematics name
+        double
+    > process_systematics_dn;
+
     std::map<
         std::string,
         std::map<Type, double>
     > total_systematics_squared;
+
+    std::map<
+        std::string,
+        std::map<Type, double>
+    > total_systematics_squared_up;
+
+    std::map<
+        std::string,
+        std::map<Type, double>
+    > total_systematics_squared_dn;
 
     std::vector< std::pair<int, std::string> > categories;
 
@@ -1702,6 +1723,8 @@ namespace plotIt {
       categories.push_back( std::make_pair(plot.yields_table_order, plot.yields_title) );
 
       std::map<std::tuple<Type, std::string>, double> plot_total_systematics;
+      std::map<std::tuple<Type, std::string>, double> plot_total_systematics_up;
+      std::map<std::tuple<Type, std::string>, double> plot_total_systematics_dn;
 
       // Open all files, and find histogram in each
       for (auto& file: m_files) {
@@ -1761,6 +1784,8 @@ namespace plotIt {
 
         // Add systematics
         double file_total_systematics = 0;
+        double file_total_systematics_up = 0;
+        double file_total_systematics_dn = 0;
         for (auto& syst: *file.systematics) {
 
           TH1* nominal_shape = static_cast<TH1*>(syst.nominal_shape.get());
@@ -1774,19 +1799,54 @@ namespace plotIt {
           double up_integral = up_shape->Integral(0, up_shape->GetNbinsX() + 1);
           double down_integral = down_shape->Integral(0, down_shape->GetNbinsX() + 1);
 
+          // For asym. error, define up/dn separately.
+          // Be careful on the sign
+          double temp_syst_error_up = up_integral - nominal_integral;
+          double temp_syst_error_dn = down_integral - nominal_integral;
+
           double total_syst_error = std::max(
                   std::abs(up_integral - nominal_integral),
                   std::abs(nominal_integral - down_integral)
           );
 
+          double total_syst_error_up;
+          double total_syst_error_dn;
+
+          // Normal case, double-sided
+          if (temp_syst_error_up * temp_syst_error_dn <= 0) {
+            if (temp_syst_error_up >= 0 and temp_syst_error_dn < 0) {
+              total_syst_error_up = temp_syst_error_up;
+              total_syst_error_dn = temp_syst_error_dn;
+            } else {
+              total_syst_error_up = temp_syst_error_dn;
+              total_syst_error_dn = temp_syst_error_up;
+            }
+          }
+          // One-sided.
+          else {
+            if (temp_syst_error_up > 0) {
+                total_syst_error_up = std::max(temp_syst_error_up, temp_syst_error_dn);
+                total_syst_error_dn = 0.0;
+            } else {
+                total_syst_error_up = 0.0;
+                total_syst_error_dn = std::max(temp_syst_error_up, temp_syst_error_dn);
+            }
+          }
+
           file_total_systematics += total_syst_error * total_syst_error;
+          file_total_systematics_up += total_syst_error_up * total_syst_error_up;
+          file_total_systematics_dn += total_syst_error_dn * total_syst_error_dn;
 
           auto key = std::make_tuple(file.type, syst.name());
           plot_total_systematics[key] += total_syst_error;
+          plot_total_systematics_up[key] += total_syst_error_up;
+          plot_total_systematics_dn[key] += total_syst_error_dn;
         }
 
         // file_total_systematics contains the quadratic sum of all the systematics for this file
         process_systematics[std::make_tuple(file.type, plot.yields_title, process_name)] += std::sqrt(file_total_systematics);
+        process_systematics_up[std::make_tuple(file.type, plot.yields_title, process_name)] += std::sqrt(file_total_systematics_up);
+        process_systematics_dn[std::make_tuple(file.type, plot.yields_title, process_name)] += std::sqrt(file_total_systematics_dn);
 
         if ( file.type == MC ){
           ADD_PAIRS(mc_yields[plot.yields_title][process_name], yield_sqerror);
@@ -1803,6 +1863,12 @@ namespace plotIt {
       // Get the total systematics for this category
       for (auto& syst: plot_total_systematics) {
         total_systematics_squared[plot.yields_title][std::get<0>(syst.first)] += syst.second * syst.second;
+      }
+      for (auto& syst: plot_total_systematics_up) {
+        total_systematics_squared_up[plot.yields_title][std::get<0>(syst.first)] += syst.second * syst.second;
+      }
+      for (auto& syst: plot_total_systematics_dn) {
+        total_systematics_squared_dn[plot.yields_title][std::get<0>(syst.first)] += syst.second * syst.second;
       }
     }
 
@@ -1825,8 +1891,14 @@ namespace plotIt {
 
         for (const auto& c: categories) {
           std::string categ = c.second;
-          latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(SIGNAL, categ, p)], 2))/signal_yields[categ][p].first)*100 << R"(\% & )";
           //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(SIGNAL, categ, p)], 2))) << R"(\% & )";
+          //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(SIGNAL, categ, p)], 2))/signal_yields[categ][p].first)*100 << R"(\% & )";
+          latexString << R"($^{+)"\
+                      << std::setprecision(m_config.yields_table_num_prec_yields)\
+                      << (std::sqrt(std::pow(process_systematics_up[std::make_tuple(SIGNAL, categ, p)], 2))/signal_yields[categ][p].first)*100\
+                      <<  R"(\%}_{-)"\
+                      << (std::sqrt(std::pow(process_systematics_dn[std::make_tuple(SIGNAL, categ, p)], 2))/signal_yields[categ][p].first)*100\
+                      << R"(\%}$ & )";
         }
 
         latexString.seekp(latexString.tellp() - 2l);
@@ -1843,11 +1915,18 @@ namespace plotIt {
 
           for (const auto& c: categories) {
             std::string categ = c.second;
-            if(mc_yields[categ][p].first > 0)
-              latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100 << R"(\% & )";
+            if(mc_yields[categ][p].first > 0) {
               //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2))) << R"(\% & )";
-            else
+              //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100 << R"(\% & )";
+              latexString << R"($^{+)"\
+                          << std::setprecision(m_config.yields_table_num_prec_yields)\
+                          << (std::sqrt(std::pow(process_systematics_up[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100
+                          <<  R"(\%}_{-)"\
+                          << (std::sqrt(std::pow(process_systematics_dn[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100
+                          << R"(\%}$ & )";
+            } else {
               latexString << R"($\pm$ )" << R"($-$ )" << R"(\% & )";
+            }
           }
 
           latexString.seekp(latexString.tellp() - 2l);
@@ -1858,8 +1937,14 @@ namespace plotIt {
         latexString << R"(Total sys. unc. & )";
 
         for (const auto& c: categories) {
-          latexString << R"($\pm $ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(total_systematics_squared[c.second][MC])/mc_total[c.second])*100 << R"(\% & )";
           //latexString << R"($\pm $ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(total_systematics_squared[c.second][MC])) << R"(\% & )";
+          //latexString << R"($\pm $ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(total_systematics_squared[c.second][MC])/mc_total[c.second])*100 << R"(\% & )";
+          latexString << R"($^{+)"
+                      << std::setprecision(m_config.yields_table_num_prec_yields)\
+                      << (std::sqrt(total_systematics_squared_up[c.second][MC])/mc_total[c.second])*100\
+                      <<  R"(\%}_{-)"\
+                      << (std::sqrt(total_systematics_squared_dn[c.second][MC])/mc_total[c.second])*100\
+                      << R"(\%}$ & )";
         }
         latexString.seekp(latexString.tellp() - 2l);
         latexString << R"( \\ )" << std::endl;
@@ -1903,7 +1988,7 @@ namespace plotIt {
       m_config.book_keeping_file.reset(TFile::Open(outputName.native().c_str(), "recreate"));
     }
 
-    constexpr std::size_t plots_per_chunk = 100;
+    constexpr std::size_t plots_per_chunk = 150;
 
     auto plots_begin = plots.begin();
     auto plots_end = plots.begin();

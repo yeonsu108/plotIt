@@ -14,6 +14,8 @@ namespace plotIt {
 
         float events = 0;
         float events_uncertainty = 0;
+        float events_uncertainty_up = 0;
+        float events_uncertainty_down = 0;
 
         float efficiency = 0;
         float efficiency_uncertainty = 0;
