@@ -1,12 +1,12 @@
 configuration:
   width: 450
   height: 450
-  luminosity-label: '%59.8 fb^{-1} (13 TeV)'
+  luminosity-label: '59.8 fb^{-1} (13 TeV)'
   experiment: " CMS"
   experiment-label-paper: true
   extra-label: "Preliminary"
   root: ''
-  #luminosity: 59832 #Already normalized
+  luminosity: 1
   luminosity-error: 0.025
   error-fill-style: 3254
   error-fill-color: "#ee556270"
@@ -31,8 +31,7 @@ plots:
   include: ['histos_control.yml']
 
 legend:
-  #position: [0.18, 0.70, 0.96, 0.88]
-  position: [0.4, 0.70, 0.96, 0.88]
+  position: [0.35, 0.70, 0.94, 0.88]
   columns: 3
 
 groups:

@@ -8,7 +8,7 @@ Gttll:
 
 Gttbkg:
   fill-color: '#666699'
-  legend: 't#bar{t} (not dileptonic)'
+  legend: 't#bar{t} others'
 
 Gst:
   fill-color: '#333366'

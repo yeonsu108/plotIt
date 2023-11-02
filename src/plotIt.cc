@@ -2316,8 +2316,9 @@ int main(int argc, char** argv) {
 
     TCLAP::SwitchArg qcdArg("q", "qcd", "Process with QCD samples (histo name with QCD)", cmd, false);
 
-    //Custom switch
     TCLAP::SwitchArg dyArg("d", "dyincl", "Process with DY inclusive sample (DYJetsToLL_M50_amc)", cmd, false);
+
+    TCLAP::SwitchArg desytopArg("t", "desytop", "Switch for DESY top framework", cmd, false);
 
     cmd.parse(argc, argv);
 
@@ -2351,6 +2352,7 @@ int main(int argc, char** argv) {
     CommandLineCfg::get().systematicsBreakdown = systematicsBreakdownArg.getValue();
     CommandLineCfg::get().do_qcd = qcdArg.getValue();
     CommandLineCfg::get().dyincl = dyArg.getValue();
+    CommandLineCfg::get().desytop = desytopArg.getValue();
 
     plotIt::plotIt p(outputPath);
     if (!p.parseConfigurationFile(configFileArg.getValue(), histogramsPath))

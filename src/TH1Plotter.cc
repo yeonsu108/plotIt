@@ -127,6 +127,19 @@ namespace plotIt {
                 && ( ! f.legend_group.empty() ) && ( dynamic_cast<TH1*>(f.object)->GetEntries() != 0 );
             } ) ) {
           TH1* nominal = dynamic_cast<TH1*>(file.object);
+
+          // Remove small mc bins...always very small number is filled.
+          if (CommandLineCfg::get().desytop) {
+              for (int i=1; i <= nominal->GetNbinsX(); i++) {
+                  float tmpbin = nominal->GetBinContent(i);
+                  //in code, 0.0001 is filled, then samples are merged.
+                  if (tmpbin < 0.005) {
+                      nominal->SetBinContent(i, 0.);
+                      nominal->SetBinError(i, 0.);
+                  }
+              }
+          }
+
           auto it = std::find_if(group_histograms.begin(), group_histograms.end(), [&file](const std::pair<std::string, std::shared_ptr<TH1>>& item) {
                   return item.first == file.legend_group;
                   });

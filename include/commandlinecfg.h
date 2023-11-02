@@ -18,6 +18,7 @@ class CommandLineCfg {
         bool unblind = false;
         bool systematicsBreakdown = false;
         bool dyincl = false;
+        bool desytop = false;
         std::string era = "";
 
     private:
