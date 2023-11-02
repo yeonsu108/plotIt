@@ -955,8 +955,8 @@ namespace plotIt {
       h_low_pad_axis->Reset(); // Keep binning
       setRange(h_low_pad_axis.get(), x_axis_range, plot.ratio_y_axis_range);
 
-      //setDefaultStyle(h_low_pad_axis.get(), plot, 3.);
-      setDefaultStyle(h_low_pad_axis.get(), plot, 1.);
+      setDefaultStyle(h_low_pad_axis.get(), plot, 3.); //old ROOT
+      //setDefaultStyle(h_low_pad_axis.get(), plot, 1.); //ROOT ver > 6.20 (perhaps)
       h_low_pad_axis->GetYaxis()->SetTitle(plot.ratio_y_axis_title.c_str());
       h_low_pad_axis->GetYaxis()->SetTickLength(0.04);
       h_low_pad_axis->GetYaxis()->SetNdivisions(505, true);
@@ -1037,7 +1037,6 @@ namespace plotIt {
       float ybins[nbins];
       float yerrup[nbins];
       float yerrdn[nbins];
-      float zeros[nbins];
 
       for (uint32_t i = 0; i < nbins; i++) {
         xbins[i] = h_data->GetBinCenter(i+1);
@@ -1045,7 +1044,6 @@ namespace plotIt {
         ybins[i] = 1.0;
         yerrup[i] = 0.0;
         yerrdn[i] = 0.0;
-        zeros[i] = 0.0;
       }
 
       bool has_syst = false;
