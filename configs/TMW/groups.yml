@@ -1,0 +1,24 @@
+Gdata:
+  legend: 'Data'
+  marker-size: 0.6
+
+Gttll:
+  fill-color: '#660000'
+  legend: 't#bar{t}(ll)'
+
+Gttbkg:
+  fill-color: '#666699'
+  legend: 't#bar{t} (not dileptonic)'
+
+Gst:
+  fill-color: '#333366'
+  legend: 'Single top'
+
+Gdy:
+  fill-color: '#669966'
+  legend: 'Z+Jets'
+
+Gother:
+  fill-color: '#666666'
+  legend: 'Other'
+

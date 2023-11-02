@@ -1,0 +1,18 @@
+'h_tau1_gen_pt_S3':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  show-onlyoverflow: true
+  yields-table-order: 0
+  yields-title: 'S5 but gen had tau'
+
+'h_tau1_pt_S3':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 1
+  yields-title: 'S5'

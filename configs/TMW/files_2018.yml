@@ -1,0 +1,77 @@
+'data.root':
+  type: data
+  pretty-name: 'Data'
+  group: Gdata
+
+'ttbarsignal.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttll
+  yields-group: '1t#bar{t}(ll)'
+  order: 1
+
+'ttbarbgFromDilepton.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttbkg
+  yields-group: '2t#bar{t} (not dileptonic)'
+  order: 2
+
+'ttbarbgFromLjets.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttbkg
+  yields-group: '2t#bar{t} (not dileptonic)'
+  order: 3
+
+'ttbarbgFromHadronic.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttbkg
+  yields-group: '2t#bar{t} (not dileptonic)'
+  order: 4
+
+'singletop.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gst
+  yields-group: '3Single top'
+  order: 5
+
+'dy.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gdy
+  yields-group: '3Z+jets'
+  order: 6
+
+'ttbarX.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '4Other'
+  order: 7
+
+'diboson.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '4Other'
+  order: 8
+
+'wjets.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '4Other'
+  order: 9
+
