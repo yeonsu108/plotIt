@@ -6,6 +6,11 @@ An utility to plot ROOT histograms.
 
 ```bash
 cd plotIt/
+#CMSSW
+source setup_for_cms_env.sh
+
+#Or lcg
+source setup_sl7_env.sh
 ```
 
 ```bash
