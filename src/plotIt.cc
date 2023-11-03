@@ -939,7 +939,10 @@ namespace plotIt {
               m_legend_groups[file.legend_group].added = true;
 
               const auto& plot_style = m_legend_groups[file.legend_group].plot_style;
-              entry = {file.object, plot_style->legend, plot_style->legend_style, plot_style->legend_order};
+              int16_t order = 0;
+              if (plot_style->legend_order == 0) order = file.order;
+              //entry = {file.object, plot_style->legend, plot_style->legend_style, plot_style->legend_order};
+              entry = {file.object, plot_style->legend, plot_style->legend_style, order};
           } else if (file.plot_style.get() && file.plot_style->legend.length() > 0) {
               entry = {file.object, file.plot_style->legend, file.plot_style->legend_style, file.plot_style->legend_order};
           }
@@ -962,7 +965,10 @@ namespace plotIt {
             entries.push_back(entry);
           }
 
-          std::sort(entries.begin(), entries.end(), [](const LegendEntry& a, const LegendEntry& b) { return a.order > b.order; });
+          if (CommandLineCfg::get().desytop)
+              std::sort(entries.begin(), entries.end(), [](const LegendEntry& a, const LegendEntry& b) { return a.order > b.order; });
+          else
+              std::sort(entries.begin(), entries.end(), [](const LegendEntry& a, const LegendEntry& b) { return a.order < b.order; });
 
           return entries;
       };
