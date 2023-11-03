@@ -1,25 +1,34 @@
 import os
 from collections import OrderedDict
 
-channelNames = ['ee', 'emu', 'mumu', 'sameflavor', 'combined']
+channelNames = {'ee': 'ee', 'emu': 'e#mu', 'mumu': '#mu#mu',
+                'sameflavor': 'ee+#mu#mu', 'combined': 'ee+e#mu+#mu#mu'}
 histNames = [
-#            'NEvents',
+            'NEvents',
             'nJets', 'nBJets',
-#            'bJet1Pt',
-#            'dileptonPt','dileptonMass',
-#            'metPt',
-#            'mlb_min', 'mlb_minimax',
-             'mlb_minimax',
-#            'lept1Pt','lept2Pt','lept1Eta','lept2Eta',
+            'bJet1Pt',
+            'dileptonPt','dileptonMass',
+            'metPt',
+            'mlb_min', 'mlb_minimax',
+#            'mlb_minimax',
+            'lept1Pt','lept2Pt',
+            'lept1Eta','lept2Eta',
 #            'ht',
-#            'jet1Pt','jet1Eta',
-#            'jet2Pt','jet2Eta',
+            'jet1Pt','jet1Eta',
+            'jet2Pt','jet2Eta',
 #            'jet3Pt','jet3Eta',
             ]
 
 #Not drawing all histos! {hname: [[btag], [njet]]}
 allowed_dict = {
-                 'mlb_minimax': [['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']]
+                 'mlb_minimax': [[], ['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']],
+                 'mlb_min': [[], [], ['TwoJet', 'GreaterOneJet']],
+                 'nJets': [['combined'], [], ['InclusiveNJet', 'GreaterOneJet']],
+                 'nBJets': [['combined'], ['InclusiveBTag', 'GreaterOneBTag'], []],
+                 'jet1Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
+                 'jet1Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
+                 'jet2Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
+                 'jet2Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                }
 btagNames = {'ZeroBTag': '= 0',
              'InclusiveBTag': '#geq 0',
@@ -30,7 +39,7 @@ njetNames = {'TwoJet': '= 2',
              'InclusiveNJet': '#geq 0',
              'GreaterOneJet': '#geq 2'}
 
-log_hists = ['mlb_minimax']
+log_hists = ['mlb_minimax', 'mlb_min', ]
 sort_hists = []
 
 hist_items = OrderedDict()
@@ -38,10 +47,12 @@ hist_items = OrderedDict()
 for hname in histNames:
     for njet, njet_label in njetNames.items():
         for btag, btag_label in btagNames.items():
-            for ch in channelNames:
+            for ch, ch_label in channelNames.items():
 
                 if hname in allowed_dict:
-                    if btag not in allowed_dict[hname][0] or njet not in allowed_dict[hname][1]: continue
+                    if (len(allowed_dict[hname][0]) > 0 and ch not in allowed_dict[hname][0])\
+                       or (len(allowed_dict[hname][1]) > 0 and btag not in allowed_dict[hname][1])\
+                       or (len(allowed_dict[hname][2]) > 0 and njet not in allowed_dict[hname][2]): continue
 
                 hout = ch + '_' + btag + '_' + njet + '_' + hname
 
@@ -55,7 +66,8 @@ for hname in histNames:
                 if ch == 'combined':
                     options_list.append("  rename:\n    - {from: '" + hout + "', to: '" + hout.replace(ch, 'll') + "'}\n")
 
-                options_list.append("  labels:\n    - {text: '#splitline{N_{b jet} " + btag_label + "}{N_{jet} " + njet_label + "}', position: [0.77, .65], font: 44}\n")
+                options_list.append("  labels:\n    - {text: '" + ch_label + "', position: [0.77, .725], font: 44, size: 14}\n")
+                options_list.append("    - {text: '#splitline{N_{b jet} " + btag_label + "}{N_{jet} " + njet_label + "}', position: [0.77, .65], font: 44, size: 14}\n")
 
                 options_list.append("  save-extensions: ['pdf', 'png']\n\n")
                 hist_items[hout] = options_list

@@ -9,7 +9,7 @@
   generated-events: 1.0
   group: Gttll
   yields-group: '1t#bar{t}(ll)'
-  order: 1
+  order: 9
 
 'ttbarbgFromDilepton.root':
   type: mc
@@ -17,7 +17,7 @@
   generated-events: 1.0
   group: Gttbkg
   yields-group: '2t#bar{t} (not dileptonic)'
-  order: 2
+  order: 7
 
 'ttbarbgFromLjets.root':
   type: mc
@@ -25,7 +25,7 @@
   generated-events: 1.0
   group: Gttbkg
   yields-group: '2t#bar{t} (not dileptonic)'
-  order: 3
+  order: 6
 
 'ttbarbgFromHadronic.root':
   type: mc
@@ -33,7 +33,7 @@
   generated-events: 1.0
   group: Gttbkg
   yields-group: '2t#bar{t} (not dileptonic)'
-  order: 4
+  order: 5
 
 'singletop.root':
   type: mc
@@ -41,37 +41,37 @@
   generated-events: 1.0
   group: Gst
   yields-group: '3Single top'
-  order: 5
+  order: 4
 
 'dy.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gdy
-  yields-group: '3Z+jets'
-  order: 6
+  yields-group: '4Z+jets'
+  order: 8
 
 'ttbarX.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gother
-  yields-group: '4Other'
-  order: 7
+  yields-group: '5Other'
+  order: 3
 
 'diboson.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gother
-  yields-group: '4Other'
-  order: 8
+  yields-group: '5Other'
+  order: 2
 
 'wjets.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gother
-  yields-group: '4Other'
-  order: 9
+  yields-group: '5Other'
+  order: 1
 
