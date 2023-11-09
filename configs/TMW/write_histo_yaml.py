@@ -5,18 +5,17 @@ channelNames = {'ee': 'ee', 'emu': 'e#mu', 'mumu': '#mu#mu',
                 'sameflavor': 'ee+#mu#mu', 'combined': 'ee+e#mu+#mu#mu'}
 histNames = [
             'NEvents',
+            #'nVtx', 'rho',
             'nJets', 'nBJets',
             'bJet1Pt',
             'dileptonPt','dileptonMass',
             'metPt',
             'mlb_min', 'mlb_minimax',
-#            'mlb_minimax',
             'lept1Pt','lept2Pt',
             'lept1Eta','lept2Eta',
-#            'ht',
             'jet1Pt','jet1Eta',
             'jet2Pt','jet2Eta',
-#            'jet3Pt','jet3Eta',
+#            'mlb_minimax',
             ]
 
 #Not drawing all histos! {hname: [[btag], [njet]]}
@@ -29,6 +28,7 @@ allowed_dict = {
                  'jet1Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
+                 'bJet1Pt': [['combined'], ['InclusiveBTag', 'OneBTag', 'GreaterOneBTag', 'TwoBTag'],[]],
                }
 btagNames = {'ZeroBTag': '= 0',
              'InclusiveBTag': '#geq 0',
@@ -39,6 +39,8 @@ njetNames = {'TwoJet': '= 2',
              'InclusiveNJet': '#geq 0',
              'GreaterOneJet': '#geq 2'}
 
+#Draw stat. unc. overlayed in the ratio pad
+stat_hists = ['mlb_minimax']
 log_hists = ['mlb_minimax', 'mlb_min', ]
 sort_hists = []
 
@@ -63,6 +65,8 @@ for hname in histNames:
                     options_list.append('  sort-by-yields: true\n')
                 if hname in sort_hists:
                     options_list.append('  sort-by-yields: true\n')
+                if hname in stat_hists:
+                    options_list.append('  ratio-draw-mcstat-error: true\n')
                 if ch == 'combined':
                     options_list.append("  rename:\n    - {from: '" + hout + "', to: '" + hout.replace(ch, 'll') + "'}\n")
 

@@ -11,6 +11,7 @@
 #include <TVirtualFitter.h>
 #include <TGraphAsymmErrors.h>
 #include <TMath.h>
+#include <TLegend.h>
 
 #include <commandlinecfg.h>
 #include <pool.h>
@@ -1029,6 +1030,13 @@ namespace plotIt {
         h_mcstat->SetFillColor(m_plotIt.getConfiguration().staterror_fill_color);
         setRange(h_mcstat.get(), x_axis_range, {});
         h_mcstat->Draw("E2 same");
+
+        auto mc_legend = new TLegend(0.25, 0.77, 0.45, 0.88);
+        mc_legend->AddEntry(h_mcstat.get(), "Stat. Unc.", "F");
+        mc_legend->SetTextFont(42);
+        mc_legend->SetFillStyle(m_plotIt.getConfiguration().staterror_fill_style);
+        mc_legend->SetBorderSize(0);
+        mc_legend->Draw();
       }
 
       h_low_pad_axis->Draw("same");
