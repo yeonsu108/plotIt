@@ -73,6 +73,7 @@
 
 #jet ht for bSF check
 'h_jet_ht_S5':
+  rebin: 2
   save-extensions: ['pdf', 'png']
 
 
@@ -143,3 +144,19 @@
 'h_chi2_SMW_mass_S5':
   save-extensions: ['pdf', 'png']
   blinded-range: [50, 130]
+
+#st_met
+'h_st_met_S5':
+  rebin: 2
+  blinded-range: [700, 1450]
+  save-extensions: ['pdf', 'png']
+
+'h_st_met_binwidth_S5':
+  y-axis: "Events / GeV"
+  y-axis-format: "%1%"
+  scale-option: "WIDTH"
+  rebin: 2
+  log-y: true
+  log-y-axis-range: [0.02, 110]
+  blinded-range: [700, 1450]
+  save-extensions: ['pdf', 'png']
