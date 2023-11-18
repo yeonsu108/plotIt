@@ -2,20 +2,10 @@ plotIt
 ======
 An utility to plot ROOT histograms.
 
-## First time setup instructions
+## You should have boost and root env from either cmssw (scram tool works) or lcg ($LCIO is set)
 
 ```bash
-cd plotIt/
-#CMSSW
-source setup_for_cms_env.sh
-
-#Or lcg
-source setup_sl7_env.sh
-```
-
-```bash
-# Build externals
-cd external
+cd plotIt/external
 ./build-external.sh
 cd ..
 make -j 4
