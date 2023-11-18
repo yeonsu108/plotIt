@@ -866,6 +866,10 @@ namespace plotIt {
       if (node["y-axis-hide-ticks"])
         plot.y_axis_hide_ticks = node["y-axis-hide-ticks"].as<bool>();
 
+      // Additional option for plot scaling
+      if (node["scale-option"])
+        plot.scale_option = node["scale-option"].as<std::string>();
+
       // Handle log
       std::vector<bool> logs_x;
       std::vector<bool> logs_y;

@@ -38,6 +38,20 @@ namespace plotIt {
         }
     }
 
+    void SystematicSet::scale(float factor, std::string scale_option_syst) {
+        if (nominal_shape) {
+            static_cast<TH1*>(nominal_shape.get())->Scale(factor, scale_option_syst.c_str());
+        }
+
+        if (up_shape) {
+            static_cast<TH1*>(up_shape.get())->Scale(factor, scale_option_syst.c_str());
+        }
+
+        if (down_shape) {
+            static_cast<TH1*>(down_shape.get())->Scale(factor, scale_option_syst.c_str());
+        }
+    }
+
     void SystematicSet::rebin(size_t factor) {
         if (nominal_shape) {
             static_cast<TH1*>(nominal_shape.get())->Rebin(factor);

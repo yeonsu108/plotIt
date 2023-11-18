@@ -12,6 +12,7 @@
 #include <TGraphAsymmErrors.h>
 #include <TMath.h>
 #include <TLegend.h>
+#include <TROOT.h>
 
 #include <commandlinecfg.h>
 #include <pool.h>
@@ -405,6 +406,7 @@ namespace plotIt {
       setHistogramStyle(file);
 
       TH1* h = dynamic_cast<TH1*>(file.object);
+      h->Rebin(plot.rebin);
 
       if (file.type != DATA) {
         plot.is_rescaled = true;
@@ -428,6 +430,8 @@ namespace plotIt {
         }
 
         h->Scale(factor);
+        if (plot.scale_option.length() > 0)
+          h->Scale(1.0, plot.scale_option.c_str());
 
         SummaryItem summary;
         summary.name = file.pretty_name;
@@ -464,6 +468,8 @@ namespace plotIt {
 
           syst.scale(factor);
           syst.rebin(plot.rebin);
+          if (plot.scale_option.length() > 0)
+            syst.scale(1.0, plot.scale_option.c_str());
         }
 
       } else {
@@ -473,8 +479,6 @@ namespace plotIt {
         summary.events = h->Integral();
         global_summary.add(file.type, summary);
       }
-
-      h->Rebin(plot.rebin);
 
       // Add overflow to first and last bin if requested
       if (plot.show_overflow) {
@@ -532,7 +536,11 @@ namespace plotIt {
     bool no_systematics = false;
 
     double h_data_integral = 1.0;
-    if (has_data) h_data_integral = h_data->Integral();
+    if (has_data) {
+        h_data_integral = h_data->Integral();
+        if (plot.scale_option.length() > 0)
+            h_data->Scale(1.0, plot.scale_option.c_str());
+    }
 
     if (plot.normalized) {
         // Normalize each plot
@@ -580,10 +588,12 @@ namespace plotIt {
 
         for (size_t i = 0; i < start_bin; i++) {
             h_data->SetBinContent(i, clone->GetBinContent(i));
+            h_data->SetBinError(i, clone->GetBinError(i));
         }
 
         for (size_t i = end_bin + 1; i <= static_cast<size_t>(h_data->GetNbinsX()); i++) {
             h_data->SetBinContent(i, clone->GetBinContent(i));
+            h_data->SetBinError(i, clone->GetBinError(i));
         }
 
         delete clone;
@@ -833,22 +843,31 @@ namespace plotIt {
     // Then signal
     for (File& signal: signal_files) {
       std::string options = m_plotIt.getPlotStyle(signal)->drawing_options + " same";
+      TH1* h_sig_temp = dynamic_cast<TH1*>(signal.object);
       if (plot.signal_normalize_data and !plot.no_data) {
-        TH1* h_sig_temp = dynamic_cast<TH1*>(signal.object);
         h_sig_temp->Scale(h_data_integral/h_sig_temp->Integral());
+        if (plot.scale_option.length() > 0)
+          h_sig_temp->Scale(1.0, plot.scale_option.c_str());
         h_sig_temp->Draw(options.c_str());
       }
       else if (plot.signal_normalize_data and plot.no_data) {
-        TH1* h_sig_temp = dynamic_cast<TH1*>(signal.object);
         auto& mc_stack_tmp = mc_stacks.begin()->second;
         h_sig_temp->Scale(mc_stack_tmp.stat_only.get()->Integral()/h_sig_temp->Integral());
+        if (plot.scale_option.length() > 0)
+          h_sig_temp->Scale(1.0, plot.scale_option.c_str());
         h_sig_temp->Draw(options.c_str());
       }
-      else signal.object->Draw(options.c_str());
+      else {
+        if (plot.scale_option.length() > 0)
+          h_sig_temp->Scale(1.0, plot.scale_option.c_str());
+        h_sig_temp->Draw(options.c_str());
+      }
     }
 
     // And finally data
     if (h_data.get()) {
+      //if (plot.scale_option.length() > 0)
+      //  h_data->Scale(1.0, plot.scale_option.c_str());
       data_drawing_options += " same";
       h_data->Draw(data_drawing_options.c_str());
       TemporaryPool::get().add(h_data);
@@ -969,8 +988,10 @@ namespace plotIt {
       h_low_pad_axis->Reset(); // Keep binning
       setRange(h_low_pad_axis.get(), x_axis_range, plot.ratio_y_axis_range);
 
-      setDefaultStyle(h_low_pad_axis.get(), plot, 3.); //old ROOT
-      //setDefaultStyle(h_low_pad_axis.get(), plot, 1.); //ROOT ver > 6.20 (perhaps)
+      if (gROOT->GetVersionInt() >= 62204)
+        setDefaultStyle(h_low_pad_axis.get(), plot, 1.);
+      else
+        setDefaultStyle(h_low_pad_axis.get(), plot, 3.); //old ROOT
       h_low_pad_axis->GetYaxis()->SetTitle(plot.ratio_y_axis_title.c_str());
       h_low_pad_axis->GetYaxis()->SetTickLength(0.04);
       h_low_pad_axis->GetYaxis()->SetNdivisions(505, true);

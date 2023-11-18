@@ -38,6 +38,7 @@ namespace plotIt {
          * Assume objects are histograms and scale them by the specified factor
          **/
         void scale(float factor);
+        void scale(float factor, std::string opt);
 
         /**
          * Assume objects are histograms and rebin them by the specified factor
