@@ -227,6 +227,10 @@
   save-extensions: ['pdf', 'png']
   blinded-range: [400, 999]
 
+'h_mutau_mass_blind_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [400, 999]
+  show-onlyoverflow: true
 
 #jet ht for bSF check
 'h_jet_ht_S3':
@@ -351,31 +355,31 @@
 'h_bjet1_eta_S5':
   save-extensions: ['pdf', 'png']
 
-#st_met
-'h_st_met_S4':
-  rebin: 2
-  save-extensions: ['pdf', 'png']
-
-'h_st_met_binwidth_S4':
-  y-axis: "Events / GeV"
-  y-axis-format: "%1%"
-  scale-option: "WIDTH"
-  rebin: 2
-  log-y: true
-  log-y-axis-range: [0.02, 200]
-  save-extensions: ['pdf', 'png']
-
-'h_st_met_S5':
-  rebin: 2
-  blinded-range: [700, 1450]
-  save-extensions: ['pdf', 'png']
-
-'h_st_met_binwidth_S5':
-  y-axis: "Events / GeV"
-  y-axis-format: "%1%"
-  scale-option: "WIDTH"
-  rebin: 2
-  log-y: true
-  log-y-axis-range: [0.02, 110]
-  blinded-range: [700, 1450]
-  save-extensions: ['pdf', 'png']
+##st_met
+#'h_st_met_S4':
+#  rebin: 2
+#  save-extensions: ['pdf', 'png']
+#
+#'h_st_met_binwidth_S4':
+#  y-axis: "Events / GeV"
+#  y-axis-format: "%1%"
+#  scale-option: "WIDTH"
+#  rebin: 2
+#  log-y: true
+#  log-y-axis-range: [0.02, 200]
+#  save-extensions: ['pdf', 'png']
+#
+#'h_st_met_S5':
+#  rebin: 2
+#  blinded-range: [700, 1450]
+#  save-extensions: ['pdf', 'png']
+#
+#'h_st_met_binwidth_S5':
+#  y-axis: "Events / GeV"
+#  y-axis-format: "%1%"
+#  scale-option: "WIDTH"
+#  rebin: 2
+#  log-y: true
+#  log-y-axis-range: [0.02, 110]
+#  blinded-range: [700, 1450]
+#  save-extensions: ['pdf', 'png']

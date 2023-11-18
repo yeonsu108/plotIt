@@ -59,6 +59,7 @@ systematics:
   - btagcferr2
   - pu
   - prefire
+  - toppt
   - muid
   - muiso
   - mutrg

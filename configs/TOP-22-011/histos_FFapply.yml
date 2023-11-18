@@ -70,6 +70,11 @@
   save-extensions: ['pdf', 'png']
   blinded-range: [400, 999]
 
+'h_mutau_mass_blind_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [400, 999]
+  show-onlyoverflow: true
+
 
 #jet ht for bSF check
 'h_jet_ht_S5':
@@ -132,6 +137,7 @@
 'h_bjet1_eta_S5':
   save-extensions: ['pdf', 'png']
 
+
 #reco
 'h_chi2_S5':
   save-extensions: ['pdf', 'png']
@@ -141,9 +147,18 @@
   save-extensions: ['pdf', 'png']
   blinded-range: [100, 240]
 
+'h_chi2_SMTop_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [250, 400]
+
+'h_chi2_SMTop_pt_notoppt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [250, 400]
+
 'h_chi2_SMW_mass_S5':
   save-extensions: ['pdf', 'png']
   blinded-range: [50, 130]
+
 
 #st_met
 'h_st_met_S5':

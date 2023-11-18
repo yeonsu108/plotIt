@@ -6,6 +6,14 @@
   save-extensions: ['pdf', 'png']
   blinded-range: [100, 240]
 
+'h_chi2_SMTop_pt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [250, 400]
+
+'h_chi2_SMTop_pt_notoppt_S5':
+  save-extensions: ['pdf', 'png']
+  blinded-range: [250, 400]
+
 'h_chi2_SMW_mass_S5':
   save-extensions: ['pdf', 'png']
   blinded-range: [50, 130]
