@@ -8,7 +8,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttll
-  yields-group: '1t#bar{t}(ll)'
+  yields-group: '1t#bar{t}\;(\ell\ell)'
   order: 9
 
 'ttbarbgFromDilepton.root':
@@ -16,7 +16,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttbkg
-  yields-group: '2t#bar{t} (not dileptonic)'
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
   order: 7
 
 'ttbarbgFromLjets.root':
@@ -24,7 +24,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttbkg
-  yields-group: '2t#bar{t} (not dileptonic)'
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
   order: 6
 
 'ttbarbgFromHadronic.root':
@@ -32,7 +32,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttbkg
-  yields-group: '2t#bar{t} (not dileptonic)'
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
   order: 5
 
 'singletop.root':

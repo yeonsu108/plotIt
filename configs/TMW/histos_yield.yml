@@ -7,7 +7,7 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 0
-  yields-title: 'll, N_{b jet} #geq 0, N_{jet} #geq 0'
+  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 0$'
 
 'combined_InclusiveBTag_GreaterOneJet_NEvents':
   y-axis: "Events"
@@ -18,7 +18,7 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 1
-  yields-title: 'll, N_{b jet} #geq 0, N_{jet} #geq 2'
+  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 'combined_TwoBTag_GreaterOneJet_NEvents':
   y-axis: "Events"
@@ -29,7 +29,7 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 2
-  yields-title: 'll, N_{b jet} = 2, N_{jet} #geq 2'
+  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 'combined_GreaterOneBTag_GreaterOneJet_NEvents':
   y-axis: "Events"
@@ -40,6 +40,6 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 3
-  yields-title: 'll, N_{b jet} #geq 2, N_{jet} #geq 2'
+  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 

@@ -1318,6 +1318,15 @@ namespace plotIt {
 
         std::string process_name = file.yields_group;
 
+        if (process_name.find_first_of("0123456789") != std::string::npos) {
+            // trick to sort process: put integer in front of the process name
+            // then we remove here
+            // Assume we have < 10 processes
+
+            auto begin = process_name.find_first_of("0123456789");
+            process_name = process_name.substr(begin+1);
+        }
+
         if (process_name.find("$") == std::string::npos)
             replace_substr(process_name, "_", "\\_");
 
@@ -1751,6 +1760,15 @@ namespace plotIt {
         }
 
         std::string process_name = file.yields_group;
+
+        if (process_name.find_first_of("0123456789") != std::string::npos) {
+            // trick to sort process: put integer in front of the process name
+            // then we remove here
+            // Assume we have < 10 processes
+
+            auto begin = process_name.find_first_of("0123456789");
+            process_name = process_name.substr(begin+1);
+        }
 
         if (process_name.find("$") == std::string::npos)
             replace_substr(process_name, "_", "\\_");
