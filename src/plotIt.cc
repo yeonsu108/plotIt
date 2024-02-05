@@ -1318,15 +1318,6 @@ namespace plotIt {
 
         std::string process_name = file.yields_group;
 
-        if (process_name.find_first_of("0123456789") != std::string::npos) {
-            // trick to sort process: put integer in front of the process name
-            // then we remove here
-            // Assume we have < 10 processes
-
-            auto begin = process_name.find_first_of("0123456789");
-            process_name = process_name.substr(begin+1);
-        }
-
         if (process_name.find("$") == std::string::npos)
             replace_substr(process_name, "_", "\\_");
 
@@ -1419,6 +1410,23 @@ namespace plotIt {
       return false;
     }
 
+    std::vector<std::string> mc_processes_sorted;
+    for(auto &process_name: mc_processes) {
+      auto process_name_modified = process_name;
+      if (process_name.find_first_of("0123456789") != std::string::npos) {
+          // trick to sort process: put integer in front of the process name
+          // then we remove here
+          // Assume we have < 10 processes
+
+          auto begin = process_name.find_first_of("0123456789");
+          process_name_modified = process_name.substr(begin+1);
+
+          std::string mathmark = "$";
+          if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
+      }
+      mc_processes_sorted.emplace_back(process_name_modified);
+    }
+
     // Sort according to user-defined order
     std::sort(categories.begin(), categories.end(), [](const std::pair<int, std::string>& cat1, const std::pair<int, std::string>& cat2){  return cat1.first < cat2.first; });
 
@@ -1467,7 +1475,8 @@ namespace plotIt {
       latexString << "    Cat. & ";
       for(auto &proc: signal_processes)
         latexString << proc << " & ";
-      for(auto &proc: mc_processes)
+      //for(auto &proc: mc_processes)
+      for(auto &proc: mc_processes_sorted)
         latexString << proc << " & ";
       if( mc_processes.size() )
         latexString << "Tot. MC & ";
@@ -1489,7 +1498,8 @@ namespace plotIt {
           latexString << "$" << signal_yields[categ][proc].first << " \\pm " << std::sqrt(signal_yields[categ][proc].second) << "$ & ";
           //latexString << "$" << signal_yields[categ][proc].first << " \\pm " << std::sqrt(signal_yields[categ][proc].second + std::pow(process_systematics[std::make_tuple(SIGNAL, categ, proc)], 2)) << "$ & ";
 
-        for(auto &proc: mc_processes) {
+        //for(auto &proc: mc_processes) {
+        for(auto &proc: mc_processes_sorted) {
           if(mc_yields[categ][proc].first > 0)
             latexString << "$" << mc_yields[categ][proc].first << " \\pm " << std::sqrt(mc_yields[categ][proc].second) << "$ & ";
             //latexString << "$" << mc_yields[categ][proc].first << " \\pm " << std::sqrt(mc_yields[categ][proc].second + std::pow(process_systematics[std::make_tuple(MC, categ, proc)], 2)) << "$ & ";
@@ -1578,7 +1588,8 @@ namespace plotIt {
             latexString << R"(\hline)" << std::endl;
 
             // Loop
-            for (const auto& p: mc_processes) {
+            //for (const auto& p: mc_processes) {
+            for (const auto& p: mc_processes_sorted) {
 
                 latexString << p << " & ";
 
@@ -1761,15 +1772,6 @@ namespace plotIt {
 
         std::string process_name = file.yields_group;
 
-        if (process_name.find_first_of("0123456789") != std::string::npos) {
-            // trick to sort process: put integer in front of the process name
-            // then we remove here
-            // Assume we have < 10 processes
-
-            auto begin = process_name.find_first_of("0123456789");
-            process_name = process_name.substr(begin+1);
-        }
-
         if (process_name.find("$") == std::string::npos)
             replace_substr(process_name, "_", "\\_");
 
@@ -1905,6 +1907,23 @@ namespace plotIt {
       return false;
     }
 
+    std::vector<std::string> mc_processes_sorted;
+    for(auto &process_name: mc_processes) {
+      auto process_name_modified = process_name;
+      if (process_name.find_first_of("0123456789") != std::string::npos) {
+          // trick to sort process: put integer in front of the process name
+          // then we remove here
+          // Assume we have < 10 processes
+
+          auto begin = process_name.find_first_of("0123456789");
+          process_name_modified = process_name.substr(begin+1);
+
+          std::string mathmark = "$";
+          if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
+      }
+      mc_processes_sorted.emplace_back(process_name_modified);
+    }
+
     // Sort according to user-defined order
     std::sort(categories.begin(), categories.end(), [](const std::pair<int, std::string>& cat1, const std::pair<int, std::string>& cat2){  return cat1.first < cat2.first; });
 
@@ -1938,7 +1957,7 @@ namespace plotIt {
 
     // Then MC samples
     if (!mc_processes.empty()) {
-      for (const auto& p: mc_processes) {
+      for (const auto& p: mc_processes_sorted) {
           latexString << p << " & ";
 
           for (const auto& c: categories) {
