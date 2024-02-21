@@ -1410,7 +1410,8 @@ namespace plotIt {
       return false;
     }
 
-    std::vector<std::string> mc_processes_sorted;
+    //std::vector<std::string> mc_processes_sorted;
+    std::map< std::string, std::string > mc_processes_sorted;
     for(auto &process_name: mc_processes) {
       auto process_name_modified = process_name;
       if (process_name.find_first_of("0123456789") != std::string::npos) {
@@ -1424,7 +1425,8 @@ namespace plotIt {
           std::string mathmark = "$";
           if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
       }
-      mc_processes_sorted.emplace_back(process_name_modified);
+      //mc_processes_sorted.emplace_back(process_name_modified);
+      mc_processes_sorted[process_name] = process_name_modified;
     }
 
     // Sort according to user-defined order
@@ -1477,7 +1479,7 @@ namespace plotIt {
         latexString << proc << " & ";
       //for(auto &proc: mc_processes)
       for(auto &proc: mc_processes_sorted)
-        latexString << proc << " & ";
+        latexString << proc.second << " & ";
       if( mc_processes.size() )
         latexString << "Tot. MC & ";
       if( has_data )
@@ -1500,11 +1502,11 @@ namespace plotIt {
 
         //for(auto &proc: mc_processes) {
         for(auto &proc: mc_processes_sorted) {
-          if(mc_yields[categ][proc].first > 0)
-            latexString << "$" << mc_yields[categ][proc].first << " \\pm " << std::sqrt(mc_yields[categ][proc].second) << "$ & ";
+          if(mc_yields[categ][proc.first].first > 0)
+            latexString << "$" << mc_yields[categ][proc.first].first << " \\pm " << std::sqrt(mc_yields[categ][proc.first].second) << "$ & ";
             //latexString << "$" << mc_yields[categ][proc].first << " \\pm " << std::sqrt(mc_yields[categ][proc].second + std::pow(process_systematics[std::make_tuple(MC, categ, proc)], 2)) << "$ & ";
           else
-            latexString << "$" << "0" << " \\pm " << std::sqrt(mc_yields[categ][proc].second) << "$ & ";
+            latexString << "$" << "0" << " \\pm " << std::sqrt(mc_yields[categ][proc.first].second) << "$ & ";
         }
         if( mc_processes.size() )
           latexString << "$" << mc_total[categ] << " \\pm " << std::sqrt(mc_total_sqerrs[categ]) << "$ & ";
@@ -1591,16 +1593,16 @@ namespace plotIt {
             //for (const auto& p: mc_processes) {
             for (const auto& p: mc_processes_sorted) {
 
-                latexString << p << " & ";
+                latexString << p.second << " & ";
 
                 for (const auto& c: categories) {
                     std::string categ = c.second;
 
-                    if (mc_yields[categ][p].first > 0)
+                    if (mc_yields[categ][p.first].first > 0)
                       //latexString << "$" << mc_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p].second + std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2)) << "}$ & ";
-                      latexString << "$" << mc_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p].second) << "}$ & ";
+                      latexString << "$" << mc_yields[categ][p.first].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
                     else
-                      latexString << "$" << "0" << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p].second) << "}$ & ";
+                      latexString << "$" << "0" << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
                 }
 
                 latexString.seekp(latexString.tellp() - 2l);
