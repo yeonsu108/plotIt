@@ -1909,7 +1909,8 @@ namespace plotIt {
       return false;
     }
 
-    std::vector<std::string> mc_processes_sorted;
+    //std::vector<std::string> mc_processes_sorted;
+    std::map< std::string, std::string > mc_processes_sorted;
     for(auto &process_name: mc_processes) {
       auto process_name_modified = process_name;
       if (process_name.find_first_of("0123456789") != std::string::npos) {
@@ -1923,7 +1924,8 @@ namespace plotIt {
           std::string mathmark = "$";
           if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
       }
-      mc_processes_sorted.emplace_back(process_name_modified);
+      //mc_processes_sorted.emplace_back(process_name_modified);
+      mc_processes_sorted[process_name] = process_name_modified;
     }
 
     // Sort according to user-defined order
@@ -1960,18 +1962,18 @@ namespace plotIt {
     // Then MC samples
     if (!mc_processes.empty()) {
       for (const auto& p: mc_processes_sorted) {
-          latexString << p << " & ";
+          latexString << p.second << " & ";
 
           for (const auto& c: categories) {
             std::string categ = c.second;
-            if(mc_yields[categ][p].first > 0) {
+            if(mc_yields[categ][p.first].first > 0) {
               //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2))) << R"(\% & )";
               //latexString << R"($\pm$ )" << std::setprecision(m_config.yields_table_num_prec_yields) << (std::sqrt(std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100 << R"(\% & )";
               latexString << R"($^{+)"\
                           << std::setprecision(m_config.yields_table_num_prec_yields)\
-                          << (std::sqrt(std::pow(process_systematics_up[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100
+                          << (std::sqrt(std::pow(process_systematics_up[std::make_tuple(MC, categ, p.first)], 2))/mc_yields[categ][p.first].first)*100
                           <<  R"(\%}_{-)"\
-                          << (std::sqrt(std::pow(process_systematics_dn[std::make_tuple(MC, categ, p)], 2))/mc_yields[categ][p].first)*100
+                          << (std::sqrt(std::pow(process_systematics_dn[std::make_tuple(MC, categ, p.first)], 2))/mc_yields[categ][p.first].first)*100
                           << R"(\%}$ & )";
             } else {
               latexString << R"($\pm$ )" << R"($-$ )" << R"(\% & )";
