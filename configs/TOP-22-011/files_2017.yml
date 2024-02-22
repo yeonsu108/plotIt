@@ -1,9 +1,9 @@
-#'hist_ST_LFV_TCMuTau_Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTcs'
-#  cross-section: 0.007375
-#  group: GLFVSTcs
-#  order: 1
+'hist_ST_LFV_TCMuTau_Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTcs'
+  cross-section: 0.007375
+  group: GLFVSTcs
+  order: 1
 
 'hist_ST_LFV_TCMuTau_Vector.root':
   type: signal
@@ -12,19 +12,19 @@
   group: GLFVSTcv
   order: 1
 
-#'hist_ST_LFV_TCMuTau_Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVSTct'
-#  cross-section: 0.177
-#  group: GLFVSTct
-#  order: 1
+'hist_ST_LFV_TCMuTau_Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTct'
+  cross-section: 0.177
+  group: GLFVSTct
+  order: 1
 
-#'hist_ST_LFV_TUMuTau_Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTus'
-#  cross-section: 0.08494
-#  group: GLFVSTus
-#  order: 1
+'hist_ST_LFV_TUMuTau_Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTus'
+  cross-section: 0.08494
+  group: GLFVSTus
+  order: 1
 
 'hist_ST_LFV_TUMuTau_Vector.root':
   type: signal
@@ -33,19 +33,19 @@
   group: GLFVSTuv
   order: 2
 
-#'hist_ST_LFV_TUMuTau_Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVSTut'
-#  cross-section: 1.781
-#  group: GLFVSTut
-#  order: 1
+'hist_ST_LFV_TUMuTau_Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTut'
+  cross-section: 1.781
+  group: GLFVSTut
+  order: 1
 
-#'hist_TT_LFV_TCMuTau_Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVTTcs'
-#  cross-section: 0.00269
-#  group: GLFVTTcs
-#  order: 1
+'hist_TT_LFV_TCMuTau_Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTcs'
+  cross-section: 0.00269
+  group: GLFVTTcs
+  order: 1
 
 'hist_TT_LFV_TCMuTau_Vector.root':
   type: signal
@@ -54,19 +54,19 @@
   group: GLFVTTcv
   order: 3
 
-#'hist_TT_LFV_TCMuTau_Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVTTct'
-#  cross-section: 0.1290
-#  group: GLFVTTct
-#  order: 1
+'hist_TT_LFV_TCMuTau_Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTct'
+  cross-section: 0.1290
+  group: GLFVTTct
+  order: 1
 
-#'hist_TT_LFV_TUMuTau_Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVTTus'
-#  cross-section: 0.00269
-#  group: GLFVTTus
-#  order: 1
+'hist_TT_LFV_TUMuTau_Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTus'
+  cross-section: 0.00269
+  group: GLFVTTus
+  order: 1
 
 'hist_TT_LFV_TUMuTau_Vector.root':
   type: signal
@@ -75,12 +75,12 @@
   group: GLFVTTuv
   order: 4
 
-#'hist_TT_LFV_TUMuTau_Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVTTut'
-#  cross-section: 0.1290
-#  group: GLFVTTut
-#  order: 1
+'hist_TT_LFV_TUMuTau_Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTut'
+  cross-section: 0.1290
+  group: GLFVTTut
+  order: 1
 
 'hist_SingleMuon2017.root':
   type: data
