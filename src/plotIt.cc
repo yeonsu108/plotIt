@@ -532,6 +532,8 @@ namespace plotIt {
         if (!CommandLineCfg::get().dyincl and (it->first.as<std::string>()).find("DYJetsToLL_M50_amc") != std::string::npos) continue;
         else if (CommandLineCfg::get().dyincl and (it->first.as<std::string>()).find("DYJetsToLL_M50_HT") != std::string::npos) continue;
 
+        if(!CommandLineCfg::get().allSig and (it->first.as<std::string>()).find("_LFV_") != std::string::npos and (it->first.as<std::string>()).find("Vector") == std::string::npos ) continue;
+
         if (files.Type() == YAML::NodeType::Map)
             parseFileNode(file, it->first, it->second);
         else
@@ -2369,6 +2371,8 @@ int main(int argc, char** argv) {
 
     TCLAP::SwitchArg dyArg("d", "dyincl", "Process with DY inclusive sample (DYJetsToLL_M50_amc)", cmd, false);
 
+    TCLAP::SwitchArg allSigArg("a", "allSig", "plot only vector signal for LFV, default for ", cmd, false);
+
     TCLAP::SwitchArg desytopArg("t", "desytop", "Switch for DESY top framework", cmd, false);
 
     cmd.parse(argc, argv);
@@ -2403,6 +2407,7 @@ int main(int argc, char** argv) {
     CommandLineCfg::get().systematicsBreakdown = systematicsBreakdownArg.getValue();
     CommandLineCfg::get().do_qcd = qcdArg.getValue();
     CommandLineCfg::get().dyincl = dyArg.getValue();
+    CommandLineCfg::get().allSig = allSigArg.getValue();
     CommandLineCfg::get().desytop = desytopArg.getValue();
 
     plotIt::plotIt p(outputPath);
