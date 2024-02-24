@@ -137,7 +137,7 @@ namespace plotIt {
     // For MC and Signal
     float cross_section = 1.;
     float branching_ratio = 1.;
-    float generated_events = 1.;
+    float generated_events = - 1.;
     float scale = 1.;
 
     // Only MC files with the same stack index will be

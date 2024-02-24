@@ -413,8 +413,8 @@ namespace plotIt {
 
         auto generated_events = file.generated_events;
 
-        if (m_plotIt.getConfiguration().generated_events_histogram.length() > 0 and file.generated_events < 2) {
-            //generated_events = 1.0 if not declared in file yaml
+        if (m_plotIt.getConfiguration().generated_events_histogram.length() > 0 and file.generated_events < 0) {
+            //generated_events = - 1.0 if not declared in file yaml
             std::shared_ptr<TFile> input(TFile::Open(file.path.c_str()));
             TH1* hevt = dynamic_cast<TH1*>(input->Get(m_plotIt.getConfiguration().generated_events_histogram.c_str()));
             generated_events = hevt->GetBinContent(m_plotIt.getConfiguration().generated_events_bin);
