@@ -534,6 +534,8 @@ namespace plotIt {
 
         if(!CommandLineCfg::get().allSig and (it->first.as<std::string>()).find("_LFV_") != std::string::npos and (it->first.as<std::string>()).find("Vector") == std::string::npos ) continue;
 
+        if(CommandLineCfg::get().binned and (((it->first.as<std::string>()).find("ttbarsignal") != std::string::npos or (it->first.as<std::string>()).find("ttbartwbb4l") != std::string::npos) and (it->first.as<std::string>()).find("Bin") == std::string::npos)) continue;
+
         if (files.Type() == YAML::NodeType::Map)
             parseFileNode(file, it->first, it->second);
         else
@@ -2375,6 +2377,8 @@ int main(int argc, char** argv) {
 
     TCLAP::SwitchArg desytopArg("t", "desytop", "Switch for DESY top framework", cmd, false);
 
+    TCLAP::SwitchArg binnedArg("", "binned", "Draw with 'ttbarsignal' binned samples", cmd, false);
+
     cmd.parse(argc, argv);
 
     //bool isData = dataArg.isSet();
@@ -2409,6 +2413,7 @@ int main(int argc, char** argv) {
     CommandLineCfg::get().dyincl = dyArg.getValue();
     CommandLineCfg::get().allSig = allSigArg.getValue();
     CommandLineCfg::get().desytop = desytopArg.getValue();
+    CommandLineCfg::get().binned = binnedArg.getValue();
 
     plotIt::plotIt p(outputPath);
     if (!p.parseConfigurationFile(configFileArg.getValue(), histogramsPath))

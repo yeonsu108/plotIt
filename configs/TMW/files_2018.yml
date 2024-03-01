@@ -3,13 +3,13 @@
   pretty-name: 'Data'
   group: Gdata
 
-#'ttbarsignal.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttll
-#  yields-group: '1t#bar{t}\;(\ell\ell)'
-#  order: 9
+'ttbarsignal.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttll
+  yields-group: '1t#bar{t}\;(\ell\ell)'
+  order: 9
 
 'ttbarsignalplustau_Bin0.root':
   type: mc
