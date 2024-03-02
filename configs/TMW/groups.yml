@@ -70,6 +70,10 @@ Gttllbin15:
   fill-color: '#3399ff'
   legend: 't#bar{t}(ll) Bin15'
 
+Gttllbin16:
+  fill-color: '#33ccff'
+  legend: 't#bar{t}(ll) Bin16'
+
 Gttbkg:
   fill-color: '#666699'
   legend: 't#bar{t} others'

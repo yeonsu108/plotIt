@@ -139,6 +139,14 @@
   yields-group: '1t#bar{t}\;(\ell\ell) Bin15'
   order: 24
 
+'ttbarsignalplustau_Bin16.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin16
+  yields-group: '1t#bar{t}\;(\ell\ell) Bin16'
+  order: 25
+
 'ttbarbgFromDilepton.root':
   type: mc
   cross-section: 1.0
