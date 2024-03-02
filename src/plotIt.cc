@@ -535,6 +535,7 @@ namespace plotIt {
         if(!CommandLineCfg::get().allSig and (it->first.as<std::string>()).find("_LFV_") != std::string::npos and (it->first.as<std::string>()).find("Vector") == std::string::npos ) continue;
 
         if(CommandLineCfg::get().binned and (((it->first.as<std::string>()).find("ttbarsignal") != std::string::npos or (it->first.as<std::string>()).find("ttbartwbb4l") != std::string::npos) and (it->first.as<std::string>()).find("Bin") == std::string::npos)) continue;
+        else if(!CommandLineCfg::get().binned and (((it->first.as<std::string>()).find("ttbarsignal") != std::string::npos or (it->first.as<std::string>()).find("ttbartwbb4l") != std::string::npos) and (it->first.as<std::string>()).find("Bin") != std::string::npos)) continue;
 
         if (files.Type() == YAML::NodeType::Map)
             parseFileNode(file, it->first, it->second);
