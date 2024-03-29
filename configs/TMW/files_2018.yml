@@ -16,7 +16,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin0
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin0'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin0'
+  order: 9
+
+'singletw_Bin0.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin0
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin0'
   order: 9
 
 'ttbarsignalplustau_Bin1.root':
@@ -24,7 +32,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin1
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin1'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin1'
+  order: 10
+
+'singletw_Bin1.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin1
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin1'
   order: 10
 
 'ttbarsignalplustau_Bin2.root':
@@ -32,7 +48,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin2
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin2'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin2'
+  order: 11
+
+'singletw_Bin2.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin2
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin2'
   order: 11
 
 'ttbarsignalplustau_Bin3.root':
@@ -40,7 +64,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin3
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin3'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin3'
+  order: 12
+
+'singletw_Bin3.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin3
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin3'
   order: 12
 
 'ttbarsignalplustau_Bin4.root':
@@ -48,7 +80,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin4
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin4'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin4'
+  order: 13
+
+'singletw_Bin4.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin4
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin4'
   order: 13
 
 'ttbarsignalplustau_Bin5.root':
@@ -56,7 +96,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin5
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin5'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin5'
+  order: 14
+
+'singletw_Bin5.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin5
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin5'
   order: 14
 
 'ttbarsignalplustau_Bin6.root':
@@ -64,7 +112,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin6
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin6'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin6'
+  order: 15
+
+'singletw_Bin6.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin6
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin6'
   order: 15
 
 'ttbarsignalplustau_Bin7.root':
@@ -72,7 +128,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin7
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin7'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin7'
+  order: 16
+
+'singletw_Bin7.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin7
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin7'
   order: 16
 
 'ttbarsignalplustau_Bin8.root':
@@ -80,7 +144,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin8
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin8'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin8'
+  order: 17
+
+'singletw_Bin8.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin8
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin8'
   order: 17
 
 'ttbarsignalplustau_Bin9.root':
@@ -88,7 +160,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin9
-  yields-group: '0t#bar{t}\;(\ell\ell) Bin9'
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin9'
+  order: 18
+
+'singletw_Bin9.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin9
+  yields-group: '0t#bar{t}\;(\ell\ell)\;+tW Bin9'
   order: 18
 
 'ttbarsignalplustau_Bin10.root':
@@ -96,7 +176,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin10
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin10'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin10'
+  order: 19
+
+'singletw_Bin10.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin10
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin10'
   order: 19
 
 'ttbarsignalplustau_Bin11.root':
@@ -104,7 +192,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin11
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin11'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin11'
+  order: 20
+
+'singletw_Bin11.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin11
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin11'
   order: 20
 
 'ttbarsignalplustau_Bin12.root':
@@ -112,7 +208,16 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin12
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin12'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin12'
+  order: 21
+
+
+'singletw_Bin12.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin12
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin12'
   order: 21
 
 'ttbarsignalplustau_Bin13.root':
@@ -120,7 +225,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin13
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin13'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin13'
+  order: 22
+
+'singletw_Bin13.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin13
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin13'
   order: 22
 
 'ttbarsignalplustau_Bin14.root':
@@ -128,7 +241,15 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin14
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin14'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin14'
+  order: 23
+
+'singletw_Bin14.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin14
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin14'
   order: 23
 
 'ttbarsignalplustau_Bin15.root':
@@ -136,24 +257,24 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin15
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin15'
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin15'
   order: 24
 
-'ttbarsignalplustau_Bin16.root':
+'singletw_Bin15.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
-  group: Gttllbin16
-  yields-group: '1t#bar{t}\;(\ell\ell) Bin16'
-  order: 25
+  group: Gttllbin15
+  yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin15'
+  order: 24
 
-'ttbarbgFromDilepton.root':
-  type: mc
-  cross-section: 1.0
-  generated-events: 1.0
-  group: Gttbkg
-  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
-  order: 7
+#'ttbarbgFromDilepton.root':
+#  type: mc
+#  cross-section: 1.0
+#  generated-events: 1.0
+#  group: Gttbkg
+#  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
+#  order: 7
 
 'ttbarbgFromLjets.root':
   type: mc
@@ -170,6 +291,14 @@
   group: Gttbkg
   yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
   order: 5
+
+'singletw.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gst
+  yields-group: '3Single top'
+  order: 4
 
 'singletop.root':
   type: mc

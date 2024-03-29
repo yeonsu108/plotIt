@@ -65,18 +65,20 @@ for hname in histNames:
                     options_list.append('  sort-by-yields: true\n')
                 if hname in sort_hists:
                     options_list.append('  sort-by-yields: true\n')
-                if hname in stat_hists:
-                    options_list.append('  ratio-draw-mcstat-error: true\n')
+                #if hname in stat_hists:
+                #    options_list.append('  ratio-draw-mcstat-error: true\n')
                 if ch == 'combined':
                     options_list.append("  rename:\n    - {from: '" + hout + "', to: '" + hout.replace(ch, 'll') + "'}\n")
 
                 options_list.append("  labels:\n    - {text: '" + ch_label + "', position: [0.77, .725], font: 44, size: 14}\n")
                 options_list.append("    - {text: '#splitline{N_{b jet} " + btag_label + "}{N_{jet} " + njet_label + "}', position: [0.77, .65], font: 44, size: 14}\n")
+                #options_list.append("  ratio-y-axis-range: [0.95, 1.05]\n")
 
                 options_list.append("  save-extensions: ['pdf', 'png']\n\n")
                 hist_items[hout] = options_list
 
 with open('histos_control.yml', 'w') as f:
+#with open('histos_control_bb4l.yml', 'w') as f:
     for histo, options in hist_items.items():
         f.write("'" + histo + "':\n")
         for option in options:

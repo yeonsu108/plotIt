@@ -1,24 +1,24 @@
-'combined_InclusiveBTag_InclusiveNJet_mlb_minimax':
-  y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
-  sort-by-yields: true
-  rename:
-    - {from: 'combined_InclusiveBTag_InclusiveNJet_mlb_minimax', to: 'll_InclusiveBTag_InclusiveNJet_mlb_minimax_yield'}
-  save-extensions: ['pdf', 'png']
-  for-yields: true
-  yields-table-order: 0
-  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 0$'
-
-'combined_InclusiveBTag_GreaterOneJet_mlb_minimax':
-  y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
-  sort-by-yields: true
-  rename:
-    - {from: 'combined_InclusiveBTag_GreaterOneJet_mlb_minimax', to: 'll_InclusiveBTag_GreaterOneJet_mlb_minimax_yield'}
-  save-extensions: ['pdf', 'png']
-  for-yields: true
-  yields-table-order: 1
-  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+#'combined_InclusiveBTag_InclusiveNJet_mlb_minimax':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  sort-by-yields: true
+#  rename:
+#    - {from: 'combined_InclusiveBTag_InclusiveNJet_mlb_minimax', to: 'll_InclusiveBTag_InclusiveNJet_mlb_minimax_yield'}
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 0
+#  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 0$'
+#
+#'combined_InclusiveBTag_GreaterOneJet_mlb_minimax':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  sort-by-yields: true
+#  rename:
+#    - {from: 'combined_InclusiveBTag_GreaterOneJet_mlb_minimax', to: 'll_InclusiveBTag_GreaterOneJet_mlb_minimax_yield'}
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 1
+#  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 0$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 'combined_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
@@ -31,15 +31,49 @@
   yields-table-order: 2
   yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
-'combined_GreaterOneBTag_GreaterOneJet_mlb_minimax':
+#'combined_GreaterOneBTag_GreaterOneJet_mlb_minimax':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  sort-by-yields: true
+#  rename:
+#    - {from: 'combined_GreaterOneBTag_GreaterOneJet_mlb_minimax', to: 'll_GreaterOneBTag_GreaterOneJet_mlb_minimax_yield'}
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 3
+#  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+
+'ee_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   sort-by-yields: true
   rename:
-    - {from: 'combined_GreaterOneBTag_GreaterOneJet_mlb_minimax', to: 'll_GreaterOneBTag_GreaterOneJet_mlb_minimax_yield'}
+    - {from: 'ee_TwoBTag_GreaterOneJet_mlb_minimax', to: 'lee_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
   save-extensions: ['pdf', 'png']
   for-yields: true
-  yields-table-order: 3
-  yields-title: '$\ell\ell$, $\textrm{N}_{\textrm{b-jet}} \geq 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+  yields-table-order: 2
+  yields-title: '$ee$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+
+'emu_TwoBTag_GreaterOneJet_mlb_minimax':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  sort-by-yields: true
+  rename:
+    - {from: 'emu_TwoBTag_GreaterOneJet_mlb_minimax', to: 'emu_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 2
+  yields-title: '$emu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+
+'mumu_TwoBTag_GreaterOneJet_mlb_minimax':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  sort-by-yields: true
+  rename:
+    - {from: 'mumu_TwoBTag_GreaterOneJet_mlb_minimax', to: 'mumu_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 2
+  yields-title: '$mumu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+
 
 
