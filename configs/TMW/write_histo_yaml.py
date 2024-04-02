@@ -4,38 +4,39 @@ from collections import OrderedDict
 channelNames = {'ee': 'ee', 'emu': 'e#mu', 'mumu': '#mu#mu',
                 'sameflavor': 'ee+#mu#mu', 'combined': 'ee+e#mu+#mu#mu'}
 histNames = [
-            'NEvents',
+            #'NEvents',
             #'nVtx', 'rho',
             'nJets', 'nBJets',
-            'bJet1Pt',
+            #'bJet1Pt',
             'dileptonPt','dileptonMass',
             'metPt',
-            'mlb_min', 'mlb_minimax',
+            #'mlb_min',
+            'mlb_minimax',
             'lept1Pt','lept2Pt',
             'lept1Eta','lept2Eta',
             'jet1Pt','jet1Eta',
             'jet2Pt','jet2Eta',
-#            'mlb_minimax',
+            'mbb',
             ]
 
 #Not drawing all histos! {hname: [[btag], [njet]]}
 allowed_dict = {
                  'mlb_minimax': [[], ['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']],
                  'mlb_min': [[], [], ['TwoJet', 'GreaterOneJet']],
+                 'mbb': [[], ['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']],
                  'nJets': [['combined'], [], ['InclusiveNJet', 'GreaterOneJet']],
                  'nBJets': [['combined'], ['InclusiveBTag', 'GreaterOneBTag'], []],
                  'jet1Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet1Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
-                 'bJet1Pt': [['combined'], ['InclusiveBTag', 'OneBTag', 'GreaterOneBTag', 'TwoBTag'],[]],
+                 'bJet1Pt': [['combined'], ['InclusiveBTag', 'GreaterOneBTag', 'TwoBTag'],[]],
                }
-btagNames = {'ZeroBTag': '= 0',
+btagNames = {#'ZeroBTag': '= 0',
              'InclusiveBTag': '#geq 0',
-             'OneBTag': '= 1',
              'GreaterOneBTag': '#geq 2',
              'TwoBTag': '= 2'}
-njetNames = {'TwoJet': '= 2',
+njetNames = {#'TwoJet': '= 2',
              'InclusiveNJet': '#geq 0',
              'GreaterOneJet': '#geq 2'}
 

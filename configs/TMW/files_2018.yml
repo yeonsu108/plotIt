@@ -268,13 +268,13 @@
   yields-group: '1t#bar{t}\;(\ell\ell)\;+tW Bin15'
   order: 24
 
-#'ttbarbgFromDilepton.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttbkg
-#  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
-#  order: 7
+'ttbarbgFromDilepton.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttbkg
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
+  order: 7
 
 'ttbarbgFromLjets.root':
   type: mc
