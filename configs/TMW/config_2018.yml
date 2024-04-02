@@ -73,6 +73,7 @@ systematics:
   - L1PREFIRING_ECAL
   - L1PREFIRING_MUON
   #- MASS: {type: shape, on: 'ttbarsignal|ttbarbg'}
+  #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - MATCH: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE_ST: {type: shape, on: 'singletop|singletw'}
