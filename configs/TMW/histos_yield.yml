@@ -47,7 +47,7 @@
   y-axis-format: "%1% / %2$.2f"
   sort-by-yields: true
   rename:
-    - {from: 'ee_TwoBTag_GreaterOneJet_mlb_minimax', to: 'lee_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
+    - {from: 'ee_TwoBTag_GreaterOneJet_mlb_minimax', to: 'ee_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 2
@@ -62,7 +62,7 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 2
-  yields-title: '$emu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+  yields-title: '$e\mu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 'mumu_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
@@ -73,7 +73,7 @@
   save-extensions: ['pdf', 'png']
   for-yields: true
   yields-table-order: 2
-  yields-title: '$mumu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
+  yields-title: '$\mu\mu$, $\textrm{N}_{\textrm{b-jet}} = 2$, $\textrm{N}_{\textrm{jet}} \geq 2$'
 
 
 

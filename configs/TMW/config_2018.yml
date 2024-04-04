@@ -22,7 +22,7 @@ configuration:
   yields-table-numerical-precision-yields: 2
 
 files: 
-  include: ['files_2018.yml']
+  include: ['files.yml']
 
 systematics:
   - norm_diboson: {type: const, value: 1.3, on: 'diboson'}
@@ -30,9 +30,9 @@ systematics:
   - norm_tt: {type: const, value: 1.042, on: 'ttbarsignal|ttbarbg'}
   - norm_ttbarX: {type: const, value: 1.3, on: 'ttbarX'}
   - norm_wjets: {type: const, value: 1.3, on: 'wjets'}
-  - BFRAG: {type: shape, on: 'ttbarsignal|ttbarbg|singletop|singletw'}
-  - BFRAG_CENTRAL: {type: shape, on: 'ttbarsignal|ttbarbg|singletop|singletw'}
-  - BSEMILEP: {type: shape, on: 'ttbarsignal|ttbarbg|singletop|singletw'}
+  - BFRAG: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
+  - BFRAG_CENTRAL: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
+  - BSEMILEP: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - BTAG_JES
   - BTAG_LJET_CORR
   - BTAG_LJET_UNCORR2018
@@ -43,7 +43,6 @@ systematics:
   - ELE_RECO
   - ELE_SCALE
   - ELE_SMEAR
-  - JER
   - JEREta02018
   - JEREta12018
   - JESAbsoluteMPFBias
@@ -72,14 +71,14 @@ systematics:
   - JESUserDefinedHEM1516
   - L1PREFIRING_ECAL
   - L1PREFIRING_MUON
-  #- MASS: {type: shape, on: 'ttbarsignal|ttbarbg'}
-  #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
+  - MASS: {type: shape, on: 'ttbarsignal|ttbarbg'}
+  - WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - MATCH: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
-  - MEFACSCALE_ST: {type: shape, on: 'singletop|singletw'}
+  - MEFACSCALE_ST: {type: shape, on: 'singletw'}
   - MEFACSCALE_Z: {type: shape, on: 'dy'}
   - MERENSCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
-  - MERENSCALE_ST: {type: shape, on: 'singletop|singletw'}
+  - MERENSCALE_ST: {type: shape, on: 'singletw'}
   - MERENSCALE_Z: {type: shape, on: 'dy'}
   - MUON_ID_STAT2018
   - MUON_ID_SYST
@@ -93,8 +92,8 @@ systematics:
   - PDF_ALPHAS: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - PSSCALE_WEIGHT_14: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - PSSCALE_WEIGHT_3: {type: shape, on: 'ttbarsignal|ttbarbg'}
-  - PSSCALE_WEIGHT_ST_14: {type: shape, on: 'singletop|singletw'}
-  - PSSCALE_WEIGHT_ST_3: {type: shape, on: 'singletop|singletw'}
+  - PSSCALE_WEIGHT_ST_14: {type: shape, on: 'singletw'}
+  - PSSCALE_WEIGHT_ST_3: {type: shape, on: 'singletw'}
   - PU
   - TOP_PT: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - TRIG_EE2018_STAT
@@ -103,7 +102,7 @@ systematics:
   - TRIG_EMU2018_SYS
   - TRIG_MUMU2018_STAT
   - TRIG_MUMU2018_SYS
-  - UETUNE: {type: shape, on: 'ttbarsignal|ttbarbg|singletop|singletw'}
+  - UETUNE: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - UNCLUSTERED2018
 
 plots:
