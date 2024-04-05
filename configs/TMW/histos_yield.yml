@@ -22,7 +22,7 @@
 
 'combined_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis-format: "%1% / Bin"
   sort-by-yields: true
   rename:
     - {from: 'combined_TwoBTag_GreaterOneJet_mlb_minimax', to: 'll_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
@@ -44,7 +44,7 @@
 
 'ee_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis-format: "%1% / Bin"
   sort-by-yields: true
   rename:
     - {from: 'ee_TwoBTag_GreaterOneJet_mlb_minimax', to: 'ee_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
@@ -55,7 +55,7 @@
 
 'emu_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis-format: "%1% / Bin"
   sort-by-yields: true
   rename:
     - {from: 'emu_TwoBTag_GreaterOneJet_mlb_minimax', to: 'emu_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
@@ -66,7 +66,7 @@
 
 'mumu_TwoBTag_GreaterOneJet_mlb_minimax':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis-format: "%1% / Bin"
   sort-by-yields: true
   rename:
     - {from: 'mumu_TwoBTag_GreaterOneJet_mlb_minimax', to: 'mumu_TwoBTag_GreaterOneJet_mlb_minimax_yield'}
