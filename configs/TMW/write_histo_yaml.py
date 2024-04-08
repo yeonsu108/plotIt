@@ -70,7 +70,7 @@ for hname in histNames:
                 #if hname in stat_hists:
                 #    options_list.append('  ratio-draw-mcstat-error: true\n')
                 if hname in non_equ_binning:
-                    options_list.append('  y-axis-format: "%1% / Bin\n')
+                    options_list.append('  y-axis-format: "%1% / Bin"\n')
                 if ch == 'combined':
                     options_list.append("  rename:\n    - {from: '" + hout + "', to: '" + hout.replace(ch, 'll') + "'}\n")
 
