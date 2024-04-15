@@ -329,7 +329,11 @@ namespace plotIt {
         m_config.lumi_label = node["luminosity-label"].as<std::string>();
 
       if (node["root"]) {
-        m_config.root = fs::absolute(fs::path(node["root"].as<std::string>()), histogramsPath).string();
+        // Use # to remove root path - for FR2 combination from different folders
+        if (node["root"].as<std::string>() == "#")
+            m_config.root = "";
+        else
+            m_config.root = fs::absolute(fs::path(node["root"].as<std::string>()), histogramsPath).string();
       }
 
       if (node["scale"])
