@@ -1,6 +1,7 @@
 #include <systematics.h>
 #include <types.h>
 #include <utilities.h>
+#include <commandlinecfg.h>
 
 #include "yaml-cpp/yaml.h"
 
@@ -185,18 +186,23 @@ namespace plotIt {
         for (const auto& variation: variations) {
             std::string object_postfix = formatSystematicsName(variation);
 
-            std::string object_name = applyRenaming(file.renaming_ops, plot.name) + object_postfix;
-            TObject* object = file.handle->Get(object_name.c_str());
+            TObject* object = NULL;
 
-            if (!object) {
-                std::string object_postfix2 = formatSystematicsName2(variation);
-                std::string object_name2 = applyRenaming(file.renaming_ops, plot.name) + object_postfix2;
-                object = file.handle->Get(object_name2.c_str());
-            }
+            if (!CommandLineCfg::get().desytop) {
 
-            if (object) {
-                links[variation]->reset(object->Clone());
-                continue;
+                std::string object_name = applyRenaming(file.renaming_ops, plot.name) + object_postfix;
+                object = file.handle->Get(object_name.c_str());
+
+                if (!object) {
+                    std::string object_postfix2 = formatSystematicsName2(variation);
+                    std::string object_name2 = applyRenaming(file.renaming_ops, plot.name) + object_postfix2;
+                    object = file.handle->Get(object_name2.c_str());
+                }
+
+                if (object) {
+                    links[variation]->reset(object->Clone());
+                    continue;
+                }
             }
 
             auto nominal_path = fs::path(file.path);
