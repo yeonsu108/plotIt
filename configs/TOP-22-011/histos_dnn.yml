@@ -3,8 +3,9 @@
   y-axis: "Entries"
   y-axis-format: "%1% / %2$.2f"
   log-y: true
+  log-x: true
   sort-by-yields: true
-  save-extensions: ['pdf']
+  save-extensions: ['pdf','png']
   for-yields: true
   yields-table-order: 0
   yields-title: 'DNN'
