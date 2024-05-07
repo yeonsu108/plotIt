@@ -5,36 +5,39 @@ channelNames = {'ee': 'ee', 'emu': 'e#mu', 'mumu': '#mu#mu',
                 'sameflavor': 'ee+#mu#mu', 'combined': 'ee+e#mu+#mu#mu'}
 histNames = [
             #'NEvents',
-            #'nVtx', 'rho',
-            'nJets', 'nBJets',
             #'bJet1Pt',
+            #'mlb_min',
+            ###
+            'nVtx', 'rho',
+            'nJets', 'nBJets',
             'dileptonPt','dileptonMass',
             'metPt',
-            #'mlb_min',
-            'mlb_minimax',
             'lept1Pt','lept2Pt',
             'lept1Eta','lept2Eta',
             'jet1Pt','jet1Eta',
             'jet2Pt','jet2Eta',
             'mbb',
+            'mlb_minimax',
             ]
 
 #Not drawing all histos! {hname: [[btag], [njet]]}
 allowed_dict = {
-                 'mlb_minimax': [[], ['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']],
+                 'mlb_minimax': [[], ['TwoBTag'], ['TwoJet', 'GreaterOneJet']],
                  'mlb_min': [[], [], ['TwoJet', 'GreaterOneJet']],
-                 'mbb': [[], ['GreaterOneBTag', 'TwoBTag'], ['TwoJet', 'GreaterOneJet']],
+                 'mbb': [[], ['TwoBTag'], ['GreaterOneJet']],
+                 'nVtx': [['combined'], ['InclusiveBTag', 'TwoBTag'], ['InclusiveNJet', 'GreaterOneJet']],
+                 'rho': [['combined'], ['InclusiveBTag', 'TwoBTag'], ['InclusiveNJet', 'GreaterOneJet']],
                  'nJets': [['combined'], [], ['InclusiveNJet', 'GreaterOneJet']],
                  'nBJets': [['combined'], ['InclusiveBTag', 'GreaterOneBTag'], []],
                  'jet1Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet1Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Pt': [['combined'], [],['GreaterOneJet', 'TwoJet']],
                  'jet2Eta': [['combined'], [],['GreaterOneJet', 'TwoJet']],
-                 'bJet1Pt': [['combined'], ['InclusiveBTag', 'GreaterOneBTag', 'TwoBTag'],[]],
+                 'bJet1Pt': [['combined'], ['GreaterOneBTag', 'TwoBTag'],[]],
                }
 btagNames = {#'ZeroBTag': '= 0',
              'InclusiveBTag': '#geq 0',
-             'GreaterOneBTag': '#geq 2',
+             #'GreaterOneBTag': '#geq 2',
              'TwoBTag': '= 2'}
 njetNames = {'TwoJet': '= 2',
              'InclusiveNJet': '#geq 0',
@@ -52,6 +55,8 @@ for hname in histNames:
     for njet, njet_label in njetNames.items():
         for btag, btag_label in btagNames.items():
             for ch, ch_label in channelNames.items():
+
+                if 'Inclusive' in njet and 'Inclusive' not in btag: continue
 
                 if hname in allowed_dict:
                     if (len(allowed_dict[hname][0]) > 0 and ch not in allowed_dict[hname][0])\
