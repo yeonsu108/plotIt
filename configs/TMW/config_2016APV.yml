@@ -71,8 +71,9 @@ systematics:
   - JESUserDefinedHEM1516
   - L1PREFIRING_ECAL
   - L1PREFIRING_MUON
-  - MASS: {type: shape, on: 'ttbarsignal|ttbarbg'}
-  - WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
+  #- MASS: {type: shape, on: 'ttbarsignal|ttbarbg'}
+  #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
+  - DS: {type: shape, on: 'singletw'}
   - MATCH: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE_ST: {type: shape, on: 'singletw'}
@@ -106,8 +107,7 @@ systematics:
   - UNCLUSTERED2016APV
 
 plots:
-  include: ['histos_yield.yml', 'histos_control.yml']
-  #include: ['histos_yield.yml']
+  include: ['histos_control.yml', 'histos_yield.yml']
 
 legend:
   position: [0.35, 0.70, 0.94, 0.88]
