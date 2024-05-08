@@ -502,11 +502,8 @@ namespace plotIt {
       if (node["yields-table-numerical-precision-ratio"])
         m_config.yields_table_num_prec_ratio = node["yields-table-numerical-precision-ratio"].as<int>();
 
-      if (node["book-keeping-file"]) {
+      if (node["book-keeping-file"])
         m_config.book_keeping_file_name = node["book-keeping-file"].as<std::string>();
-        if (CommandLineCfg::get().do_yields)
-          m_config.book_keeping_file_name = "plots_yields.root";
-      }
 
       // Axis size
       if (node["x-axis-label-size"])
@@ -921,13 +918,6 @@ namespace plotIt {
           if (p.log_y)
             p.output_suffix += "_logy";
 
-          // continue yields for normal plots - to save canvas root files separately
-          if (CommandLineCfg::get().do_yields && CommandLineCfg::get().desytop && !plot.use_for_yields) {
-            continue;
-          } else if (!CommandLineCfg::get().do_yields && CommandLineCfg::get().desytop && plot.use_for_yields ) {
-            continue;
-          }
-
           m_plots.push_back(p);
           ++log_counter;
         }
@@ -1083,7 +1073,6 @@ namespace plotIt {
   }
 
   bool plotIt::plot(Plot& plot) {
-
     std::cout << "Plotting '" << plot.name << "'" << std::endl;
 
     bool hasMC = false;
