@@ -86,3 +86,40 @@ GLFVTTut:
   line-color: '#4F4D80'
   legend: 'TTLFVu_t'
 
+#############
+#  postfit  #
+#############
+
+Gtt:
+  fill-color: '#ee4444'
+  legend: 'TT'
+
+# resue ST colors
+GLFVcs:
+  line-color: '#99CC66'
+  legend: 'LFVc_s'
+
+GLFVcv:
+  line-color: '#99CC66'
+  legend: 'LFVc_v'
+
+GLFVct:
+  line-color: '#99CC66'
+  legend: 'LFVc_t'
+
+GLFVus:
+  line-color: '#6B8551'
+  legend: 'LFVu_s'
+
+GLFVuv:
+  line-color: '#6B8551'
+  legend: 'LFVu_v'
+
+GLFVut:
+  line-color: '#6B8551'
+  legend: 'LFVu_t'
+
+#As we never show QCD, reuse color
+Gother:
+  fill-color: '#d0cfd4'
+  legend: 'Other'

@@ -1,0 +1,16 @@
+'DNN':
+  x-axis: "DNN Score"
+  y-axis: "Events"
+  y-axis-format: "%1% / bin"
+  log-y: true
+  log-x: true
+  sort-by-yields: true
+  save-extensions: ['pdf','png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'DNN'
+  ratio-y-axis-range: [0.8, 1.2]
+  ratio-y-axis-auto-range: true
+  #signal-normalize-data: false
+  #labels:
+  #  - {text: 'ct', position: [0.2, 0.806], size: 18, font: 44}

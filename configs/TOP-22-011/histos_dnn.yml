@@ -1,7 +1,7 @@
 'h_dnn_pred_S5':
   x-axis: "DNN Score"
-  y-axis: "Entries"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis: "Events"
+  y-axis-format: "%1% / bin"
   log-y: true
   log-x: true
   sort-by-yields: true

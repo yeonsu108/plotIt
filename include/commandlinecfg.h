@@ -21,6 +21,7 @@ class CommandLineCfg {
         bool desytop = false;
         bool allSig = false;
         bool binned = false;
+        std::string selectSig = "";
         std::string era = "";
 
     private:
