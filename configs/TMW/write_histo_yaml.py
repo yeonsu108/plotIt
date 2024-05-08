@@ -39,7 +39,7 @@ btagNames = {#'ZeroBTag': '= 0',
              'InclusiveBTag': '#geq 0',
              #'GreaterOneBTag': '#geq 2',
              'TwoBTag': '= 2'}
-njetNames = {'TwoJet': '= 2',
+njetNames = {#'TwoJet': '= 2',
              'InclusiveNJet': '#geq 0',
              'GreaterOneJet': '#geq 2'}
 
