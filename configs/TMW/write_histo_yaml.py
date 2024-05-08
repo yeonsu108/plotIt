@@ -8,7 +8,7 @@ histNames = [
             #'bJet1Pt',
             #'mlb_min',
             ###
-            'nVtx', 'rho',
+            'nVtx', 'RHO',
             'nJets', 'nBJets',
             'dileptonPt','dileptonMass',
             'metPt',

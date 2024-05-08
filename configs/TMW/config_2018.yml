@@ -7,8 +7,7 @@ configuration:
   extra-label: "Preliminary"
   root: ''
   luminosity: 1
-  #luminosity-error: 0.025
-  luminosity-error: 0.0
+  luminosity-error: 0.025
   error-fill-style: 3154
   error-fill-color: "#ee556270"
   staterror-fill-style: 3145
@@ -76,6 +75,7 @@ systematics:
   #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw'}
   - DS: {type: shape, on: 'singletw'}
   - MATCH: {type: shape, on: 'ttbarsignal|ttbarbg'}
+  - MESCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg'}
   - MEFACSCALE_ST: {type: shape, on: 'singletw'}
   - MEFACSCALE_Z: {type: shape, on: 'dy'}
