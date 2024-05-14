@@ -1127,8 +1127,8 @@ namespace plotIt {
     if (plot.log_y)
       c.SetLogy();
 
-    if (plot.log_x)
-      c.SetLogx();
+    //if (plot.log_x)
+    //  c.SetLogx();
 
     Position legend_position = plot.legend_position;
 
