@@ -82,7 +82,7 @@
   group: GLFVTTut
   order: 1
 
-'hist_SingleMuon2016post.root':
+'hist_SingleMuon.root':
   type: data
   pretty-name: 'Data'
   group: GData
@@ -303,14 +303,27 @@
   yields-group: '4Z+Jets'
   order: 24
 
+#'hist_WJetsToLNu_incl.root':
+#  type: mc
+#  pretty-name: 'WJetsToLNu_incl'
+#  cross-section: 67350.0
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 25
+
 'hist_WJetsToLNu_HT0To100.root':
   type: mc
   pretty-name: 'WJetsToLNu_HT0To100'
   cross-section: 65396.85 # 67350.0 * 0.972
-  generated-events: 78691397 # 80958227 * 0.972
+  scale: 1.0288 # 1/0.972 for generator-event scale, anyway cancels out
   group: GWJets
   yields-group: '6W+Jets'
   order: 25
+  # 65396.85 ~ 65282.37803 = 67350.0 - 1568.7 - 419 - 56.52 - 15.05 - 6.8707 - 1.4488 - 0.03247
+  # generated-events: 72594985 # 74686199 * 0.972 (2016pre)
+  # generated-events: 78691397 # 80958227 * 0.972 (2016post)
+  # generated-events: 76114585 # 78307186 * 0.972 (2017)
+  # generated-events: 78781833 # 81051269 * 0.972 (htcut, 2018)
 
 'hist_WJetsToLNu_HT100To200.root':
   type: mc

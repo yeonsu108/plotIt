@@ -24,7 +24,7 @@ configuration:
   generated-events-bin: 2
 
 files: 
-  include: ['files_2018.yml']
+  include: ['files.yml']
 
 systematics:
   - tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
@@ -47,7 +47,11 @@ systematics:
   - jesAbsolute_2018
   - jesBBEC1
   - jesBBEC1_2018
-  - jesFlavorQCD
+  #- jesFlavorQCD
+  - jesFlavorPureGluon
+  - jesFlavorPureQuark
+  - jesFlavorPureCharm
+  - jesFlavorPureBottom
   - jesRelativeBal
   - jesRelativeSample_2018
   - btaghf
@@ -98,10 +102,12 @@ systematics:
   - tune: {type: shape, on: 'TTTo'}
 
 plots:
-  include: ['histos_control.yml', 'histos_reco.yml', 'histos_yield.yml']
-  #include: ['histos_dnn.yml']
+  #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
+  #include: ['histos_yield.yml']
+  include: ['histos_dnn.yml']
   #include: ['histos_FFcalc.yml']
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
+  #include: ['histos_yield_S5.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]
