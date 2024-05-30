@@ -38,6 +38,10 @@ GQCD:
   fill-color: '#d0cfd4'
   legend: 'QCD'
 
+GFakeTau:
+  fill-color: '#d0cfd4'
+  legend: 'Tau MisID'
+
 GLFVSTcs:
   line-color: '#99CC66'
   legend: 'STLFVc_s'
