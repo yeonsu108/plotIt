@@ -101,27 +101,27 @@ Gtt:
 # resue ST colors
 GLFVcs:
   line-color: '#99CC66'
-  legend: 'ST+TT LFV^{tc#mu#tau}_{Scalar}'
+  legend: 'LFV^{tc#mu#tau}_{Scalar}'
 
 GLFVcv:
   line-color: '#99CC66'
-  legend: 'ST+TT LFV^{tc#mu#tau}_{Vector}'
+  legend: 'LFV^{tc#mu#tau}_{Vector}'
 
 GLFVct:
   line-color: '#99CC66'
-  legend: 'ST+TT LFV^{tc#mu#tau}_{Tensor}'
+  legend: 'LFV^{tc#mu#tau}_{Tensor}'
 
 GLFVus:
   line-color: '#6B8551'
-  legend: 'ST+TT LFV^{tu#mu#tau}_{Scalar}'
+  legend: 'LFV^{tu#mu#tau}_{Scalar}'
 
 GLFVuv:
   line-color: '#6B8551'
-  legend: 'ST+TT LFV^{tu#mu#tau}_{Vector}'
+  legend: 'LFV^{tu#mu#tau}_{Vector}'
 
 GLFVut:
   line-color: '#6B8551'
-  legend: 'ST+TT LFV^{tu#mu#tau}_{Tensor}'
+  legend: 'LFV^{tu#mu#tau}_{Tensor}'
 
 #As we never show QCD, reuse color
 # -> use gray for misID, WJet color for other if needed
