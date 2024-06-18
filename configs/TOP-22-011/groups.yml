@@ -68,7 +68,7 @@ GLFVSTut:
 
 GLFVTTcs:
   line-color: '#908DCC'
-  legend: 'TT LFV^{tc#mu#tau}_{Scalar}r'
+  legend: 'TT LFV^{tc#mu#tau}_{Scalar}'
 
 GLFVTTcv:
   line-color: '#908DCC'
