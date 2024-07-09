@@ -19,7 +19,7 @@ configuration:
   blinded-range-fill-style: 1001
   yields-table-align: v
   book-keeping-file: 'plots.root'
-  yields-table-numerical-precision-yields: 2
+  yields-table-numerical-precision-yields: 1
   generated-events-histogram: 'hcounter'
   generated-events-bin: 2
   #syst-only: true
@@ -55,7 +55,7 @@ systematics:
   - jesFlavorPureBottom
   - jesRelativeBal
   - jesRelativeSample_2016
-  - metUnclust
+  #- metUnclust
   - btaghf
   - btaglf
   - btaghfstats1
@@ -71,7 +71,7 @@ systematics:
   - muiso
   - mutrg
   - muhighpt
-  - muonhighscale
+  #- muonhighscale
   #- tauidjet
   - tauFFstat
   - tauFFsyst

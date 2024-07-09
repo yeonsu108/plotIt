@@ -16,3 +16,20 @@
   for-yields: true
   yields-table-order: 1
   yields-title: 'S5'
+
+'h_ncleanjetspass_S3':
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleanbjetspass_S2':
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_tau1_decayMode_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_tau1_decayMode_gen_S3':
+  show-onlyoverflow: true
+  save-extensions: ['pdf', 'png']
