@@ -544,6 +544,8 @@ namespace plotIt {
         // This option must be used with allSig
         if(CommandLineCfg::get().selectSig.length() > 0 and isLfvSignal and (it->first.as<std::string>()).find(CommandLineCfg::get().selectSig) == std::string::npos ) continue;
 
+        if(CommandLineCfg::get().noSig and isLfvSignal) continue;
+
         if(CommandLineCfg::get().binned and (((it->first.as<std::string>()).find("ttbarsignal") != std::string::npos
                 or (it->first.as<std::string>()).find("ttbartwbb4l") != std::string::npos
                 or (it->first.as<std::string>()).find("singletw") != std::string::npos)
@@ -1451,6 +1453,20 @@ namespace plotIt {
       mc_processes_sorted[process_name] = process_name_modified;
     }
 
+    std::map< std::string, std::string > signal_processes_sorted;
+    for(auto &process_name: signal_processes) {
+      auto process_name_modified = process_name;
+      if (process_name.find_first_of("0123456789") != std::string::npos) {
+
+          auto begin = process_name.find_first_of("0123456789");
+          process_name_modified = process_name.substr(begin+1);
+
+          std::string mathmark = "$";
+          if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
+      }
+      signal_processes_sorted[process_name] = process_name_modified;
+    }
+
     // Sort according to user-defined order
     std::sort(categories.begin(), categories.end(), [](const std::pair<int, std::string>& cat1, const std::pair<int, std::string>& cat2){  return cat1.first < cat2.first; });
 
@@ -1468,7 +1484,8 @@ namespace plotIt {
             ss << "$" << number << std::setprecision(error_precision) << "^{+" << error_high << "}_{-" << error_low << "}$";
         } else {
             // Symmetric errors
-            ss << "$" << number << R"( {\scriptstyle\ \pm\ )" << std::setprecision(error_precision) << error_low << "}$";
+            //ss << "$" << number << R"( {\scriptstyle\ \pm\ )" << std::setprecision(error_precision) << error_low << "}$";
+            ss << "$" << number << "$ &$\\pm$& $" << std::setprecision(error_precision) << error_low << "$";
         }
 
         return ss.str();
@@ -1497,8 +1514,8 @@ namespace plotIt {
 
       // title line
       latexString << "    Cat. & ";
-      for(auto &proc: signal_processes)
-        latexString << proc << " & ";
+      for(auto &proc: signal_processes_sorted)
+        latexString << proc.second << " & ";
       //for(auto &proc: mc_processes)
       for(auto &proc: mc_processes_sorted)
         latexString << proc.second << " & ";
@@ -1518,8 +1535,8 @@ namespace plotIt {
         latexString << tab << categ << " & ";
         latexString << std::setprecision(m_config.yields_table_num_prec_yields);
 
-        for(auto &proc: signal_processes)
-          latexString << "$" << signal_yields[categ][proc].first << " \\pm " << std::sqrt(signal_yields[categ][proc].second) << "$ & ";
+        for(auto &proc: signal_processes_sorted)
+          latexString << "$" << signal_yields[categ][proc.first].first << " \\pm " << std::sqrt(signal_yields[categ][proc.first].second) << "$ & ";
           //latexString << "$" << signal_yields[categ][proc].first << " \\pm " << std::sqrt(signal_yields[categ][proc].second + std::pow(process_systematics[std::make_tuple(SIGNAL, categ, proc)], 2)) << "$ & ";
 
         //for(auto &proc: mc_processes) {
@@ -1555,7 +1572,8 @@ namespace plotIt {
           double error_low = ratio * std::sqrt(std::pow(error_data_low / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
           double error_high = ratio * std::sqrt(std::pow(error_data_high / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
 
-          latexString << format_number_with_errors(ratio, error_low, error_high, m_config.yields_table_num_prec_ratio, m_config.yields_table_num_prec_ratio) << " & ";
+          //latexString << format_number_with_errors(ratio, error_low, error_high, m_config.yields_table_num_prec_ratio, m_config.yields_table_num_prec_ratio) << " & ";
+          latexString << format_number_with_errors(ratio, error_low, error_high, m_config.yields_table_num_prec_ratio, 1) << " & ";
         }
 
         latexString.seekp(latexString.tellp() - 2l);
@@ -1567,15 +1585,16 @@ namespace plotIt {
     } else if (m_config.yields_table_align.find("v") != std::string::npos) {
 
         // Tabular header
-        latexString << R"(\begin{tabular}{@{}l)";
-        std::string header = " & ";
+        latexString << R"(\begin{tabular}{@{}lc)";
+        std::string header = " & & ";
         for (size_t i = 0; i < categories.size(); i++) {
-            latexString << "r";
-            header += categories[i].second;
+            latexString << "rcl";
+            header += R"(\multicolumn{3}{c}{)" + categories[i].second + R"(})";
             if (i != (categories.size() - 1))
                 header += " & ";
         }
-        latexString << R"(@{}} \hline)" << std::endl;
+        //latexString << R"(@{}} \hline)" << std::endl;
+        latexString << R"(@{}})" << std::endl;
         latexString << header << R"(\\)" << std::endl;
 
         latexString << std::setprecision(m_config.yields_table_num_prec_yields);
@@ -1586,15 +1605,16 @@ namespace plotIt {
             latexString << R"(\hline)" << std::endl;
 
             // Loop
-            for (const auto& p: signal_processes) {
+            for (const auto& p: signal_processes_sorted) {
 
-                latexString << p << " & ";
+                latexString << p.second << " & & ";
 
                 for (const auto& c: categories) {
                     std::string categ = c.second;
 
                     //latexString << "$" << signal_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(signal_yields[categ][p].second + std::pow(process_systematics[std::make_tuple(SIGNAL, categ, p)], 2)) << "}$ & ";
-                    latexString << "$" << signal_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(signal_yields[categ][p].second) << "}$ & ";
+                    //latexString << "$" << signal_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(signal_yields[categ][p].second) << "}$ & ";
+                    latexString << "$" << signal_yields[categ][p.first].first << "$ & $\\pm$ & $" << std::sqrt(signal_yields[categ][p.first].second) << "$ & ";
                 }
 
                 latexString.seekp(latexString.tellp() - 2l);
@@ -1615,16 +1635,18 @@ namespace plotIt {
             //for (const auto& p: mc_processes) {
             for (const auto& p: mc_processes_sorted) {
 
-                latexString << p.second << " & ";
+                latexString << p.second << " & & ";
 
                 for (const auto& c: categories) {
                     std::string categ = c.second;
 
                     if (mc_yields[categ][p.first].first > 0)
                       //latexString << "$" << mc_yields[categ][p].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p].second + std::pow(process_systematics[std::make_tuple(MC, categ, p)], 2)) << "}$ & ";
-                      latexString << "$" << mc_yields[categ][p.first].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
+                      //latexString << "$" << mc_yields[categ][p.first].first << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
+                      latexString << "$" << mc_yields[categ][p.first].first << "$ &$\\pm$& $" << std::sqrt(mc_yields[categ][p.first].second) << "$ & ";
                     else
-                      latexString << "$" << "0" << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
+                      //latexString << "$" << "0" << R"( {\scriptstyle\ \pm\ )" << std::sqrt(mc_yields[categ][p.first].second) << "}$ & ";
+                      latexString << "$" << "0" << "$ &$\\pm$& $" << std::sqrt(mc_yields[categ][p.first].second) << "$ & ";
                 }
 
                 latexString.seekp(latexString.tellp() - 2l);
@@ -1634,11 +1656,12 @@ namespace plotIt {
             // Space
             //latexString << R"( & \\ \hline)" << std::endl;
             //latexString << R"(Total {\scriptsize $\pm$ (stat) $\pm$ (syst)} & )";
-            latexString << R"(Total {\scriptsize $\pm$ (stat)} & )";
+            latexString << R"(Total {\scriptsize $\pm$ (stat)} & & )";
 
             for (const auto& c: categories) {
                 //latexString << "$" << mc_total[c.second] << R"({\scriptstyle\ \pm\ )" << std::sqrt(mc_total_sqerrs[c.second]) << R"(\ \pm\ )" << std::sqrt(total_systematics_squared[c.second][MC]) << "}$ & ";
-                latexString << "$" << mc_total[c.second] << R"({\scriptstyle\ \pm\ )" << std::sqrt(mc_total_sqerrs[c.second]) << "}$ & ";
+                //latexString << "$" << mc_total[c.second] << R"({\scriptstyle\ \pm\ )" << std::sqrt(mc_total_sqerrs[c.second]) << "}$ & ";
+                latexString << "$" << mc_total[c.second] << "$ &$\\pm$& $" << std::sqrt(mc_total_sqerrs[c.second]) << "$ & ";
             }
 
             latexString.seekp(latexString.tellp() - 2l);
@@ -1649,7 +1672,8 @@ namespace plotIt {
         if (has_data) {
             latexString << R"(\hline)" << std::endl;
             //latexString << R"(Data {\scriptsize $\pm$ (stat)} & )";
-            latexString << R"(Data & )";
+            //latexString << R"(Data & )";
+            latexString << R"(Data & & )";
             latexString << std::setprecision(0);
 
             for (const auto& c: categories) {
@@ -1669,7 +1693,7 @@ namespace plotIt {
         // And finally data / MC
         if (!mc_processes.empty() && has_data) {
             latexString << R"(\hline)" << std::endl;
-            latexString << R"(Data / Background prediction & )";
+            latexString << R"(Data / Background prediction & & )";
             latexString << std::setprecision(m_config.yields_table_num_prec_ratio);
 
             for (const auto& c: categories) {
@@ -1677,24 +1701,27 @@ namespace plotIt {
                 int64_t data_yield = data_yields[categ];
                 double ratio = data_yield / mc_total[categ];
 
-            //    static const double alpha = 1. - 0.682689492;
-            //    double error_data_low = data_yield - ROOT::Math::gamma_quantile(alpha / 2., data_yield, 1.);
-            //    double error_data_high = ROOT::Math::gamma_quantile_c(alpha / 2., data_yield, 1.) - data_yield;
+                //static const double alpha = 1. - 0.682689492;
+                //double error_data_low = data_yield - ROOT::Math::gamma_quantile(alpha / 2., data_yield, 1.);
+                //double error_data_high = ROOT::Math::gamma_quantile_c(alpha / 2., data_yield, 1.) - data_yield;
 
-            //    double error_mc = std::sqrt(mc_total_sqerrs[categ] + total_systematics_squared[categ][MC]);
+                double error_mc = std::sqrt(mc_total_sqerrs[categ] + total_systematics_squared[categ][MC]);
 
-            //    double error_low = ratio * std::sqrt(std::pow(error_data_low / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
-            //    double error_high = ratio * std::sqrt(std::pow(error_data_high / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
+                //double error_low = ratio * std::sqrt(std::pow(error_data_low / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
+                //double error_high = ratio * std::sqrt(std::pow(error_data_high / data_yields[categ], 2) +  std::pow(error_mc / mc_total[categ], 2));
 
-            //    latexString << format_number_with_errors(ratio, error_low, error_high, m_config.yields_table_num_prec_ratio, m_config.yields_table_num_prec_ratio) << " & ";
-                latexString << ratio << " & ";
+                double error_low = std::pow(error_mc / mc_total[categ], 2);
+                double error_high = std::pow(error_mc / mc_total[categ], 2);
+
+                latexString << format_number_with_errors(ratio, error_low, error_high, m_config.yields_table_num_prec_ratio, m_config.yields_table_num_prec_ratio) << " & ";
+                //latexString << ratio << " & ";
             }
 
             latexString.seekp(latexString.tellp() - 2l);
             latexString << R"( \\ )" << std::endl;
         }
 
-        latexString << R"(\hline)" << std::endl;
+        //latexString << R"(\hline)" << std::endl;
         latexString << R"(\end{tabular})" << std::endl;
     } else {
       std::cerr << "Error: yields table alignment " << m_config.yields_table_align << " is not recognized (for now, only \"h\" and \"v\" are supported)" << std::endl;
@@ -1948,6 +1975,20 @@ namespace plotIt {
       }
       //mc_processes_sorted.emplace_back(process_name_modified);
       mc_processes_sorted[process_name] = process_name_modified;
+    }
+
+    std::map< std::string, std::string > signal_processes_sorted;
+    for(auto &process_name: signal_processes) {
+      auto process_name_modified = process_name;
+      if (process_name.find_first_of("0123456789") != std::string::npos) {
+
+          auto begin = process_name.find_first_of("0123456789");
+          process_name_modified = process_name.substr(begin+1);
+
+          std::string mathmark = "$";
+          if (process_name.compare(0, 1, mathmark) == 0) process_name_modified = "$" + process_name_modified;
+      }
+      signal_processes_sorted[process_name] = process_name_modified;
     }
 
     // Sort according to user-defined order
@@ -2393,6 +2434,8 @@ int main(int argc, char** argv) {
 
     TCLAP::SwitchArg allSigArg("a", "allSig", "plot only vector signal for LFV, default for ", cmd, false);
 
+    TCLAP::SwitchArg noSigArg("n", "noSig", "plot no signal for LFV, default for ", cmd, false);
+
     TCLAP::ValueArg<std::string> selectSigArg("", "selectSig", "plot only select signal for LFV", false, "", "string", cmd);
 
     TCLAP::SwitchArg desytopArg("t", "desytop", "Switch for DESY top framework", cmd, false);
@@ -2432,6 +2475,7 @@ int main(int argc, char** argv) {
     CommandLineCfg::get().do_qcd = qcdArg.getValue();
     CommandLineCfg::get().dyincl = dyArg.getValue();
     CommandLineCfg::get().allSig = allSigArg.getValue();
+    CommandLineCfg::get().noSig = noSigArg.getValue();
     CommandLineCfg::get().selectSig = selectSigArg.getValue();
     CommandLineCfg::get().desytop = desytopArg.getValue();
     CommandLineCfg::get().binned = binnedArg.getValue();

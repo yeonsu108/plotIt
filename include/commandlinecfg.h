@@ -20,6 +20,7 @@ class CommandLineCfg {
         bool dyincl = false;
         bool desytop = false;
         bool allSig = false;
+        bool noSig = false;
         bool binned = false;
         std::string selectSig = "";
         std::string era = "";
