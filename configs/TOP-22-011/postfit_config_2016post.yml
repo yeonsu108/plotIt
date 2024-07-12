@@ -4,7 +4,7 @@ configuration:
   luminosity-label: '16.8 fb^{-1} (13 TeV)'
   experiment: " CMS"
   experiment-label-paper: true
-  extra-label: "Preliminary"
+  extra-label: " Preliminary"
   root: './postfit_shapes_TOP_LFV_forPlotIt'
   luminosity: 1
   luminosity-error: 0
