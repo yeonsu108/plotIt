@@ -413,9 +413,9 @@ namespace plotIt {
     float width = 800;
     float height = 800;
     float margin_left = 0.16;
-    float margin_right = 0.03;
-    float margin_top = 0.06;
-    float margin_bottom = 0.1;
+    float margin_right = 0.04;
+    float margin_top = 0.065;
+    float margin_bottom = 0.115;
     std::vector<std::string> eras = {};
     std::map<std::string,float> luminosity = { { "", -1. } };
     float scale = 1;
@@ -425,9 +425,9 @@ namespace plotIt {
     float luminosity_error_percent = 0;
     bool syst_only = false;
 
-    std::string y_axis_format = "%1% / %2$.2f";
+    std::string y_axis_format = "%1% / %2$.0f GeV";
     //std::string ratio_y_axis_title = "Data / MC";
-    std::string ratio_y_axis_title = "Data / Pred.";
+    std::string ratio_y_axis_title = "Data/Pred.";
     std::string ratio_style = "P0";
 
     int16_t error_fill_color = 42;

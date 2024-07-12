@@ -693,13 +693,13 @@ namespace plotIt {
       const auto& config = m_plotIt.getConfiguration();
       hi_pad->SetTopMargin(config.margin_top / .6666);
       hi_pad->SetLeftMargin(config.margin_left);
-      hi_pad->SetBottomMargin(0.02);
+      hi_pad->SetBottomMargin(0.03);
       hi_pad->SetRightMargin(config.margin_right);
 
       low_pad = std::make_shared<TPad>("pad_lo", "", 0., 0., 1, 0.33333);
       low_pad->Draw();
       low_pad->SetLeftMargin(config.margin_left);
-      low_pad->SetTopMargin(.05);
+      low_pad->SetTopMargin(.01);
       //low_pad->SetBottomMargin(config.margin_bottom / .3333);
       low_pad->SetBottomMargin(config.margin_bottom / .28);
       low_pad->SetRightMargin(config.margin_right);
@@ -740,7 +740,7 @@ namespace plotIt {
 
     hideTicks(toDraw[0].first, plot.x_axis_hide_ticks, plot.y_axis_hide_ticks);
 
-    float safe_margin = .20;
+    float safe_margin = .2;
     if (plot.log_y)
       safe_margin = 8;
 
@@ -748,7 +748,7 @@ namespace plotIt {
       maximum *= 1 + safe_margin;
       if (!plot.y_axis_auto_range) setMaximum(toDraw[0].first, maximum);
       else {
-        float maxfrac = 0.4;
+        float maxfrac = 0.45;
         float max_sig = 0.0;
         if ( signal_files.size() > 0 ) {
           std::vector<float> sigMax;

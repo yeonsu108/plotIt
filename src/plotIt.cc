@@ -1138,6 +1138,7 @@ namespace plotIt {
     TLegend legend(legend_position.x1, legend_position.y1, legend_position.x2, legend_position.y2);
     //legend.SetTextFont(62);
     legend.SetTextFont(42);
+    legend.SetTextSize(0.045);
     legend.SetFillStyle(0);
     legend.SetBorderSize(0);
     legend.SetNColumns(plot.legend_columns);
@@ -1163,19 +1164,19 @@ namespace plotIt {
       topMargin /= .6666;
 
     // Move exponent label if shown
-    TGaxis::SetMaxDigits(4);
-    TGaxis::SetExponentOffset(-0.06, 0, "y");
+    TGaxis::SetMaxDigits(3);
+    TGaxis::SetExponentOffset(-0.03, 0.01, "y");
 
     // Luminosity label
     if (m_config.lumi_label.length() > 0) {
-      std::shared_ptr<TPaveText> pt = std::make_shared<TPaveText>(m_config.margin_left, 1 - 0.5 * topMargin, 1 - m_config.margin_right, 1, "brNDC");
+      std::shared_ptr<TPaveText> pt = std::make_shared<TPaveText>(m_config.margin_left, 1 - 0.2 * topMargin, 1 - m_config.margin_right, 1, "NDC");
       TemporaryPool::get().add(pt);
 
       pt->SetFillStyle(0);
       pt->SetBorderSize(0);
       pt->SetMargin(0);
       pt->SetTextFont(62);
-      pt->SetTextSize(0.65 * topMargin);
+      pt->SetTextSize(0.8 * topMargin);
       pt->SetTextAlign(33);
 
       pt->AddText(m_config.lumi_label.c_str());
@@ -1187,7 +1188,7 @@ namespace plotIt {
       std::shared_ptr<TPaveText> pt;
       if (m_config.experiment_label_paper)
           //pt = std::make_shared<TPaveText>(1.15 * m_config.margin_left, 1 - 2.75 * topMargin, 1 - m_config.margin_right, 1, "brNDC");
-          pt = std::make_shared<TPaveText>(1.15 * m_config.margin_left, 1 - 2.6 * topMargin, 1 - m_config.margin_right, 1 - 0.9 * topMargin, "brNDC");
+          pt = std::make_shared<TPaveText>(1.15 * m_config.margin_left, 1 - 2.6 * topMargin, 1 - m_config.margin_right, 1 - 1.0 * topMargin, "brNDC");
       else pt = std::make_shared<TPaveText>(m_config.margin_left, 1 - 0.5 * topMargin, 1 - m_config.margin_right, 1, "brNDC");
       TemporaryPool::get().add(pt);
 
@@ -1196,7 +1197,7 @@ namespace plotIt {
       pt->SetMargin(0);
       pt->SetTextFont(62);
       if (m_config.experiment_label_paper)
-          pt->SetTextSize(0.8 * topMargin);
+          pt->SetTextSize(0.9 * topMargin);
       else pt->SetTextSize(0.65 * topMargin);
       pt->SetTextAlign(13);
 
@@ -1213,7 +1214,7 @@ namespace plotIt {
 
         //text = fmt.str();
 
-        boost::format fmt("#font[52]{#scale[0.62]{%s}}");
+        boost::format fmt("#font[52]{#scale[0.58]{%s}}");
         fmt % extra_label;
 
         text2 = fmt.str();
