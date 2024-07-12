@@ -10,7 +10,7 @@
   pretty-name: 'LFVSTuv'
   cross-section: 0.3924
   group: GLFVSTuv
-  order: 2
+  order: 1
 
 'hist_ST_LFV_TUMuTau_Tensor.root':
   type: signal
@@ -31,7 +31,7 @@
   pretty-name: 'LFVSTcv'
   cross-section: 0.03673
   group: GLFVSTcv
-  order: 1
+  order: 3
 
 'hist_ST_LFV_TCMuTau_Tensor.root':
   type: signal
@@ -52,7 +52,7 @@
   pretty-name: 'LFVTTuv'
   cross-section: 0.0215
   group: GLFVTTuv
-  order: 4
+  order: 2
 
 'hist_TT_LFV_TUMuTau_Tensor.root':
   type: signal
@@ -73,7 +73,7 @@
   pretty-name: 'LFVTTcv'
   cross-section: 0.0215
   group: GLFVTTcv
-  order: 3
+  order: 4
 
 'hist_TT_LFV_TCMuTau_Tensor.root':
   type: signal

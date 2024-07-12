@@ -1,5 +1,6 @@
 #jet multiplicities
 'h_ncleanjetspass_S5':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
@@ -7,6 +8,7 @@
 
 #b jet multiplicities
 'h_ncleanbjetspass_S5':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
@@ -14,6 +16,7 @@
 
 #PV
 'h_nvtx_S5':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 
@@ -24,6 +27,7 @@
 
 #MET phi
 'h_met_phi_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -34,6 +38,7 @@
 
 #Muon eta
 'h_muon1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -49,14 +54,17 @@
 
 #tau eta
 'h_tau1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #tau decayMode
 'h_tau1_decayMode_S5':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 #Muon tau dR
 'h_mutau_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -77,11 +85,13 @@
 
 #jet1 eta
 'h_jet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet1 btag
 'h_jet1_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -92,11 +102,13 @@
 
 #jet2 eta
 'h_jet2_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet2 btag
 'h_jet2_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -107,11 +119,13 @@
 
 #jet3 eta
 'h_jet3_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet3 btag
 'h_jet3_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -120,24 +134,30 @@
   save-extensions: ['pdf', 'png']
 
 'h_bjet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #reco
 'h_chi2_S5':
   x-axis-range: [0, 950]
+  y-axis-format: "%1% / %2$.0f"
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_mass_S5':
+  x-axis: 'm_{t}^{hadronic} (GeV)'
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_pt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_pt_notoppt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMW_mass_S5':
+  x-axis: 'm_{W}^{hadronic} (GeV)'
   save-extensions: ['pdf', 'png']
 
 

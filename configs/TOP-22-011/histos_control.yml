@@ -1,25 +1,30 @@
 #jet multiplicities
 'h_ncleanjetspass_notausf_S1':
+  y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
 'h_ncleanjetspass_S2':
+  y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
 'h_ncleanjetspass_S3':
+  y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
 'h_ncleanjetspass_S4':
+  y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
 'h_ncleanjetspass_S5':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
@@ -27,26 +32,31 @@
 
 #b jet multiplicities
 'h_ncleanbjetspass_notausf_S1':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 'h_ncleanbjetspass_S2':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 'h_ncleanbjetspass_S3':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 'h_ncleanbjetspass_S4':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 'h_ncleanbjetspass_S5':
+  y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
@@ -54,18 +64,23 @@
 
 #PV
 'h_nvtx_notausf_S1':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_nvtx_S2':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_nvtx_S3':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_nvtx_S4':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_nvtx_S5':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 
@@ -88,18 +103,23 @@
 
 #MET phi
 'h_met_phi_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_met_phi_S2':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_met_phi_S3':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_met_phi_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_met_phi_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -122,18 +142,23 @@
 
 #Muon eta
 'h_muon1_eta_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_muon1_eta_S2':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_muon1_eta_S3':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_muon1_eta_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_muon1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -170,41 +195,55 @@
 
 #tau eta
 'h_tau1_eta_S2':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_eta_S3':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_eta_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
+
 
 #tau decayMode
 'h_tau1_decayMode_S2':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_decayMode_S3':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_decayMode_S4':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_tau1_decayMode_S5':
+  y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
+
 
 #Muon tau dR
 'h_mutau_dR_S2':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_mutau_dR_S3':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_mutau_dR_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_mutau_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
@@ -255,35 +294,45 @@
 
 #jet1 eta
 'h_jet1_eta_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_eta_S2':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_eta_S3':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_eta_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet1 btag
 'h_jet1_btag_notausf_S1':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_btag_S2':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_btag_S3':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_btag_S4':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet1_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -297,17 +346,21 @@
 
 #jet2 eta
 'h_jet2_eta_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet2_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet2 btag
 'h_jet2_btag_S4':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet2_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -321,17 +374,21 @@
 
 #jet3 eta
 'h_jet3_eta_S4':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 'h_jet3_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
 #jet3 btag
 'h_jet3_btag_S4':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 'h_jet3_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 
@@ -340,6 +397,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_bjet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 ##st_met

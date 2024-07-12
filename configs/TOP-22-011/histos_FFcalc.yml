@@ -1,6 +1,5 @@
 'h_tau1_gen_pt_S3':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
   save-extensions: ['pdf', 'png']
   for-yields: true
@@ -10,7 +9,6 @@
 
 'h_tau1_pt_S3':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
   save-extensions: ['pdf', 'png']
   for-yields: true

@@ -1,6 +1,6 @@
 'h_ncleanjetspass_yield_S5':
   y-axis: "Events"
-  y-axis-format: "%1% / %2$.2f"
+  y-axis-format: "%1% / bin"
   signal-normalize-data: false
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
