@@ -1138,7 +1138,8 @@ namespace plotIt {
     TLegend legend(legend_position.x1, legend_position.y1, legend_position.x2, legend_position.y2);
     //legend.SetTextFont(62);
     legend.SetTextFont(42);
-    legend.SetTextSize(0.045);
+    //legend.SetTextSize(0.045);
+    legend.SetTextSize(0.055);
     legend.SetFillStyle(0);
     legend.SetBorderSize(0);
     legend.SetNColumns(plot.legend_columns);

@@ -76,6 +76,7 @@ systematics:
   #- tauidjet
   - tauFFstat
   - tauFFsyst
+  - tauFFptdep
   - tauidjetUncert0
   - tauidjetUncert1
   - tauidjetSystalleras
