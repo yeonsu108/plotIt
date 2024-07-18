@@ -33,5 +33,5 @@ plots:
   include: ['postfit_histos_dnn.yml']
 
 legend:
-  position: [0.35, 0.70, 0.93, 0.88]
+  position: [0.38, 0.65, 0.93, 0.88]
   columns: 3
