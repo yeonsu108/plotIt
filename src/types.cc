@@ -15,7 +15,7 @@ namespace plotIt {
     else if (type == SIGNAL)
       legend_style = "F";
     else if (type == DATA)
-      legend_style = "P";
+      legend_style = "EP";
 
     if (node["legend-style"])
       legend_style = node["legend-style"].as<std::string>();
