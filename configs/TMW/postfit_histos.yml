@@ -6,13 +6,14 @@
   for-yields: true
   yields-table-order: 2
   yields-title: '$Post-fit$'
-  x-axis: 'm_{lb}^{minimax}'
+  x-axis: 'm_{lb}^{minimax} (GeV)'
   ratio-y-axis-range: [0.945, 1.055]
   ratio-y-axis-auto-range: true
   post-fit: true
   log-y: true
   labels:
-    - {text: 'Post-fit e#mu', position: [0.2, 0.806], size: 17, font: 44}
+    - {text: 'Postfit', position: [0.2, 0.80], size: 17, font: 44}
+    - {text: 'ee+e#mu+#mu#mu', position: [0.2, 0.77], size: 17, font: 44}
 
 'GOneJ_TwoB_prefit':
   y-axis: "Events"
@@ -22,10 +23,11 @@
   for-yields: true
   yields-table-order: 2
   yields-title: '$Pre-fit$'
-  x-axis: 'm_{lb}^{minimax}'
+  x-axis: 'm_{lb}^{minimax} (GeV)'
   ratio-y-axis-range: [0.945, 1.055]
   ratio-y-axis-auto-range: true
   post-fit: true
   log-y: true
   labels:
-    - {text: 'Pre-fit e#mu', position: [0.2, 0.806], size: 17, font: 44}
+    - {text: 'Prefit', position: [0.2, 0.80], size: 17, font: 44}
+    - {text: 'ee+e#mu+#mu#mu', position: [0.2, 0.77], size: 17, font: 44}

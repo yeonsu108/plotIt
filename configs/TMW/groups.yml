@@ -72,7 +72,7 @@ Gttllbin15:
 
 Gttbkg:
   fill-color: '#666699'
-  legend: 't#bar{t} (not dileptonic)'
+  legend: 't#bar{t} (LJ+JJ)'
 
 Gst:
   fill-color: '#333366'

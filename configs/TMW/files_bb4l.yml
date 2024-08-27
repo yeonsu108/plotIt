@@ -1,15 +1,7 @@
-'data_obs.root':
+'data.root':
   type: data
   pretty-name: 'Data'
   group: Gdata
-
-#'ttbarsignal.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttll
-#  yields-group: '1t#bar{t}(ll)'
-#  order: 9
 
 'ttbartwbb4linclusive.root':
   type: mc
@@ -107,53 +99,85 @@
   yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin10}'
   order: 19
 
-#'ttbartwbb4linclusive_Bin11.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttllbin11
-#  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin11}'
-#  order: 20
-#
-#'ttbartwbb4linclusive_Bin12.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttllbin12
-#  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin12}'
-#  order: 21
-#
-#'ttbartwbb4linclusive_Bin13.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttllbin13
-#  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin13}'
-#  order: 22
-#
-#'ttbartwbb4linclusive_Bin14.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttllbin14
-#  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin14}'
-#  order: 23
-#
-#'ttbartwbb4linclusive_Bin15.root':
-#  type: mc
-#  cross-section: 1.0
-#  generated-events: 1.0
-#  group: Gttllbin15
-#  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin15}'
-#  order: 24
+'ttbartwbb4linclusive_Bin11.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin11
+  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin11}'
+  order: 20
 
-'ttbarbg.root':
+'ttbartwbb4linclusive_Bin12.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin12
+  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin12}'
+  order: 21
+
+'ttbartwbb4linclusive_Bin13.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin13
+  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin13}'
+  order: 22
+
+'ttbartwbb4linclusive_Bin14.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin14
+  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin14}'
+  order: 23
+
+'ttbartwbb4linclusive_Bin15.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttllbin15
+  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin15}'
+  order: 24
+
+#'ttbarbgFromDilepton.root':
+#  type: mc
+#  cross-section: 1.0
+#  generated-events: 1.0
+#  group: Gttbkg
+#  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
+#  order: 7
+
+'ttbarbgFromLjets.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gttbkg
-  yields-group: '2t#bar{t} (not dileptonic)'
-  order: 7
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
+  order: 6
+
+'ttbarbgFromHadronic.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gttbkg
+  yields-group: '2t#bar{t}\;(\textrm{not dileptonic})'
+  order: 5
+
+'singletw.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gst
+  yields-group: '3Single top'
+  order: 4
+
+'singletop.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '5Other'
+  order: 4
 
 'dy.root':
   type: mc
@@ -163,10 +187,27 @@
   yields-group: '4Z+jets'
   order: 8
 
-'others.root':
+'ttbarX.root':
   type: mc
   cross-section: 1.0
   generated-events: 1.0
   group: Gother
   yields-group: '5Other'
   order: 3
+
+'diboson.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '5Other'
+  order: 2
+
+'wjets.root':
+  type: mc
+  cross-section: 1.0
+  generated-events: 1.0
+  group: Gother
+  yields-group: '5Other'
+  order: 1
+
