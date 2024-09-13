@@ -7,8 +7,7 @@ configuration:
   extra-label: "  Preliminary"
   root: ''
   luminosity: 1
-  #luminosity-error: 0.025
-  luminosity-error: 0.0
+  luminosity-error: 0.025
   error-fill-style: 3154
   error-fill-color: "#ee556270"
   staterror-fill-style: 3145
@@ -33,8 +32,8 @@ systematics:
   - norm_tt: {type: const, value: 1.042, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - norm_ttbarX: {type: const, value: 1.3, on: 'ttbarX'}
   - norm_wjets: {type: const, value: 1.3, on: 'wjets'}
-  #- BFRAG: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
-  #- BFRAG_CENTRAL: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
+  - BFRAG: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
+  - BFRAG_CENTRAL: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
   #- BSEMILEP: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
   - BTAG_JES
   - BTAG_LJET_CORR
@@ -42,6 +41,7 @@ systematics:
   - BTAG_PILEUP
   - BTAG_STATISTIC2018
   - BTAG_TYPE3
+  #- DS: {type: shape, on: 'singletw'}
   - ELE_ID
   - ELE_RECO
   - ELE_SCALE
@@ -74,9 +74,6 @@ systematics:
   - JESUserDefinedHEM1516
   - L1PREFIRING_ECAL
   - L1PREFIRING_MUON
-  #- MASS: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
-  #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
-  #- DS: {type: shape, on: 'singletw'}
   #- MATCH: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MESCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
@@ -85,6 +82,7 @@ systematics:
   - MERENSCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MERENSCALE_ST: {type: shape, on: 'singletw'}
   - MERENSCALE_Z: {type: shape, on: 'dy'}
+  - ML_HDAMP: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MUON_ID_STAT2018
   - MUON_ID_SYST
   - MUON_ISO_STAT2018
@@ -109,6 +107,8 @@ systematics:
   - TRIG_MUMU2018_SYS
   #- UETUNE: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
   - UNCLUSTERED2018
+  #- MASS: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
+  #- WIDTH_30: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
 
 plots:
   include: ['histos_control.yml', 'histos_yield.yml']
