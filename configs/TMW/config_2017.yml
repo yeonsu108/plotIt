@@ -76,10 +76,10 @@ systematics:
   #- MATCH: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MESCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MEFACSCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
-  - MEFACSCALE_ST: {type: shape, on: 'singletw'}
+  #- MEFACSCALE_ST: {type: shape, on: 'singletw'}
   - MEFACSCALE_Z: {type: shape, on: 'dy'}
   - MERENSCALE: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
-  - MERENSCALE_ST: {type: shape, on: 'singletw'}
+  #- MERENSCALE_ST: {type: shape, on: 'singletw'}
   - MERENSCALE_Z: {type: shape, on: 'dy'}
   - ML_HDAMP: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - MUON_ID_STAT2017
@@ -94,8 +94,8 @@ systematics:
   - PDF_ALPHAS: {type: shape, on: 'ttbarsignal|ttbarbg|singletw|ttbartwbb4linclusive'}
   - PSSCALE_WEIGHT_14: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - PSSCALE_WEIGHT_3: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
-  - PSSCALE_WEIGHT_ST_14: {type: shape, on: 'singletw'}
-  - PSSCALE_WEIGHT_ST_3: {type: shape, on: 'singletw'}
+  #- PSSCALE_WEIGHT_ST_14: {type: shape, on: 'singletw'}
+  #- PSSCALE_WEIGHT_ST_3: {type: shape, on: 'singletw'}
   - PU
   #- TOP_PT: {type: shape, on: 'ttbarsignal|ttbarbg|ttbartwbb4linclusive'}
   - TRIG_EE2017_STAT
