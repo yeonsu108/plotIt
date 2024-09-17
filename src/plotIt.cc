@@ -1685,7 +1685,7 @@ namespace plotIt {
             //    double error_low = yield - ROOT::Math::gamma_quantile(alpha / 2., yield, 1.);
             //    double error_high = ROOT::Math::gamma_quantile_c(alpha / 2., yield, 1.) - yield;
             //    latexString << format_number_with_errors(yield, error_low, error_high, 0, m_config.yields_table_num_prec_yields) << " & ";
-                latexString << yield << " & ";
+                latexString << yield << " & & & ";
             }
 
             latexString.seekp(latexString.tellp() - 2l);

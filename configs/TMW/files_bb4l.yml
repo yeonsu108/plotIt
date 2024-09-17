@@ -8,7 +8,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttll
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l})'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) }'
   order: 9
 
 'ttbartwbb4linclusive_Bin0.root':
@@ -16,7 +16,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin0
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin0}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin0}'
   order: 9
 
 'ttbartwbb4linclusive_Bin1.root':
@@ -24,7 +24,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin1
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin1}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin1}'
   order: 10
 
 'ttbartwbb4linclusive_Bin2.root':
@@ -32,7 +32,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin2
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin2}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin2}'
   order: 11
 
 'ttbartwbb4linclusive_Bin3.root':
@@ -40,7 +40,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin3
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin3}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin3}'
   order: 12
 
 'ttbartwbb4linclusive_Bin4.root':
@@ -48,7 +48,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin4
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin4}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin4}'
   order: 13
 
 'ttbartwbb4linclusive_Bin5.root':
@@ -56,7 +56,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin5
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin5}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin5}'
   order: 14
 
 'ttbartwbb4linclusive_Bin6.root':
@@ -64,7 +64,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin6
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin6}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin6}'
   order: 15
 
 'ttbartwbb4linclusive_Bin7.root':
@@ -72,7 +72,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin7
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin7}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin7}'
   order: 16
 
 'ttbartwbb4linclusive_Bin8.root':
@@ -80,7 +80,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin8
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin8}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin8}'
   order: 17
 
 'ttbartwbb4linclusive_Bin9.root':
@@ -88,7 +88,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin9
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin9}'
+  yields-group: '1t#bar{t}+tW\textrm{ (bb4l) Bin9}'
   order: 18
 
 'ttbartwbb4linclusive_Bin10.root':
@@ -96,7 +96,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin10
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin10}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin10}'
   order: 19
 
 'ttbartwbb4linclusive_Bin11.root':
@@ -104,7 +104,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin11
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin11}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin11}'
   order: 20
 
 'ttbartwbb4linclusive_Bin12.root':
@@ -112,7 +112,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin12
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin12}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin12}'
   order: 21
 
 'ttbartwbb4linclusive_Bin13.root':
@@ -120,7 +120,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin13
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin13}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin13}'
   order: 22
 
 'ttbartwbb4linclusive_Bin14.root':
@@ -128,7 +128,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin14
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin14}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin14}'
   order: 23
 
 'ttbartwbb4linclusive_Bin15.root':
@@ -136,7 +136,7 @@
   cross-section: 1.0
   generated-events: 1.0
   group: Gttllbin15
-  yields-group: '1t#bar{t}+tW(\ell\ell\textrm{ bb4l}) #textrm{Bin15}'
+  yields-group: '2t#bar{t}+tW\textrm{ (bb4l) Bin15}'
   order: 24
 
 #'ttbarbgFromDilepton.root':
