@@ -111,6 +111,7 @@ namespace plotIt {
       std::vector<File> m_files;
       std::vector<Plot> m_plots;
       std::vector<SystematicPtr> m_systematics;
+      std::vector<SystematicPtr> m_systematics_siglike;
       std::map<std::string, Group> m_legend_groups;
       std::map<std::string, Group> m_yields_groups;
 

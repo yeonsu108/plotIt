@@ -154,7 +154,9 @@ namespace plotIt {
     std::map<std::string, TObject*> objects;
 
     std::vector<SystematicSet>* systematics;
+    std::vector<SystematicSet>* systematics_siglike;
     std::map<std::string, std::vector<SystematicSet>> systematics_cache;
+    std::map<std::string, std::vector<SystematicSet>> systematics_cache_siglike;
 
     int16_t order = std::numeric_limits<int16_t>::min();
 
@@ -316,6 +318,7 @@ namespace plotIt {
 
     bool show_ratio = true;
     bool ratio_draw_mcstat_error = false;
+    bool draw_siglike_unc = false;
     bool post_fit = false;
 
     bool fit = false;

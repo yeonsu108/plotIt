@@ -45,7 +45,7 @@ njetNames = {#'TwoJet': '= 2',
 
 #Draw stat. unc. overlayed in the ratio pad
 stat_hists = ['mlb_minimax']
-log_hists = ['mlb_minimax', 'mlb_min', ]
+log_hists = ['mlb_minimax', 'mlb_min', 'RHO']
 non_equ_binning = ['mlb_minimax', 'nBJets', 'nJets']
 sort_hists = []
 

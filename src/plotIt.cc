@@ -139,7 +139,8 @@ namespace plotIt {
             throw YAML::ParserException(node.Mark(), "Invalid systematics node. Must be either a string or a map");
       }
 
-      m_systematics.push_back(SystematicFactory::create(name, type, configuration));
+      if (type == "siglike") m_systematics_siglike.push_back(SystematicFactory::create(name, type, configuration));
+      else m_systematics.push_back(SystematicFactory::create(name, type, configuration));
   }
 
   std::vector<RenameOp> parseRenameNode(const YAML::Node& node) {
@@ -762,6 +763,9 @@ namespace plotIt {
 
       if (node["ratio-draw-mcstat-error"])
         plot.ratio_draw_mcstat_error = node["ratio-draw-mcstat-error"].as<bool>();
+
+      if (node["draw-siglike-unc"])
+        plot.draw_siglike_unc = node["draw-siglike-unc"].as<bool>();
 
       if (node["post-fit"])
         plot.post_fit = node["post-fit"].as<bool>();
@@ -2213,6 +2217,10 @@ namespace plotIt {
               if (std::regex_search(file.path, syst->on))
                   file.systematics_cache[plot.uid].push_back(syst->newSet(cloned_obj.get(), file, plot));
           }
+          for (auto& syst: m_systematics_siglike) {
+              if (std::regex_search(file.path, syst->on))
+                  file.systematics_cache_siglike[plot.uid].push_back(syst->newSet(cloned_obj.get(), file, plot));
+          }
         }
 
         continue;
@@ -2240,6 +2248,7 @@ namespace plotIt {
     file.object = it->second;
 
     file.systematics = & file.systematics_cache[plot.uid];
+    file.systematics_siglike = & file.systematics_cache_siglike[plot.uid];
 
     return true;
   }

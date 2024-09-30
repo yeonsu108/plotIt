@@ -253,6 +253,8 @@ namespace plotIt {
             result = std::make_shared<LogNormalSystematic>(node);
         } else if (type == "shape") {
             result = std::make_shared<ShapeSystematic>(node);
+        } else if (type == "siglike") {
+            result = std::make_shared<ShapeSystematic>(node);
         }
 
         if (result) {
