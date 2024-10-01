@@ -47,6 +47,7 @@ njetNames = {#'TwoJet': '= 2',
 stat_hists = ['mlb_minimax']
 log_hists = ['mlb_minimax', 'mlb_min', 'RHO']
 non_equ_binning = ['mlb_minimax', 'nBJets', 'nJets']
+no_unit_bin = ['RHO', 'lept1Eta', 'lept2Eta', 'jet2Eta', 'jet2Eta']
 sort_hists = []
 
 hist_items = OrderedDict()
@@ -76,6 +77,8 @@ for hname in histNames:
                 #    options_list.append('  ratio-draw-mcstat-error: true\n')
                 if hname in non_equ_binning:
                     options_list.append('  y-axis-format: "%1% / Bin"\n')
+                if hname in no_unit_bin:
+                    options_list.append('  y-axis-format: "%1% / %2$.2f"\n')
                 if ch == 'combined':
                     options_list.append("  rename:\n    - {from: '" + hout + "', to: '" + hout.replace(ch, 'll') + "'}\n")
 

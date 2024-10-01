@@ -939,6 +939,8 @@ namespace plotIt {
                 value.second.stat_and_syst_asym->Draw("2");
                 TemporaryPool::get().add(value.second.stat_and_syst_asym);
 
+                // Don't draw siglike unc in upper pane, it is not visible
+                /*
                 if (plot.draw_siglike_unc) {
                     std::shared_ptr<TH1> syst_siglike_up_toDraw(static_cast<TH1*>(value.second.stat_and_syst->Clone("syst_siglike_up_toDraw")));
                     std::shared_ptr<TH1> syst_siglike_dn_toDraw(static_cast<TH1*>(value.second.stat_and_syst->Clone("syst_siglike_up_toDraw")));
@@ -957,6 +959,7 @@ namespace plotIt {
                     TemporaryPool::get().add(syst_siglike_up_toDraw);
                     TemporaryPool::get().add(syst_siglike_dn_toDraw);
                 }
+                */
             }
         });
     }
@@ -1173,10 +1176,10 @@ namespace plotIt {
         setRange(h_mcstat.get(), x_axis_range, {});
         h_mcstat->Draw("E2 same");
 
-        auto mc_legend = new TLegend(0.25, 0.77, 0.45, 0.88);
+        auto mc_legend = new TLegend(0.20, 0.82, 0.35, 0.92);
         mc_legend->AddEntry(h_mcstat.get(), "Stat. Unc.", "F");
         mc_legend->SetTextFont(42);
-        mc_legend->SetFillStyle(m_plotIt.getConfiguration().staterror_fill_style);
+        mc_legend->SetFillStyle(0);
         mc_legend->SetBorderSize(0);
         mc_legend->Draw();
       }
@@ -1289,12 +1292,22 @@ namespace plotIt {
         if (plot.draw_siglike_unc) {
             h_syst_siglike_up->SetFillStyle(0);
             h_syst_siglike_dn->SetFillStyle(0);
-            h_syst_siglike_up->SetLineWidth(2);
-            h_syst_siglike_dn->SetLineWidth(2);
-            h_syst_siglike_up->SetLineColor(3);
-            h_syst_siglike_dn->SetLineColor(4);
+            h_syst_siglike_up->SetLineWidth(3);
+            h_syst_siglike_dn->SetLineWidth(3);
+            h_syst_siglike_up->SetLineColor(601);
+            h_syst_siglike_dn->SetLineColor(633);
             h_syst_siglike_up->Draw("same hist");
             h_syst_siglike_dn->Draw("same hist");
+
+            auto syst_legend = new TLegend(0.75, 0.45, 0.95, 0.55);
+            syst_legend->SetNColumns(2);
+            syst_legend->AddEntry(h_syst_siglike_up.get(), "Var. up", "F");
+            syst_legend->AddEntry(h_syst_siglike_dn.get(), "Var. dn", "F");
+            syst_legend->SetTextFont(42);
+            syst_legend->SetFillStyle(0);
+            syst_legend->SetBorderSize(0);
+            syst_legend->Draw();
+
         }
       }
 

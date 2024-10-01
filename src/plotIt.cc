@@ -1144,6 +1144,8 @@ namespace plotIt {
     legend.SetTextFont(42);
     //legend.SetTextSize(0.045);
     legend.SetTextSize(0.055);
+    if (CommandLineCfg::get().desytop)
+        legend.SetTextSize(0.045);
     legend.SetFillStyle(0);
     legend.SetBorderSize(0);
     legend.SetNColumns(plot.legend_columns);

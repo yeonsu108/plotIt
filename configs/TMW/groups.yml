@@ -6,73 +6,94 @@ Gttll:
   fill-color: '#660000'
   legend: 't#bar{t}(ll)'
 
+Gttllincl:
+  fill-color: '#cc0000'
+  #legend: 't#bar{t}+tW (bb4l)'
+  legend: 'bb4l'
+
 Gttllbin0:
   fill-color: '#cc0000'
-  legend: 't#bar{t}+tW Bin0'
+  #legend: 't#bar{t}+tW Bin0'
+  legend: 'bb4l Bin0'
 
 Gttllbin1:
   fill-color: '#660000'
-  legend: 't#bar{t}+tW Bin1'
+  #legend: 't#bar{t}+tW Bin1'
+  legend: 'bb4l Bin1'
 
 Gttllbin2:
   fill-color: '#996666'
-  legend: 't#bar{t}+tW Bin2'
+  #legend: 't#bar{t}+tW Bin2'
+  legend: 'bb4l Bin2'
 
 Gttllbin3:
   fill-color: '#ff99cc'
-  legend: 't#bar{t}+tW Bin3'
+  #legend: 't#bar{t}+tW Bin3'
+  legend: 'bb4l Bin3'
 
 Gttllbin4:
   fill-color: '#ff33cc'
-  legend: 't#bar{t}+tW Bin4'
+  #legend: 't#bar{t}+tW Bin4'
+  legend: 'bb4l Bin4'
 
 Gttllbin5:
   fill-color: '#ff00ff'
-  legend: 't#bar{t}+tW Bin5'
+  #legend: 't#bar{t}+tW Bin5'
+  legend: 'bb4l Bin5'
 
 Gttllbin6:
   fill-color: '#990099'
-  legend: 't#bar{t}+tW Bin6'
+  #legend: 't#bar{t}+tW Bin6'
+  legend: 'bb4l Bin6'
 
 Gttllbin7:
   fill-color: '#996699'
-  legend: 't#bar{t}+tW Bin7'
+  #legend: 't#bar{t}+tW Bin7'
+  legend: 'bb4l Bin7'
 
 Gttllbin8:
   fill-color: '#9933ff'
-  legend: 't#bar{t}+tW Bin8'
+  #legend: 't#bar{t}+tW Bin8'
+  legend: 'bb4l Bin8'
 
 Gttllbin9:
   fill-color: '#ff9933'
-  legend: 't#bar{t}+tW Bin9'
+  #legend: 't#bar{t}+tW Bin9'
+  legend: 'bb4l Bin9'
 
 Gttllbin10:
   fill-color: '#cc6633'
-  legend: 't#bar{t}+tW Bin10'
+  #legend: 't#bar{t}+tW Bin10'
+  legend: 'bb4l Bin10'
 
 Gttllbin11:
   fill-color: '#ffcc33'
-  legend: 't#bar{t}+tW Bin11'
+  #legend: 't#bar{t}+tW Bin11'
+  legend: 'bb4l Bin11'
 
 Gttllbin12:
   fill-color: '#cccc00'
-  legend: 't#bar{t}+tW Bin12'
+  #legend: 't#bar{t}+tW Bin12'
+  legend: 'bb4l Bin12'
 
 Gttllbin13:
   fill-color: '#00cccc'
-  legend: 't#bar{t}+tW Bin13'
+  #legend: 't#bar{t}+tW Bin13'
+  legend: 'bb4l Bin13'
 
 Gttllbin14:
   fill-color: '#006666'
-  legend: 't#bar{t}+tW Bin14'
+  #legend: 't#bar{t}+tW Bin14'
+  legend: 'bb4l Bin14'
 
 Gttllbin15:
   fill-color: '#3399ff'
-  legend: 't#bar{t}+tW Bin15'
+  #legend: 't#bar{t}+tW Bin15'
+  legend: 'bb4l Bin10'
 
 Gttbkg:
   fill-color: '#666699'
-  legend: 't#bar{t} (LJ+JJ)'
+  legend: 't#bar{t} Bkg'
 
 Gst:
   fill-color: '#333366'
