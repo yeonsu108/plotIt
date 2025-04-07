@@ -1,3 +1,87 @@
+#'hist_ST_LFV_TUMuTau_Scalar.root':
+#  type: signal
+#  pretty-name: 'LFVSTus'
+#  cross-section: 0.08494
+#  group: GLFVSTus
+#  order: 1
+#
+#'hist_ST_LFV_TUMuTau_Vector.root':
+#  type: signal
+#  pretty-name: 'LFVSTuv'
+#  cross-section: 0.3924
+#  group: GLFVSTuv
+#  order: 1
+#
+#'hist_ST_LFV_TUMuTau_Tensor.root':
+#  type: signal
+#  pretty-name: 'LFVSTut'
+#  cross-section: 1.781
+#  group: GLFVSTut
+#  order: 1
+#
+#'hist_ST_LFV_TCMuTau_Scalar.root':
+#  type: signal
+#  pretty-name: 'LFVSTcs'
+#  cross-section: 0.007375
+#  group: GLFVSTcs
+#  order: 1
+#
+#'hist_ST_LFV_TCMuTau_Vector.root':
+#  type: signal
+#  pretty-name: 'LFVSTcv'
+#  cross-section: 0.03673
+#  group: GLFVSTcv
+#  order: 3
+#
+#'hist_ST_LFV_TCMuTau_Tensor.root':
+#  type: signal
+#  pretty-name: 'LFVSTct'
+#  cross-section: 0.177
+#  group: GLFVSTct
+#  order: 1
+#
+#'hist_TT_LFV_TUMuTau_Scalar.root':
+#  type: signal
+#  pretty-name: 'LFVTTus'
+#  cross-section: 0.00269
+#  group: GLFVTTus
+#  order: 1
+#
+#'hist_TT_LFV_TUMuTau_Vector.root':
+#  type: signal
+#  pretty-name: 'LFVTTuv'
+#  cross-section: 0.0215
+#  group: GLFVTTuv
+#  order: 2
+#
+#'hist_TT_LFV_TUMuTau_Tensor.root':
+#  type: signal
+#  pretty-name: 'LFVTTut'
+#  cross-section: 0.1290
+#  group: GLFVTTut
+#  order: 1
+#
+#'hist_TT_LFV_TCMuTau_Scalar.root':
+#  type: signal
+#  pretty-name: 'LFVTTcs'
+#  cross-section: 0.00269
+#  group: GLFVTTcs
+#  order: 1
+#
+#'hist_TT_LFV_TCMuTau_Vector.root':
+#  type: signal
+#  pretty-name: 'LFVTTcv'
+#  cross-section: 0.0215
+#  group: GLFVTTcv
+#  order: 4
+#
+#'hist_TT_LFV_TCMuTau_Tensor.root':
+#  type: signal
+#  pretty-name: 'LFVTTct'
+#  cross-section: 0.1290
+#  group: GLFVTTct
+#  order: 1
+
 'hist_Muon0-v1.root':
   type: data
   pretty-name: 'Data'
@@ -24,7 +108,7 @@
   cross-section: 405.75
   group: Gttlj
   yields-group: '2\ttbar LJ'
-  order: 1
+  order: 6
 
 'hist_TTto2L2Nu.root':
   type: mc
@@ -32,7 +116,7 @@
   cross-section: 98.04
   group: Gttll
   yields-group: '1\ttbar LL'
-  order: 2
+  order: 7
 
 'hist_TTto4Q.root':
   type: mc
@@ -40,47 +124,119 @@
   cross-section: 419.82
   group: Gttjj
   yields-group: '3\ttbar Had'
-  order: 3
+  order: 8
 
-'hist_TBbar_s_4f.root':
+'hist_TBbar_s-channel_4fs.root':
   type: mc
   pretty-name: 'SingleTops'
   cross-section: 2.278
   group: GSingleT
   yields-group: '5Single Top'
-  order: 8
-
-'hist_TbarB_s.root':
-  type: mc
-  pretty-name: 'SingleTopt'
-  cross-section: 11.43
-  group: GSingleT
-  yields-group: '5Single Top'
   order: 9
 
-'hist_ST_t_antitop_4f.root':
+'hist_TbarB_s-channel_4fs.root':
   type: mc
-  pretty-name: 'SingleTbart'
-  cross-section: 80.0
+  pretty-name: 'SingleTops'
+  cross-section: 1.43
   group: GSingleT
   yields-group: '5Single Top'
   order: 10
 
-'hist_ST_tW_top_5f.root':
+'hist_TBbarQ_t-channel_4fs.root':
   type: mc
-  pretty-name: 'SingleToptW'
-  cross-section: 39.65
+  pretty-name: 'SingleTopt'
+  cross-section: 123.8
   group: GSingleT
   yields-group: '5Single Top'
   order: 11
 
-'hist_ST_tW_antitop_5f.root':
+'hist_TQbarto2Q-t-channel.root':
   type: mc
-  pretty-name: 'SingleTbartW'
-  cross-section: 39.65
+  pretty-name: 'SingleTopt'
+  cross-section: 87.75
   group: GSingleT
   yields-group: '5Single Top'
   order: 12
+
+'hist_TQbartoLNu-t-channel.root':
+  type: mc
+  pretty-name: 'SingleTopt'
+  cross-section: 42.25
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 13
+
+'hist_TbarBQ_t-channel_4fs.root':
+  type: mc
+  pretty-name: 'SingleTbart'
+  cross-section: 75.47
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 14
+
+'hist_TbarQto2Q-t-channel.root':
+  type: mc
+  pretty-name: 'SingleTbart'
+  cross-section: 53.028
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 15
+
+'hist_TbarQtoLNu-t-channel.root':
+  type: mc
+  pretty-name: 'SingleTbart'
+  cross-section: 25.532
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 16
+
+'hist_TbarWplusto2L2Nu.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 4.01
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 17
+
+'hist_TbarWplustoLNu2Q.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 16.02
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 18
+
+'hist_TbarWplusto4Q.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 16.02
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 19
+
+'hist_TWminusto2L2Nu.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 4.00
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 20
+
+'hist_TWminustoLNu2Q.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 16.00
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 21
+
+'hist_TWminusto4Q.root':
+  type: mc
+  pretty-name: 'SingleTbartW'
+  cross-section: 16.00
+  group: GSingleT
+  yields-group: '5Single Top'
+  order: 22
 
 'hist_ttHto2B.root':
   type: mc
@@ -88,7 +244,7 @@
   cross-section: 0.5742
   group: GttV
   yields-group: '7tt+X'
-  order: 4
+  order: 23
 
 'hist_ttHto2C.root':
   type: mc
@@ -96,7 +252,7 @@
   cross-section: 0.5742
   group: GttV
   yields-group: '7tt+X'
-  order: 5
+  order: 24
 
 'hist_ttHtoZG.root':
   type: mc
@@ -104,7 +260,7 @@
   cross-section: 0.5742
   group: GttV
   yields-group: '7tt+X'
-  order: 6
+  order: 25
 
 #'hist_TTWJetsToLNu.root':
 #  type: mc
@@ -144,7 +300,7 @@
   cross-section: 80.23
   group: GVV
   yields-group: '8VV'
-  order: 7
+  order: 26
 
 'hist_WZ.root':
   type: mc
@@ -152,7 +308,7 @@
   cross-section: 29.1
   group: GVV
   yields-group: '8VV'
-  order: 8
+  order: 27
 
 'hist_ZZ.root':
   type: mc
@@ -160,39 +316,47 @@
   cross-section: 13.15
   group: GVV
   yields-group: '8VV'
-  order: 9
+  order: 28
 
-'hist_DYto2L-2Jets_MLL-10to50.root':
-  type: mc
-  pretty-name: 'DYJets10to50'
-  cross-section: 20950.0
-  group: GZJets
-  yields-group: '4Z+Jets'
-  order: 10
+#'hist_DYto2L-2Jets_MLL-10to50.root':
+#  type: mc
+#  pretty-name: 'DYJets'
+#  cross-section: 20950.0
+#  group: GZJets
+#  yields-group: '4Z+Jets'
+#  order: 29
+#
+#'hist_DYto2L-2Jets_MLL-50.root':
+#  type: mc
+#  pretty-name: 'DYJets'
+#  cross-section: 6688.0
+#  group: GZJets
+#  yields-group: '4Z+Jets'
+#  order: 30
 
-'hist_DYJetsToLL_M50_mg.root':
+#'hist_DYJetsToLL_M50_mg.root':
+#  type: mc
+#  pretty-name: 'DYJets'
+#  cross-section: 5558.0
+#  group: GZJets
+#  yields-group: '4Z+Jets'
+#  order: 11
+
+'hist_DYto2L-4Jets_MLL-10to50.root':
   type: mc
   pretty-name: 'DYJets'
   cross-section: 5558.0
   group: GZJets
   yields-group: '4Z+Jets'
-  order: 11
-
-'hist_DYto2L-2Jets_MLL-50.root':
-  type: mc
-  pretty-name: 'DYJets'
-  cross-section: 6688.0 #140.0 * 1.13
-  group: GZJets
-  yields-group: '4Z+Jets'
-  order: 12
+  order: 31
 
 'hist_DYto2L-4Jets_MLL-50.root':
   type: mc
   pretty-name: 'DYJets'
-  cross-section: 5467 #139.2 * 1.13
+  cross-section: 5467
   group: GZJets
   yields-group: '4Z+Jets'
-  order: 13
+  order: 32
 
 'hist_WtoLNu-4Jets.root':
   type: mc
@@ -200,85 +364,69 @@
   cross-section: 55390
   group: GWJets
   yields-group: '6W+Jets'
-  order: 14
+  order: 33
 
-#'hist_WJetsToLNu_HT0To100.root':
+#'hist_WtoLNu_HT40To100.root':
 #  type: mc
-#  pretty-name: 'WJetsToLNu_HT0To100'
-#  cross-section: 65396.85 # 67350.0 * 0.972
-#  scale: 1.0288 # 1/0.972 for generator-event scale, anyway cancels out
+#  pretty-name: 'WtoLNu_HT40To100'
+#  cross-section: 4254 # 67350.0 * 0.972
+#  #scale: 1.0288 # 1/0.972 for generator-event scale, anyway cancels out
 #  group: GWJets
 #  yields-group: '6W+Jets'
-#  order: 25
-#  # 65396.85 ~ 65282.37803 = 67350.0 - 1568.7 - 419 - 56.52 - 15.05 - 6.8707 - 1.4488 - 0.03247
-#  # generated-events: 72594985 # 74686199 * 0.972 (2016pre)
-#  # generated-events: 78691397 # 80958227 * 0.972 (2016post)
-#  # generated-events: 76114585 # 78307186 * 0.972 (2017)
-#  # generated-events: 78781833 # 81051269 * 0.972 (htcut, 2018)
+#  order: 34
+##  # 65396.85 ~ 65282.37803 = 67350.0 - 1568.7 - 419 - 56.52 - 15.05 - 6.8707 - 1.4488 - 0.03247
+##  # generated-events: 72594985 # 74686199 * 0.972 (2016pre)
+##  # generated-events: 78691397 # 80958227 * 0.972 (2016post)
+##  # generated-events: 76114585 # 78307186 * 0.972 (2017)
+##  # generated-events: 78781833 # 81051269 * 0.972 (htcut, 2018)
+##
+#'hist_WtoLNu_HT100To400.root':
+#  type: mc
+#  pretty-name: 'WtoLNu_HT100To400'
+#  cross-section: 1626 # 1256.0 * 1.249
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 35
 #
-#'hist_WJetsToLNu_HT100To200.root':
+#'hist_WtoLNu_HT400To800.root':
 #  type: mc
-#  pretty-name: 'WJetsToLNu_HT100To200'
-#  cross-section: 1568.7 # 1256.0 * 1.249
+#  pretty-name: 'WtoLNu_HT400To800'
+#  cross-section: 59.99 # 45.25 * 1.249
 #  group: GWJets
 #  yields-group: '6W+Jets'
-#  order: 26
+#  order: 36
 #
-#'hist_WJetsToLNu_HT200To400.root':
+#'hist_WtoLNu_HT800To1500.root':
 #  type: mc
-#  pretty-name: 'WJetsToLNu_HT200To400'
-#  cross-section: 419 # 335.5 * 1.249
+#  pretty-name: 'WtoLNu_HT800To1500'
+#  cross-section: 6.23 # 5.501 * 1.249
 #  group: GWJets
 #  yields-group: '6W+Jets'
-#  order: 27
+#  order: 37
 #
-#'hist_WJetsToLNu_HT400To600.root':
+#'hist_WtoLNu_HT1500To2500.root':
 #  type: mc
-#  pretty-name: 'WJetsToLNu_HT400To600'
-#  cross-section: 56.52 # 45.25 * 1.249
+#  pretty-name: 'WtoLNu_HT1500To2500'
+#  cross-section: 0.4477 # 1.16 * 1.249
 #  group: GWJets
 #  yields-group: '6W+Jets'
-#  order: 28
+#  order: 38
 #
-#'hist_WJetsToLNu_HT600To800.root':
+#'hist_WtoLNu_HT2500ToInf.root':
 #  type: mc
-#  pretty-name: 'WJetsToLNu_HT600To800'
-#  cross-section: 15.05 # 12.05 * 1.249
+#  pretty-name: 'WtoLNu_HT2500ToInf'
+#  cross-section: 0.03075 # 0.026 * 1.249
 #  group: GWJets
 #  yields-group: '6W+Jets'
-#  order: 29
-#
-#'hist_WJetsToLNu_HT800To1200.root':
-#  type: mc
-#  pretty-name: 'WJetsToLNu_HT800To1200'
-#  cross-section: 6.8707 # 5.501 * 1.249
-#  group: GWJets
-#  yields-group: '6W+Jets'
-#  order: 30
-#
-#'hist_WJetsToLNu_HT1200To2500.root':
-#  type: mc
-#  pretty-name: 'WJetsToLNu_HT1200To2500'
-#  cross-section: 1.4488 # 1.16 * 1.249
-#  group: GWJets
-#  yields-group: '6W+Jets'
-#  order: 31
-#
-#'hist_WJetsToLNu_HT2500ToInf.root':
-#  type: mc
-#  pretty-name: 'WJetsToLNu_HT2500ToInf'
-#  cross-section: 0.03247 # 0.026 * 1.249
-#  group: GWJets
-#  yields-group: '6W+Jets'
-#  order: 32
+#  order: 39
 
-#'hist_QCD_Pt15To20_MuEnriched.root':
-#  type: mc
-#  pretty-name: 'QCD'
-#  cross-section: 2797000.0
-#  group: GQCD
-#  yields-group: '9QCD'
-#  order: 33
+'hist_QCD_Pt15To20_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 2982000.0
+  group: GQCD
+  yields-group: '9QCD'
+  order: 34
 
 'hist_QCD_Pt20To30_MuEnriched.root':
   type: mc
@@ -286,7 +434,7 @@
   cross-section: 2679000.0
   group: GQCD
   yields-group: '9QCD'
-  order: 34
+  order: 35
 
 'hist_QCD_Pt30To50_MuEnriched.root':
   type: mc
@@ -294,7 +442,7 @@
   cross-section: 1497000.0
   group: GQCD
   yields-group: '9QCD'
-  order: 35
+  order: 36
 
 'hist_QCD_Pt50To80_MuEnriched.root':
   type: mc
@@ -302,7 +450,7 @@
   cross-section: 409500.0
   group: GQCD
   yields-group: '9QCD'
-  order: 36
+  order: 37
 
 'hist_QCD_Pt80To120_MuEnriched.root':
   type: mc
@@ -310,7 +458,7 @@
   cross-section: 95130.0
   group: GQCD
   yields-group: '9QCD'
-  order: 37
+  order: 38
 
 'hist_QCD_Pt120To170_MuEnriched.root':
   type: mc
@@ -318,7 +466,7 @@
   cross-section: 22980.0
   group: GQCD
   yields-group: '9QCD'
-  order: 38
+  order: 39
 
 'hist_QCD_Pt170To300_MuEnriched.root':
   type: mc
@@ -326,7 +474,7 @@
   cross-section: 7763
   group: GQCD
   yields-group: '9QCD'
-  order: 39
+  order: 40
 
 'hist_QCD_Pt300To470_MuEnriched.root':
   type: mc
@@ -334,7 +482,7 @@
   cross-section: 699.1
   group: GQCD
   yields-group: '9QCD'
-  order: 40
+  order: 41
 
 'hist_QCD_Pt470To600_MuEnriched.root':
   type: mc
@@ -342,7 +490,7 @@
   cross-section: 68.24
   group: GQCD
   yields-group: '9QCD'
-  order: 41
+  order: 42
 
 'hist_QCD_Pt600To800_MuEnriched.root':
   type: mc
@@ -350,7 +498,7 @@
   cross-section: 21.37
   group: GQCD
   yields-group: '9QCD'
-  order: 42
+  order: 43
 
 'hist_QCD_Pt800To1000_MuEnriched.root':
   type: mc
@@ -358,7 +506,7 @@
   cross-section: 3.913
   group: GQCD
   yields-group: '9QCD'
-  order: 43
+  order: 44
 
 'hist_QCD_Pt1000_MuEnriched.root':
   type: mc
@@ -366,4 +514,4 @@
   cross-section: 1.323
   group: GQCD
   yields-group: '9QCD'
-  order: 44
+  order: 45

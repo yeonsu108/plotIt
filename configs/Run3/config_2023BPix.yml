@@ -114,7 +114,7 @@ plots:
   #include: ['histos_FFcalc.yml']
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield_S5.yml']
-  include: ['histos_test.yml']
+  include: ['histos.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]

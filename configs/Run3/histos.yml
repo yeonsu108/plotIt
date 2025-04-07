@@ -1,0 +1,133 @@
+'h_muon1_pt':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_pt_S1':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_pt_S2':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_pt':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
+'h_muon1_pt_S1':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
+'h_muon1_pt_S2':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
+
+'h_muon1_eta':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_eta_S1':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_eta_S2':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+
+'h_muon1_eta':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
+'h_muon1_eta_S1':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
+'h_muon1_eta_S2':
+  y-axis: "Events"
+  y-axis-format: "%1% / %2$.2f"
+  signal-normalize-data: false
+  sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+  for-yields: true
+  yields-table-order: 0
+  yields-title: 'Muon'
+  log-y: true
+  ratio-y-axis-range: [0.01, 2.05]
+
