@@ -1,0 +1,125 @@
+configuration:
+  width: 450
+  height: 450
+  luminosity-label: '%1$.1f fb^{-1} (13.6 TeV)'
+  experiment: " CMS"
+  experiment-label-paper: true
+  extra-label: " Work in Progress"
+  root: ''
+  luminosity: 26671.7 
+  luminosity-error: 0.014
+  error-fill-style: 3254
+  error-fill-color: "#ee556270"
+  staterror-fill-style: 3145
+  staterror-fill-color: 7
+  ratio-fit-error-fill-style: 1001
+  ratio-fit-error-fill-color: "#aa556270"
+  ratio-fit-line-color: "#0B486B"
+  blinded-range-fill-color: "#29556270"
+  blinded-range-fill-style: 1001
+  yields-table-align: v
+  book-keeping-file: 'plots.root'
+  yields-table-numerical-precision-yields: 1
+  generated-events-histogram: 'hcounter'
+  generated-events-bin: 2
+  #syst-only: true
+
+files: 
+  include: ['files.yml']
+  #include: ['files_fake.yml']
+
+systematics:
+  #- tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
+  #- other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
+  #- other_xsec2: {type: const, value: 1.1, on: 'ST_s'}
+  #- other_xsec3: {type: const, value: 1.1, on: 'ST_t'}
+  #- other_xsec5: {type: const, value: 1.1, on: 'ttH'}
+  #- other_xsec6: {type: const, value: 1.1, on: 'TTWJets'}
+  #- other_xsec7: {type: const, value: 1.1, on: 'TTZ'}
+  #- other_xsec8: {type: const, value: 1.1, on: 'WJetsToLNu_HT'}
+  #- other_xsec9: {type: const, value: 1.1, on: 'WW'}
+  #- other_xsec10: {type: const, value: 1.1, on: 'WZ'}
+  #- other_xsec11: {type: const, value: 1.1, on: 'ZZ'}
+  #- qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
+  #- muExtra: {type: const, value: 1.005}
+  #- tes
+  #- jer
+  #- jesHEM
+  #- jesAbsolute
+  #- jesAbsolute_2018
+  #- jesBBEC1
+  #- jesBBEC1_2018
+  #- jesFlavorQCD
+  #- jesFlavorPureGluon
+  #- jesFlavorPureQuark
+  #- jesFlavorPureCharm
+  #- jesFlavorPureBottom
+  #- jesRelativeBal
+  #- jesRelativeSample_2018
+  ##- metUnclust
+  #- btaghf
+  #- btaglf
+  #- btaghfstats1
+  #- btaglfstats1
+  #- btaghfstats2
+  #- btaglfstats2
+  #- btagcferr1
+  #- btagcferr2
+  #- pu
+  #- prefire
+  #- toppt
+  #- muid
+  #- muiso
+  #- mutrg
+  #- muhighpt
+  ##- muonhighscale
+  ##- tauidjet
+  #- tauFFstat
+  #- tauFFsyst
+  #- tauFFptdep
+  #- tauidjetUncert0
+  #- tauidjetUncert1
+  #- tauidjetSystalleras
+  #- tauidjetSystUL2018
+  #- tauidjetSystdm0UL2018
+  #- tauidjetSystdm1UL2018
+  #- tauidjetSystdm10UL2018
+  #- tauidjetSystdm11UL2018
+  #- tauidjetHighptstat_bin1
+  #- tauidjetHighptstat_bin2
+  #- tauidjetHighptsyst
+  #- tauidjetHighptextrap
+  #- tauidmu
+  #- tauidel
+  #- mescale: {type: shape, on: 'TTTo'}
+  #- mescale: {type: shape, on: '_LFV'}
+  #- renscale: {type: shape, on: 'TTTo'}
+  #- renscale: {type: shape, on: '_LFV'}
+  #- facscale: {type: shape, on: 'TTTo'}
+  #- facscale: {type: shape, on: '_LFV'}
+  #- isr: {type: shape, on: 'TTTo'}
+  #- isr: {type: shape, on: '_LFV'}
+  #- fsr: {type: shape, on: 'TTTo'}
+  #- fsr: {type: shape, on: '_LFV'}
+  #- pdfalphas: {type: shape, on: 'TTTo'}
+  ##- pdfenv: {type: shape, on: 'TTTo'}
+  ##- pdfenv: {type: shape, on: '_LFV'}
+  #- hdamp: {type: shape, on: 'TTTo'}
+  #- tune: {type: shape, on: 'TTTo'}
+
+plots:
+  #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
+  #include: ['histos_yield.yml']
+  #include: ['histos_dnn.yml']
+  #include: ['histos_FFcalc.yml']
+  #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
+  #include: ['histos_yield_S5.yml']
+  include: ['histos.yml']
+
+legend:
+  #position: [0.18, 0.70, 0.96, 0.88]
+  position: [0.35, 0.70, 0.96, 0.88]
+  columns: 4
+
+groups:
+  include: ['groups.yml']

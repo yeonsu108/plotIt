@@ -4,10 +4,10 @@ configuration:
   luminosity-label: '%1$.1f fb^{-1} (13.6 TeV)'
   experiment: " CMS"
   experiment-label-paper: true
-  extra-label: " Work in Progress"
+  extra-label: " WIP"
   root: ''
-  luminosity: 9451 
-  luminosity-error: 0.025
+  luminosity: 7980.4 
+  luminosity-error: 0.014
   error-fill-style: 3254
   error-fill-color: "#ee556270"
   staterror-fill-style: 3145
@@ -25,7 +25,7 @@ configuration:
   #syst-only: true
 
 files: 
-  include: ['files.yml']
+  include: ['files_22.yml']
   #include: ['files_fake.yml']
 
 systematics:

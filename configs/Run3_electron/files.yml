@@ -82,22 +82,7 @@
 #  group: GLFVTTct
 #  order: 1
 
-'hist_Muon0-v1.root':
-  type: data
-  pretty-name: 'Data'
-  group: GData
-
-'hist_Muon0-v2.root':
-  type: data
-  pretty-name: 'Data'
-  group: GData
-
-'hist_Muon1-v1.root':
-  type: data
-  pretty-name: 'Data'
-  group: GData
-
-'hist_Muon1-v2.root':
+'hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
@@ -420,7 +405,7 @@
 #  yields-group: '6W+Jets'
 #  order: 39
 
-'hist_QCD_Pt15To20_MuEnriched.root':
+'hist_QCD_Pt15To20_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 2982000.0
@@ -428,7 +413,7 @@
   yields-group: '9QCD'
   order: 34
 
-'hist_QCD_Pt20To30_MuEnriched.root':
+'hist_QCD_Pt20To30_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 2679000.0
@@ -436,7 +421,7 @@
   yields-group: '9QCD'
   order: 35
 
-'hist_QCD_Pt30To50_MuEnriched.root':
+'hist_QCD_Pt30To50_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 1497000.0
@@ -444,7 +429,7 @@
   yields-group: '9QCD'
   order: 36
 
-'hist_QCD_Pt50To80_MuEnriched.root':
+'hist_QCD_Pt50To80_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 409500.0
@@ -452,7 +437,7 @@
   yields-group: '9QCD'
   order: 37
 
-'hist_QCD_Pt80To120_MuEnriched.root':
+'hist_QCD_Pt80To120_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 95130.0
@@ -460,7 +445,7 @@
   yields-group: '9QCD'
   order: 38
 
-'hist_QCD_Pt120To170_MuEnriched.root':
+'hist_QCD_Pt120To170_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 22980.0
@@ -468,7 +453,7 @@
   yields-group: '9QCD'
   order: 39
 
-'hist_QCD_Pt170To300_MuEnriched.root':
+'hist_QCD_Pt170To300_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 7763
@@ -476,7 +461,7 @@
   yields-group: '9QCD'
   order: 40
 
-'hist_QCD_Pt300To470_MuEnriched.root':
+'hist_QCD_Pt300To470_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 699.1
@@ -484,7 +469,7 @@
   yields-group: '9QCD'
   order: 41
 
-'hist_QCD_Pt470To600_MuEnriched.root':
+'hist_QCD_Pt470To600_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 68.24
@@ -492,7 +477,7 @@
   yields-group: '9QCD'
   order: 42
 
-'hist_QCD_Pt600To800_MuEnriched.root':
+'hist_QCD_Pt600To800_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 21.37
@@ -500,7 +485,7 @@
   yields-group: '9QCD'
   order: 43
 
-'hist_QCD_Pt800To1000_MuEnriched.root':
+'hist_QCD_Pt800To1000_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 3.913
@@ -508,7 +493,7 @@
   yields-group: '9QCD'
   order: 44
 
-'hist_QCD_Pt1000_MuEnriched.root':
+'hist_QCD_Pt1000_EMEnriched.root':
   type: mc
   pretty-name: 'QCD'
   cross-section: 1.323
