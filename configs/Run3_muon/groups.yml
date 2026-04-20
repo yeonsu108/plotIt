@@ -56,7 +56,8 @@ GLFVSTct:
 
 GLFVSTus:
   line-color: '#a96b59'
-  legend: 'ST LFV^{tu#mu#tau}_{Scalar}'
+  legend: 'ST LFV'
+    #legend: 'ST LFV^{tu#mu#tau}_{Scalar}'
 
 GLFVSTuv:
   line-color: '#a96b59'

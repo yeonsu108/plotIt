@@ -330,7 +330,7 @@
 'hist_DYto2L-4Jets_MLL-10to50.root':
   type: mc
   pretty-name: 'DYJets'
-  cross-section: 5558.0
+  cross-section: 17380.0
   group: GZJets
   yields-group: '4Z+Jets'
   order: 31
@@ -343,13 +343,46 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'hist_WtoLNu-4Jets.root':
+'hist_WtoLNu-2Jets.root':
   type: mc
-  pretty-name: 'WtoLNu_4Jets'
-  cross-section: 55390
+  pretty-name: 'WtoLNu_2Jets'
+  cross-section: 64481.58
   group: GWJets
   yields-group: '6W+Jets'
   order: 33
+
+
+
+#'hist_WtoLNu-2Jets_0J.root':
+#  type: mc
+#  pretty-name: 'WtoLNu_2Jets'
+#  cross-section: 55760
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 33
+#'hist_WtoLNu-2Jets_1J.root':
+#  type: mc
+#  pretty-name: 'WtoLNu_2Jets'
+#  cross-section: 9529
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 33
+#'hist_WtoLNu-2Jets_2J.root':
+#  type: mc
+#  pretty-name: 'WtoLNu_2Jets'
+#  cross-section: 3532
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 33
+
+
+#'hist_WtoLNu-4Jets.root':
+#  type: mc
+#  pretty-name: 'WtoLNu_4Jets'
+#  cross-section: 55390
+#  group: GWJets
+#  yields-group: '6W+Jets'
+#  order: 33
 
 #'hist_WtoLNu_HT40To100.root':
 #  type: mc
@@ -405,13 +438,13 @@
 #  yields-group: '6W+Jets'
 #  order: 39
 
-#'hist_QCD_Pt15To20_MuEnriched.root':
-#  type: mc
-#  pretty-name: 'QCD'
-#  cross-section: 2982000.0
-#  group: GQCD
-#  yields-group: '9QCD'
-#  order: 34
+'hist_QCD_Pt15To20_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 2982000.0
+  group: GQCD
+  yields-group: '9QCD'
+  order: 34
 
 'hist_QCD_Pt20To30_MuEnriched.root':
   type: mc

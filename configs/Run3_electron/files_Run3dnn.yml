@@ -1,9 +1,9 @@
-'process0315_v2//electron/v2022/hist_Egamma.root':
+'DNN_out_0316//electron/v2022/hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
 
-'process0315_v2//electron/v2022/hist_TTtoLNu2Q.root':
+'DNN_out_0316//electron/v2022/hist_TTtoLNu2Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'TTtoLNu2Q'
@@ -12,7 +12,7 @@
   yields-group: '2\ttbar LJ'
   order: 6
 
-'process0315_v2//electron/v2022/hist_TTto2L2Nu.root':
+'DNN_out_0316//electron/v2022/hist_TTto2L2Nu.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'TTTo2L2Nu'
@@ -21,7 +21,7 @@
   yields-group: '1\ttbar LL'
   order: 7
 
-'process0315_v2//electron/v2022/hist_TTto4Q.root':
+'DNN_out_0316//electron/v2022/hist_TTto4Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'TTto4Q'
@@ -30,7 +30,7 @@
   yields-group: '3\ttbar Had'
   order: 8
 
-'process0315_v2//electron/v2022/hist_TBbar_s-channel_4fs.root':
+'DNN_out_0316//electron/v2022/hist_TBbar_s-channel_4fs.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTops'
@@ -39,7 +39,7 @@
   yields-group: '5Single Top'
   order: 9
 
-'process0315_v2//electron/v2022/hist_TbarB_s-channel_4fs.root':
+'DNN_out_0316//electron/v2022/hist_TbarB_s-channel_4fs.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTops'
@@ -48,7 +48,7 @@
   yields-group: '5Single Top'
   order: 10
 
-'process0315_v2//electron/v2022/hist_TBbarQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2022/hist_TBbarQ_t-channel_4fs.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTopt'
@@ -57,7 +57,7 @@
   yields-group: '5Single Top'
   order: 11
 
-'process0315_v2//electron/v2022/hist_TQbarto2Q-t-channel.root':
+'DNN_out_0316//electron/v2022/hist_TQbarto2Q-t-channel.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTopt'
@@ -66,7 +66,7 @@
   yields-group: '5Single Top'
   order: 12
 
-'process0315_v2//electron/v2022/hist_TQbartoLNu-t-channel.root':
+'DNN_out_0316//electron/v2022/hist_TQbartoLNu-t-channel.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTopt'
@@ -75,7 +75,7 @@
   yields-group: '5Single Top'
   order: 13
 
-'process0315_v2//electron/v2022/hist_TbarBQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2022/hist_TbarBQ_t-channel_4fs.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbart'
@@ -84,7 +84,7 @@
   yields-group: '5Single Top'
   order: 14
 
-'process0315_v2//electron/v2022/hist_TbarQto2Q-t-channel.root':
+'DNN_out_0316//electron/v2022/hist_TbarQto2Q-t-channel.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbart'
@@ -93,7 +93,7 @@
   yields-group: '5Single Top'
   order: 15
 
-'process0315_v2//electron/v2022/hist_TbarQtoLNu-t-channel.root':
+'DNN_out_0316//electron/v2022/hist_TbarQtoLNu-t-channel.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbart'
@@ -102,7 +102,7 @@
   yields-group: '5Single Top'
   order: 16
 
-'process0315_v2//electron/v2022/hist_TbarWplusto2L2Nu.root':
+'DNN_out_0316//electron/v2022/hist_TbarWplusto2L2Nu.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -111,7 +111,7 @@
   yields-group: '5Single Top'
   order: 17
 
-'process0315_v2//electron/v2022/hist_TbarWplustoLNu2Q.root':
+'DNN_out_0316//electron/v2022/hist_TbarWplustoLNu2Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -120,7 +120,7 @@
   yields-group: '5Single Top'
   order: 18
 
-'process0315_v2//electron/v2022/hist_TbarWplusto4Q.root':
+'DNN_out_0316//electron/v2022/hist_TbarWplusto4Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -129,7 +129,7 @@
   yields-group: '5Single Top'
   order: 19
 
-'process0315_v2//electron/v2022/hist_TWminusto2L2Nu.root':
+'DNN_out_0316//electron/v2022/hist_TWminusto2L2Nu.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -138,7 +138,7 @@
   yields-group: '5Single Top'
   order: 20
 
-'process0315_v2//electron/v2022/hist_TWminustoLNu2Q.root':
+'DNN_out_0316//electron/v2022/hist_TWminustoLNu2Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -147,7 +147,7 @@
   yields-group: '5Single Top'
   order: 21
 
-'process0315_v2//electron/v2022/hist_TWminusto4Q.root':
+'DNN_out_0316//electron/v2022/hist_TWminusto4Q.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'SingleTbartW'
@@ -156,7 +156,7 @@
   yields-group: '5Single Top'
   order: 22
 
-'process0315_v2//electron/v2022/hist_ttHto2B.root':
+'DNN_out_0316//electron/v2022/hist_ttHto2B.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'ttHto2B'
@@ -167,7 +167,7 @@
 
 
 
-'process0315_v2//electron/v2022/hist_WW.root':
+'DNN_out_0316//electron/v2022/hist_WW.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'WW'
@@ -176,7 +176,7 @@
   yields-group: '8VV'
   order: 26
 
-'process0315_v2//electron/v2022/hist_WZ.root':
+'DNN_out_0316//electron/v2022/hist_WZ.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'WZ'
@@ -185,7 +185,7 @@
   yields-group: '8VV'
   order: 27
 
-'process0315_v2//electron/v2022/hist_ZZ.root':
+'DNN_out_0316//electron/v2022/hist_ZZ.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'ZZ'
@@ -194,7 +194,7 @@
   yields-group: '8VV'
   order: 28
 
-'process0315_v2//electron/v2022/hist_DYto2L-4Jets_MLL-10to50.root':
+'DNN_out_0316//electron/v2022/hist_DYto2L-4Jets_MLL-10to50.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'DYJets'
@@ -203,7 +203,7 @@
   yields-group: '4Z+Jets'
   order: 31
 
-'process0315_v2//electron/v2022/hist_DYto2L-4Jets_MLL-50.root':
+'DNN_out_0316//electron/v2022/hist_DYto2L-4Jets_MLL-50.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'DYJets'
@@ -212,7 +212,7 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'process0315_v2//electron/v2022/hist_WtoLNu-2Jets.root':
+'DNN_out_0316//electron/v2022/hist_WtoLNu-2Jets.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'WtoLNu_2Jets'
@@ -221,7 +221,7 @@
   yields-group: '6W+Jets'
   order: 33
 
-'process0315_v2//electron/v2022/hist_QCD_Pt30To50_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt30To50_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -230,7 +230,7 @@
   yields-group: '9QCD'
   order: 36
 
-'process0315_v2//electron/v2022/hist_QCD_Pt50To80_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt50To80_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -239,7 +239,7 @@
   yields-group: '9QCD'
   order: 37
 
-'process0315_v2//electron/v2022/hist_QCD_Pt80To120_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt80To120_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -248,7 +248,7 @@
   yields-group: '9QCD'
   order: 38
 
-'process0315_v2//electron/v2022/hist_QCD_Pt120To170_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt120To170_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -257,7 +257,7 @@
   yields-group: '9QCD'
   order: 39
 
-'process0315_v2//electron/v2022/hist_QCD_Pt170To300_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt170To300_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -266,7 +266,7 @@
   yields-group: '9QCD'
   order: 40
 
-'process0315_v2//electron/v2022/hist_QCD_Pt300_EMEnriched.root':
+'DNN_out_0316//electron/v2022/hist_QCD_Pt300_EMEnriched.root':
   scale: 0.04669476544657575
   type: mc
   pretty-name: 'QCD'
@@ -275,12 +275,12 @@
   yields-group: '9QCD'
   order: 41
 
-'process0315_v2//electron/v2022EE/hist_Egamma.root':
+'DNN_out_0316//electron/v2022EE/hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
 
-'process0315_v2//electron/v2022EE/hist_TTtoLNu2Q.root':
+'DNN_out_0316//electron/v2022EE/hist_TTtoLNu2Q.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'TTtoLNu2Q'
@@ -289,7 +289,7 @@
   yields-group: '2\ttbar LJ'
   order: 6
 
-'process0315_v2//electron/v2022EE/hist_TTto2L2Nu.root':
+'DNN_out_0316//electron/v2022EE/hist_TTto2L2Nu.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'TTTo2L2Nu'
@@ -299,7 +299,7 @@
   order: 7
 
 
-'process0315_v2//electron/v2022EE/hist_TBbar_s-channel_4fs.root':
+'DNN_out_0316//electron/v2022EE/hist_TBbar_s-channel_4fs.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTops'
@@ -308,7 +308,7 @@
   yields-group: '5Single Top'
   order: 9
 
-'process0315_v2//electron/v2022EE/hist_TbarB_s-channel_4fs.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarB_s-channel_4fs.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTops'
@@ -317,7 +317,7 @@
   yields-group: '5Single Top'
   order: 10
 
-'process0315_v2//electron/v2022EE/hist_TBbarQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2022EE/hist_TBbarQ_t-channel_4fs.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTopt'
@@ -326,7 +326,7 @@
   yields-group: '5Single Top'
   order: 11
 
-'process0315_v2//electron/v2022EE/hist_TQbarto2Q-t-channel.root':
+'DNN_out_0316//electron/v2022EE/hist_TQbarto2Q-t-channel.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTopt'
@@ -335,7 +335,7 @@
   yields-group: '5Single Top'
   order: 12
 
-'process0315_v2//electron/v2022EE/hist_TQbartoLNu-t-channel.root':
+'DNN_out_0316//electron/v2022EE/hist_TQbartoLNu-t-channel.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTopt'
@@ -344,7 +344,7 @@
   yields-group: '5Single Top'
   order: 13
 
-'process0315_v2//electron/v2022EE/hist_TbarBQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarBQ_t-channel_4fs.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbart'
@@ -353,7 +353,7 @@
   yields-group: '5Single Top'
   order: 14
 
-'process0315_v2//electron/v2022EE/hist_TbarQto2Q-t-channel.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarQto2Q-t-channel.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbart'
@@ -362,7 +362,7 @@
   yields-group: '5Single Top'
   order: 15
 
-'process0315_v2//electron/v2022EE/hist_TbarQtoLNu-t-channel.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarQtoLNu-t-channel.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbart'
@@ -371,7 +371,7 @@
   yields-group: '5Single Top'
   order: 16
 
-'process0315_v2//electron/v2022EE/hist_TbarWplusto2L2Nu.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarWplusto2L2Nu.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -380,7 +380,7 @@
   yields-group: '5Single Top'
   order: 17
 
-'process0315_v2//electron/v2022EE/hist_TbarWplustoLNu2Q.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarWplustoLNu2Q.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -389,7 +389,7 @@
   yields-group: '5Single Top'
   order: 18
 
-'process0315_v2//electron/v2022EE/hist_TbarWplusto4Q.root':
+'DNN_out_0316//electron/v2022EE/hist_TbarWplusto4Q.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -398,7 +398,7 @@
   yields-group: '5Single Top'
   order: 19
 
-'process0315_v2//electron/v2022EE/hist_TWminusto2L2Nu.root':
+'DNN_out_0316//electron/v2022EE/hist_TWminusto2L2Nu.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -407,7 +407,7 @@
   yields-group: '5Single Top'
   order: 20
 
-'process0315_v2//electron/v2022EE/hist_TWminustoLNu2Q.root':
+'DNN_out_0316//electron/v2022EE/hist_TWminustoLNu2Q.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -416,7 +416,7 @@
   yields-group: '5Single Top'
   order: 21
 
-'process0315_v2//electron/v2022EE/hist_TWminusto4Q.root':
+'DNN_out_0316//electron/v2022EE/hist_TWminusto4Q.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'SingleTbartW'
@@ -425,7 +425,7 @@
   yields-group: '5Single Top'
   order: 22
 
-'process0315_v2//electron/v2022EE/hist_ttHto2B.root':
+'DNN_out_0316//electron/v2022EE/hist_ttHto2B.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'ttHto2B'
@@ -436,7 +436,7 @@
 
 
 
-'process0315_v2//electron/v2022EE/hist_WW.root':
+'DNN_out_0316//electron/v2022EE/hist_WW.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'WW'
@@ -445,7 +445,7 @@
   yields-group: '8VV'
   order: 26
 
-'process0315_v2//electron/v2022EE/hist_WZ.root':
+'DNN_out_0316//electron/v2022EE/hist_WZ.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'WZ'
@@ -454,7 +454,7 @@
   yields-group: '8VV'
   order: 27
 
-'process0315_v2//electron/v2022EE/hist_ZZ.root':
+'DNN_out_0316//electron/v2022EE/hist_ZZ.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'ZZ'
@@ -463,7 +463,7 @@
   yields-group: '8VV'
   order: 28
 
-'process0315_v2//electron/v2022EE/hist_DYto2L-4Jets_MLL-10to50.root':
+'DNN_out_0316//electron/v2022EE/hist_DYto2L-4Jets_MLL-10to50.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'DYJets'
@@ -472,7 +472,7 @@
   yields-group: '4Z+Jets'
   order: 31
 
-'process0315_v2//electron/v2022EE/hist_DYto2L-4Jets_MLL-50.root':
+'DNN_out_0316//electron/v2022EE/hist_DYto2L-4Jets_MLL-50.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'DYJets'
@@ -481,7 +481,7 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'process0315_v2//electron/v2022EE/hist_WtoLNu-2Jets.root':
+'DNN_out_0316//electron/v2022EE/hist_WtoLNu-2Jets.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'WtoLNu_2Jets'
@@ -489,7 +489,7 @@
   group: GWJets
   yields-group: '6W+Jets'
   order: 33
-'process0315_v2//electron/v2022EE/hist_QCD_Pt10To30_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt10To30_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -498,7 +498,7 @@
   yields-group: '9QCD'
   order: 34
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt30To50_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt30To50_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -507,7 +507,7 @@
   yields-group: '9QCD'
   order: 36
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt50To80_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt50To80_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -516,7 +516,7 @@
   yields-group: '9QCD'
   order: 37
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt80To120_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt80To120_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -525,7 +525,7 @@
   yields-group: '9QCD'
   order: 38
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt120To170_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt120To170_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -534,7 +534,7 @@
   yields-group: '9QCD'
   order: 39
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt170To300_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt170To300_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -543,7 +543,7 @@
   yields-group: '9QCD'
   order: 40
 
-'process0315_v2//electron/v2022EE/hist_QCD_Pt300_EMEnriched.root':
+'DNN_out_0316//electron/v2022EE/hist_QCD_Pt300_EMEnriched.root':
   scale: 0.15606467283529094
   type: mc
   pretty-name: 'QCD'
@@ -552,12 +552,12 @@
   yields-group: '9QCD'
   order: 41
 
-'process0315_v2//electron/v2023/hist_Egamma.root':
+'DNN_out_0316//electron/v2023/hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
 
-'process0315_v2//electron/v2023/hist_TTtoLNu2Q.root':
+'DNN_out_0316//electron/v2023/hist_TTtoLNu2Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'TTtoLNu2Q'
@@ -566,7 +566,7 @@
   yields-group: '2\ttbar LJ'
   order: 6
 
-'process0315_v2//electron/v2023/hist_TTto2L2Nu.root':
+'DNN_out_0316//electron/v2023/hist_TTto2L2Nu.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'TTTo2L2Nu'
@@ -575,7 +575,7 @@
   yields-group: '1\ttbar LL'
   order: 7
 
-'process0315_v2//electron/v2023/hist_TTto4Q.root':
+'DNN_out_0316//electron/v2023/hist_TTto4Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'TTto4Q'
@@ -584,7 +584,7 @@
   yields-group: '3\ttbar Had'
   order: 8
 
-'process0315_v2//electron/v2023/hist_TBbar_s-channel_4fs.root':
+'DNN_out_0316//electron/v2023/hist_TBbar_s-channel_4fs.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTops'
@@ -593,7 +593,7 @@
   yields-group: '5Single Top'
   order: 9
 
-'process0315_v2//electron/v2023/hist_TbarB_s-channel_4fs.root':
+'DNN_out_0316//electron/v2023/hist_TbarB_s-channel_4fs.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTops'
@@ -602,7 +602,7 @@
   yields-group: '5Single Top'
   order: 10
 
-'process0315_v2//electron/v2023/hist_TBbarQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2023/hist_TBbarQ_t-channel_4fs.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTopt'
@@ -611,7 +611,7 @@
   yields-group: '5Single Top'
   order: 11
 
-'process0315_v2//electron/v2023/hist_TQbarto2Q-t-channel.root':
+'DNN_out_0316//electron/v2023/hist_TQbarto2Q-t-channel.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTopt'
@@ -620,7 +620,7 @@
   yields-group: '5Single Top'
   order: 12
 
-'process0315_v2//electron/v2023/hist_TQbartoLNu-t-channel.root':
+'DNN_out_0316//electron/v2023/hist_TQbartoLNu-t-channel.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTopt'
@@ -629,7 +629,7 @@
   yields-group: '5Single Top'
   order: 13
 
-'process0315_v2//electron/v2023/hist_TbarBQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2023/hist_TbarBQ_t-channel_4fs.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbart'
@@ -638,7 +638,7 @@
   yields-group: '5Single Top'
   order: 14
 
-'process0315_v2//electron/v2023/hist_TbarQto2Q-t-channel.root':
+'DNN_out_0316//electron/v2023/hist_TbarQto2Q-t-channel.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbart'
@@ -647,7 +647,7 @@
   yields-group: '5Single Top'
   order: 15
 
-'process0315_v2//electron/v2023/hist_TbarQtoLNu-t-channel.root':
+'DNN_out_0316//electron/v2023/hist_TbarQtoLNu-t-channel.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbart'
@@ -656,7 +656,7 @@
   yields-group: '5Single Top'
   order: 16
 
-'process0315_v2//electron/v2023/hist_TbarWplusto2L2Nu.root':
+'DNN_out_0316//electron/v2023/hist_TbarWplusto2L2Nu.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -665,7 +665,7 @@
   yields-group: '5Single Top'
   order: 17
 
-'process0315_v2//electron/v2023/hist_TbarWplustoLNu2Q.root':
+'DNN_out_0316//electron/v2023/hist_TbarWplustoLNu2Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -674,7 +674,7 @@
   yields-group: '5Single Top'
   order: 18
 
-'process0315_v2//electron/v2023/hist_TbarWplusto4Q.root':
+'DNN_out_0316//electron/v2023/hist_TbarWplusto4Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -683,7 +683,7 @@
   yields-group: '5Single Top'
   order: 19
 
-'process0315_v2//electron/v2023/hist_TWminusto2L2Nu.root':
+'DNN_out_0316//electron/v2023/hist_TWminusto2L2Nu.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -692,7 +692,7 @@
   yields-group: '5Single Top'
   order: 20
 
-'process0315_v2//electron/v2023/hist_TWminustoLNu2Q.root':
+'DNN_out_0316//electron/v2023/hist_TWminustoLNu2Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -701,7 +701,7 @@
   yields-group: '5Single Top'
   order: 21
 
-'process0315_v2//electron/v2023/hist_TWminusto4Q.root':
+'DNN_out_0316//electron/v2023/hist_TWminusto4Q.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'SingleTbartW'
@@ -710,7 +710,7 @@
   yields-group: '5Single Top'
   order: 22
 
-'process0315_v2//electron/v2023/hist_ttHto2B.root':
+'DNN_out_0316//electron/v2023/hist_ttHto2B.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'ttHto2B'
@@ -721,7 +721,7 @@
 
 
 
-'process0315_v2//electron/v2023/hist_WW.root':
+'DNN_out_0316//electron/v2023/hist_WW.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'WW'
@@ -730,7 +730,7 @@
   yields-group: '8VV'
   order: 26
 
-'process0315_v2//electron/v2023/hist_WZ.root':
+'DNN_out_0316//electron/v2023/hist_WZ.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'WZ'
@@ -739,7 +739,7 @@
   yields-group: '8VV'
   order: 27
 
-'process0315_v2//electron/v2023/hist_ZZ.root':
+'DNN_out_0316//electron/v2023/hist_ZZ.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'ZZ'
@@ -748,7 +748,7 @@
   yields-group: '8VV'
   order: 28
 
-'process0315_v2//electron/v2023/hist_DYto2L-4Jets_MLL-10to50.root':
+'DNN_out_0316//electron/v2023/hist_DYto2L-4Jets_MLL-10to50.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'DYJets'
@@ -757,7 +757,7 @@
   yields-group: '4Z+Jets'
   order: 31
 
-'process0315_v2//electron/v2023/hist_DYto2L-4Jets_MLL-50.root':
+'DNN_out_0316//electron/v2023/hist_DYto2L-4Jets_MLL-50.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'DYJets'
@@ -766,7 +766,7 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'process0315_v2//electron/v2023/hist_WtoLNu-2Jets.root':
+'DNN_out_0316//electron/v2023/hist_WtoLNu-2Jets.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'WtoLNu_2Jets'
@@ -775,7 +775,7 @@
   yields-group: '6W+Jets'
   order: 33
 
-'process0315_v2//electron/v2023/hist_QCD_Pt30To50_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt30To50_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -784,7 +784,7 @@
   yields-group: '9QCD'
   order: 36
 
-'process0315_v2//electron/v2023/hist_QCD_Pt50To80_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt50To80_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -793,7 +793,7 @@
   yields-group: '9QCD'
   order: 37
 
-'process0315_v2//electron/v2023/hist_QCD_Pt80To120_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt80To120_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -802,7 +802,7 @@
   yields-group: '9QCD'
   order: 38
 
-'process0315_v2//electron/v2023/hist_QCD_Pt120To170_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt120To170_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -811,7 +811,7 @@
   yields-group: '9QCD'
   order: 39
 
-'process0315_v2//electron/v2023/hist_QCD_Pt170To300_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt170To300_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -820,7 +820,7 @@
   yields-group: '9QCD'
   order: 40
 
-'process0315_v2//electron/v2023/hist_QCD_Pt300_EMEnriched.root':
+'DNN_out_0316//electron/v2023/hist_QCD_Pt300_EMEnriched.root':
   scale: 0.10412113488175048
   type: mc
   pretty-name: 'QCD'
@@ -829,18 +829,18 @@
   yields-group: '9QCD'
   order: 41
 
-'process0315_v2//electron/v2023_BPix/hist_ST_TUElTau_Scalar.root':
+'DNN_out_0316//electron/v2023_BPix/hist_ST_TUElTau_Scalar.root':
   type: signal
   pretty-name: 'LFVSTus'
   cross-section: 0.071623
   group: GLFVSTus
   
-'process0315_v2//electron/v2023_BPix/hist_Egamma.root':
+'DNN_out_0316//electron/v2023_BPix/hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
 
-'process0315_v2//electron/v2023_BPix/hist_TTtoLNu2Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TTtoLNu2Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'TTtoLNu2Q'
@@ -849,7 +849,7 @@
   yields-group: '2\ttbar LJ'
   order: 6
 
-'process0315_v2//electron/v2023_BPix/hist_TTto2L2Nu.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TTto2L2Nu.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'TTTo2L2Nu'
@@ -858,7 +858,7 @@
   yields-group: '1\ttbar LL'
   order: 7
 
-'process0315_v2//electron/v2023_BPix/hist_TTto4Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TTto4Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'TTto4Q'
@@ -867,7 +867,7 @@
   yields-group: '3\ttbar Had'
   order: 8
 
-'process0315_v2//electron/v2023_BPix/hist_TBbar_s-channel_4fs.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TBbar_s-channel_4fs.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTops'
@@ -876,7 +876,7 @@
   yields-group: '5Single Top'
   order: 9
 
-'process0315_v2//electron/v2023_BPix/hist_TbarB_s-channel_4fs.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarB_s-channel_4fs.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTops'
@@ -885,7 +885,7 @@
   yields-group: '5Single Top'
   order: 10
 
-'process0315_v2//electron/v2023_BPix/hist_TBbarQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TBbarQ_t-channel_4fs.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTopt'
@@ -894,7 +894,7 @@
   yields-group: '5Single Top'
   order: 11
 
-'process0315_v2//electron/v2023_BPix/hist_TQbarto2Q-t-channel.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TQbarto2Q-t-channel.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTopt'
@@ -903,7 +903,7 @@
   yields-group: '5Single Top'
   order: 12
 
-'process0315_v2//electron/v2023_BPix/hist_TQbartoLNu-t-channel.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TQbartoLNu-t-channel.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTopt'
@@ -912,7 +912,7 @@
   yields-group: '5Single Top'
   order: 13
 
-'process0315_v2//electron/v2023_BPix/hist_TbarBQ_t-channel_4fs.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarBQ_t-channel_4fs.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbart'
@@ -921,7 +921,7 @@
   yields-group: '5Single Top'
   order: 14
 
-'process0315_v2//electron/v2023_BPix/hist_TbarQto2Q-t-channel.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarQto2Q-t-channel.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbart'
@@ -930,7 +930,7 @@
   yields-group: '5Single Top'
   order: 15
 
-'process0315_v2//electron/v2023_BPix/hist_TbarQtoLNu-t-channel.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarQtoLNu-t-channel.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbart'
@@ -939,7 +939,7 @@
   yields-group: '5Single Top'
   order: 16
 
-'process0315_v2//electron/v2023_BPix/hist_TbarWplusto2L2Nu.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarWplusto2L2Nu.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -948,7 +948,7 @@
   yields-group: '5Single Top'
   order: 17
 
-'process0315_v2//electron/v2023_BPix/hist_TbarWplustoLNu2Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarWplustoLNu2Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -957,7 +957,7 @@
   yields-group: '5Single Top'
   order: 18
 
-'process0315_v2//electron/v2023_BPix/hist_TbarWplusto4Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TbarWplusto4Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -966,7 +966,7 @@
   yields-group: '5Single Top'
   order: 19
 
-'process0315_v2//electron/v2023_BPix/hist_TWminusto2L2Nu.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TWminusto2L2Nu.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -975,7 +975,7 @@
   yields-group: '5Single Top'
   order: 20
 
-'process0315_v2//electron/v2023_BPix/hist_TWminustoLNu2Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TWminustoLNu2Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -984,7 +984,7 @@
   yields-group: '5Single Top'
   order: 21
 
-'process0315_v2//electron/v2023_BPix/hist_TWminusto4Q.root':
+'DNN_out_0316//electron/v2023_BPix/hist_TWminusto4Q.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'SingleTbartW'
@@ -993,7 +993,7 @@
   yields-group: '5Single Top'
   order: 22
 
-'process0315_v2//electron/v2023_BPix/hist_ttHto2B.root':
+'DNN_out_0316//electron/v2023_BPix/hist_ttHto2B.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'ttHto2B'
@@ -1004,7 +1004,7 @@
 
 
 
-'process0315_v2//electron/v2023_BPix/hist_WW.root':
+'DNN_out_0316//electron/v2023_BPix/hist_WW.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'WW'
@@ -1013,7 +1013,7 @@
   yields-group: '8VV'
   order: 26
 
-'process0315_v2//electron/v2023_BPix/hist_WZ.root':
+'DNN_out_0316//electron/v2023_BPix/hist_WZ.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'WZ'
@@ -1022,7 +1022,7 @@
   yields-group: '8VV'
   order: 27
 
-'process0315_v2//electron/v2023_BPix/hist_ZZ.root':
+'DNN_out_0316//electron/v2023_BPix/hist_ZZ.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'ZZ'
@@ -1031,7 +1031,7 @@
   yields-group: '8VV'
   order: 28
 
-'process0315_v2//electron/v2023_BPix/hist_DYto2L-4Jets_MLL-10to50.root':
+'DNN_out_0316//electron/v2023_BPix/hist_DYto2L-4Jets_MLL-10to50.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'DYJets'
@@ -1040,7 +1040,7 @@
   yields-group: '4Z+Jets'
   order: 31
 
-'process0315_v2//electron/v2023_BPix/hist_DYto2L-4Jets_MLL-50.root':
+'DNN_out_0316//electron/v2023_BPix/hist_DYto2L-4Jets_MLL-50.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'DYJets'
@@ -1049,7 +1049,7 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'process0315_v2//electron/v2023_BPix/hist_WtoLNu-2Jets.root':
+'DNN_out_0316//electron/v2023_BPix/hist_WtoLNu-2Jets.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'WtoLNu_2Jets'
@@ -1057,7 +1057,7 @@
   group: GWJets
   yields-group: '6W+Jets'
   order: 33
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt10To30_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt10To30_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1066,7 +1066,7 @@
   yields-group: '9QCD'
   order: 34
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt30To50_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt30To50_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1075,7 +1075,7 @@
   yields-group: '9QCD'
   order: 36
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt50To80_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt50To80_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1084,7 +1084,7 @@
   yields-group: '9QCD'
   order: 37
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt80To120_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt80To120_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1093,7 +1093,7 @@
   yields-group: '9QCD'
   order: 38
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt120To170_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt120To170_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1102,7 +1102,7 @@
   yields-group: '9QCD'
   order: 39
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt170To300_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt170To300_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1111,7 +1111,7 @@
   yields-group: '9QCD'
   order: 40
 
-'process0315_v2//electron/v2023_BPix/hist_QCD_Pt300_EMEnriched.root':
+'DNN_out_0316//electron/v2023_BPix/hist_QCD_Pt300_EMEnriched.root':
   scale: 0.055302284240048544
   type: mc
   pretty-name: 'QCD'
@@ -1120,12 +1120,12 @@
   yields-group: '9QCD'
   order: 41
 
-'process0315_v2//electron/v15_2024tmp/hist_Egamma.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_Egamma.root':
   type: data
   pretty-name: 'Data'
   group: GData
 
-'process0315_v2//electron/v15_2024tmp/hist_TTtoLNu2Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TTtoLNu2Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'TTtoLNu2Q'
@@ -1134,7 +1134,7 @@
   yields-group: '2\ttbar LJ'
   order: 6
 
-'process0315_v2//electron/v15_2024tmp/hist_TTto2L2Nu.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TTto2L2Nu.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'TTTo2L2Nu'
@@ -1143,7 +1143,7 @@
   yields-group: '1\ttbar LL'
   order: 7
 
-'process0315_v2//electron/v15_2024tmp/hist_TTto4Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TTto4Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'TTto4Q'
@@ -1152,7 +1152,7 @@
   yields-group: '3\ttbar Had'
   order: 8
 
-    #'process0315_v2//electron/v15_2024tmp/hist_TBbar_s-channel_4fs.root':
+    #'DNN_out_0316//electron/v15_2024tmp/hist_TBbar_s-channel_4fs.root':
     #  scale: 0.6378107059745308
     #  type: mc
     #  pretty-name: 'SingleTops'
@@ -1161,7 +1161,7 @@
     #  yields-group: '5Single Top'
     #  order: 9
     #
-    #'process0315_v2//electron/v15_2024tmp/hist_TbarB_s-channel_4fs.root':
+    #'DNN_out_0316//electron/v15_2024tmp/hist_TbarB_s-channel_4fs.root':
     #  scale: 0.6378107059745308
     #  type: mc
     #  pretty-name: 'SingleTops'
@@ -1170,7 +1170,7 @@
     #  yields-group: '5Single Top'
     #  order: 10
 
-    #'process0315_v2//electron/v15_2024tmp/hist_TBbarQ_t-channel_4fs.root':
+    #'DNN_out_0316//electron/v15_2024tmp/hist_TBbarQ_t-channel_4fs.root':
     #  scale: 0.6378107059745308
     #  type: mc
     #  pretty-name: 'SingleTopt'
@@ -1179,7 +1179,7 @@
     #  yields-group: '5Single Top'
     #  order: 11
 
-'process0315_v2//electron/v15_2024tmp/hist_TQbarto2Q-t-channel.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TQbarto2Q-t-channel.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTopt'
@@ -1188,7 +1188,7 @@
   yields-group: '5Single Top'
   order: 12
 
-'process0315_v2//electron/v15_2024tmp/hist_TQbartoLNu-t-channel.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TQbartoLNu-t-channel.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTopt'
@@ -1197,7 +1197,7 @@
   yields-group: '5Single Top'
   order: 13
 
-    #'process0315_v2//electron/v15_2024tmp/hist_TbarBQ_t-channel_4fs.root':
+    #'DNN_out_0316//electron/v15_2024tmp/hist_TbarBQ_t-channel_4fs.root':
     #  scale: 0.6378107059745308
     #  type: mc
     #  pretty-name: 'SingleTbart'
@@ -1206,7 +1206,7 @@
     #  yields-group: '5Single Top'
     #  order: 14
 
-'process0315_v2//electron/v15_2024tmp/hist_TbarQto2Q-t-channel.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TbarQto2Q-t-channel.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbart'
@@ -1215,7 +1215,7 @@
   yields-group: '5Single Top'
   order: 15
 
-'process0315_v2//electron/v15_2024tmp/hist_TbarQtoLNu-t-channel.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TbarQtoLNu-t-channel.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbart'
@@ -1224,7 +1224,7 @@
   yields-group: '5Single Top'
   order: 16
 
-'process0315_v2//electron/v15_2024tmp/hist_TbarWplusto2L2Nu.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TbarWplusto2L2Nu.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1233,7 +1233,7 @@
   yields-group: '5Single Top'
   order: 17
 
-'process0315_v2//electron/v15_2024tmp/hist_TbarWplustoLNu2Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TbarWplustoLNu2Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1242,7 +1242,7 @@
   yields-group: '5Single Top'
   order: 18
 
-'process0315_v2//electron/v15_2024tmp/hist_TbarWplusto4Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TbarWplusto4Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1251,7 +1251,7 @@
   yields-group: '5Single Top'
   order: 19
 
-'process0315_v2//electron/v15_2024tmp/hist_TWminusto2L2Nu.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TWminusto2L2Nu.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1260,7 +1260,7 @@
   yields-group: '5Single Top'
   order: 20
 
-'process0315_v2//electron/v15_2024tmp/hist_TWminustoLNu2Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TWminustoLNu2Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1269,7 +1269,7 @@
   yields-group: '5Single Top'
   order: 21
 
-'process0315_v2//electron/v15_2024tmp/hist_TWminusto4Q.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_TWminusto4Q.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'SingleTbartW'
@@ -1278,7 +1278,7 @@
   yields-group: '5Single Top'
   order: 22
 
-'process0315_v2//electron/v15_2024tmp/hist_ttHto2B.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_ttHto2B.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'ttHto2B'
@@ -1287,7 +1287,7 @@
   yields-group: '7tt+X'
   order: 23
 
-'process0315_v2//electron/v15_2024tmp/hist_WW.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_WW.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'WW'
@@ -1296,7 +1296,7 @@
   yields-group: '8VV'
   order: 26
 
-'process0315_v2//electron/v15_2024tmp/hist_WZ.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_WZ.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'WZ'
@@ -1305,7 +1305,7 @@
   yields-group: '8VV'
   order: 27
 
-'process0315_v2//electron/v15_2024tmp/hist_ZZ.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_ZZ.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'ZZ'
@@ -1314,7 +1314,7 @@
   yields-group: '8VV'
   order: 28
 
-'process0315_v2//electron/v15_2024tmp/hist_DYto2L-4Jets_MLL-10to50.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_DYto2L-4Jets_MLL-10to50.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'DYJets'
@@ -1323,7 +1323,7 @@
   yields-group: '4Z+Jets'
   order: 31
 
-'process0315_v2//electron/v15_2024tmp/hist_DYto2L-4Jets_MLL-50.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_DYto2L-4Jets_MLL-50.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'DYJets'
@@ -1332,7 +1332,7 @@
   yields-group: '4Z+Jets'
   order: 32
 
-'process0315_v2//electron/v15_2024tmp/hist_WtoLNu-2Jets.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_WtoLNu-2Jets_0J.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'WtoLNu_2Jets'
@@ -1340,7 +1340,7 @@
   group: GWJets
   yields-group: '6W+Jets'
   order: 33
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt10To30_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt10To30_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1349,7 +1349,7 @@
   yields-group: '9QCD'
   order: 34
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt30To50_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt30To50_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1358,7 +1358,7 @@
   yields-group: '9QCD'
   order: 36
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt50To80_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt50To80_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1367,7 +1367,7 @@
   yields-group: '9QCD'
   order: 37
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt80To120_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt80To120_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1376,7 +1376,7 @@
   yields-group: '9QCD'
   order: 38
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt120To170_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt120To170_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1385,7 +1385,7 @@
   yields-group: '9QCD'
   order: 39
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt170To300_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt170To300_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'
@@ -1394,7 +1394,7 @@
   yields-group: '9QCD'
   order: 40
 
-'process0315_v2//electron/v15_2024tmp/hist_QCD_Pt300_EMEnriched.root':
+'DNN_out_0316//electron/v15_2024tmp/hist_QCD_Pt300_EMEnriched.root':
   scale: 0.6378107059745308
   type: mc
   pretty-name: 'QCD'

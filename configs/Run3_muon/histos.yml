@@ -130,11 +130,19 @@
 
 
 #PV
+'h_nvtx_pu_S1':
+  y-axis-format: "%1% / bin"
+  save-extensions: ['pdf', 'png']
+
 'h_nvtx_notausf_S1':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 'h_nvtx_S2':
+  y-axis-format: "%1% / bin"
+  save-extensions: ['pdf', 'png']
+
+'h_nvtx_pu_S3':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 

@@ -4,10 +4,11 @@ configuration:
   luminosity-label: '%1$.1f fb^{-1} (13.6 TeV)'
   experiment: " CMS"
   experiment-label-paper: true
-  extra-label: " "
-  root: ''
-  luminosity: 9451 
-  luminosity-error: 0.013
+  extra-label: " WIP"
+  root: './process0619_27/muon/2023_postprocess'
+  luminosity: 17794 
+  luminosity-error: 0.0
+  syst-only: true
   error-fill-style: 3254
   error-fill-color: "#ee556270"
   staterror-fill-style: 3145
@@ -28,6 +29,16 @@ files:
   include: ['files.yml']
   #include: ['files_fake.yml']
 
+legend:
+  #position: [0.18, 0.70, 0.96, 0.88]
+  position: [0.35, 0.70, 0.96, 0.88]
+  columns: 4
+
+groups:
+  include: ['groups.yml']
+plots:
+  include: ['histos_yield.yml']
+
 systematics:
   #- tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
   #- other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
@@ -44,18 +55,15 @@ systematics:
   #- muExtra: {type: const, value: 1.005}
   #- tes
   #- jer
-  #- jesHEM
   #- jesAbsolute
   #- jesAbsolute_2018
   #- jesBBEC1
   #- jesBBEC1_2018
-  #- jesFlavorQCD
   #- jesFlavorPureGluon
   #- jesFlavorPureQuark
   #- jesFlavorPureCharm
   #- jesFlavorPureBottom
   #- jesRelativeBal
-  #- jesRelativeSample_2018
   ##- metUnclust
   #- btaghf
   #- btaglf
@@ -66,25 +74,17 @@ systematics:
   #- btagcferr1
   #- btagcferr2
   #- pu
-  #- prefire
   #- toppt
   #- muid
   #- muiso
   #- mutrg
   #- muhighpt
   ##- muonhighscale
-  ##- tauidjet
   #- tauFFstat
   #- tauFFsyst
-  #- tauFFptdep
   #- tauidjetUncert0
   #- tauidjetUncert1
   #- tauidjetSystalleras
-  #- tauidjetSystUL2018
-  #- tauidjetSystdm0UL2018
-  #- tauidjetSystdm1UL2018
-  #- tauidjetSystdm10UL2018
-  #- tauidjetSystdm11UL2018
   #- tauidjetHighptstat_bin1
   #- tauidjetHighptstat_bin2
   #- tauidjetHighptsyst
@@ -95,32 +95,10 @@ systematics:
   #- mescale: {type: shape, on: '_LFV'}
   #- renscale: {type: shape, on: 'TTTo'}
   #- renscale: {type: shape, on: '_LFV'}
-  #- facscale: {type: shape, on: 'TTTo'}
-  #- facscale: {type: shape, on: '_LFV'}
   #- isr: {type: shape, on: 'TTTo'}
   #- isr: {type: shape, on: '_LFV'}
   #- fsr: {type: shape, on: 'TTTo'}
   #- fsr: {type: shape, on: '_LFV'}
   #- pdfalphas: {type: shape, on: 'TTTo'}
-  ##- pdfenv: {type: shape, on: 'TTTo'}
-  ##- pdfenv: {type: shape, on: '_LFV'}
   #- hdamp: {type: shape, on: 'TTTo'}
   #- tune: {type: shape, on: 'TTTo'}
-
-plots:
-  #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
-  #include: ['histos_yield.yml']
-  #include: ['histos_dnn.yml']
-  #include: ['histos_FFcalc.yml']
-  #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
-  #include: ['histos_yield_S5.yml']
-  include: ['histos_yield.yml', 'histos_test.yml', 'histos_reco.yml']
-
-legend:
-  #position: [0.18, 0.70, 0.96, 0.88]
-  #position: [0.35, 0.70, 0.96, 0.88]
-  position: [0.37, 0.65, 0.93, 0.88]
-  columns: 4
-
-groups:
-  include: ['groups.yml']

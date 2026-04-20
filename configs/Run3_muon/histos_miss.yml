@@ -1,0 +1,14 @@
+
+#jet2 pt
+'h_jet2_pt_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_jet2_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+'h_jet2_pt_S4_all':
+  save-extensions: ['pdf', 'png']
+
+'h_jet2_pt_S5_all':
+  save-extensions: ['pdf', 'png']
+
