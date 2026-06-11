@@ -1,4 +1,58 @@
-'h_ncleanjetspass_S1_all':
+#'h_ncleanjetspass_S1_nobtag':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  signal-normalize-data: false
+#  sort-by-yields: true 
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 0
+#  yields-title: 'One muon'
+#  #post-fit: true #this only affect ratio band - no mc stat.
+#
+#'h_ncleanjetspass_S2_nobtag':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  signal-normalize-data: false
+#  sort-by-yields: true 
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 1
+#  yields-title: 'One tau'
+#  #post-fit: true
+#
+#'h_ncleanjetspass_S3_nobtag':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  signal-normalize-data: false
+#  sort-by-yields: true 
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 2
+#  yields-title: 'OS muon tau'
+#  #post-fit: true
+#
+#'h_ncleanjetspass_S4_nobtag':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  signal-normalize-data: false
+#  sort-by-yields: true 
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 3
+#  yields-title: 'nJets$\geq$ 3'
+#  #post-fit: true
+#
+#'h_ncleanjetspass_S5_nobtag':
+#  y-axis: "Events"
+#  y-axis-format: "%1% / %2$.2f"
+#  signal-normalize-data: false
+#  sort-by-yields: true
+#  save-extensions: ['pdf', 'png']
+#  for-yields: true
+#  yields-table-order: 4
+#  yields-title: 'One b-tagged jet'
+ 
+'h_ncleanjetspass_S1':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
@@ -9,7 +63,7 @@
   yields-title: 'One muon'
   #post-fit: true #this only affect ratio band - no mc stat.
 
-'h_ncleanjetspass_S2_all':
+'h_ncleanjetspass_S2':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
@@ -20,7 +74,7 @@
   yields-title: 'One tau'
   #post-fit: true
 
-'h_ncleanjetspass_S3_all':
+'h_ncleanjetspass_S3':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
@@ -31,7 +85,7 @@
   yields-title: 'OS muon tau'
   #post-fit: true
 
-'h_ncleanjetspass_S4_all':
+'h_ncleanjetspass_S4':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
@@ -42,7 +96,7 @@
   yields-title: 'nJets$\geq$ 3'
   #post-fit: true
 
-'h_ncleanjetspass_S5_all':
+'h_ncleanjetspass_S5':
   y-axis: "Events"
   y-axis-format: "%1% / %2$.2f"
   signal-normalize-data: false
