@@ -389,13 +389,13 @@
 #  yields-group: '9QCD'
 #  order: 33
 
-'hist_QCD_Pt20To30_MuEnriched.root':
-  type: mc
-  pretty-name: 'QCD'
-  cross-section: 2518000.0
-  group: GQCD
-  yields-group: '9QCD'
-  order: 34
+    #'hist_QCD_Pt20To30_MuEnriched.root':
+    #  type: mc
+    #  pretty-name: 'QCD'
+    #  cross-section: 2518000.0
+    #  group: GQCD
+    #  yields-group: '9QCD'
+    #  order: 34
 
 'hist_QCD_Pt30To50_MuEnriched.root':
   type: mc

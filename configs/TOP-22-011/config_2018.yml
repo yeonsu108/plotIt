@@ -46,7 +46,7 @@ systematics:
   - jer
   - jesHEM
   - jesAbsolute
-  - jesAbsolute_2018
+  #- jesAbsolute_2018
   - jesBBEC1
   - jesBBEC1_2018
   #- jesFlavorQCD
