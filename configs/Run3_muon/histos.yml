@@ -190,21 +190,6 @@
 'h_puppimet_pt_S5':
   save-extensions: ['pdf', 'png']
 
-'h_met_pt_notausf_S1':
-  save-extensions: ['pdf', 'png']
-
-'h_met_pt_S2':
-  save-extensions: ['pdf', 'png']
-
-'h_met_pt_S3':
-  save-extensions: ['pdf', 'png']
-
-'h_met_pt_S4':
-  save-extensions: ['pdf', 'png']
-
-'h_met_pt_S5':
-  save-extensions: ['pdf', 'png']
-
 #PuppiMET phi
 'h_puppimet_phi_notausf_S1':
   y-axis-format: "%1% / %2$.2f"
@@ -230,26 +215,6 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_met_phi_notausf_S1':
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_met_phi_S2':
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_met_phi_S3':
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_met_phi_S4':
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_met_phi_S5':
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
 #PuppiMET sumEt
 'h_puppisum_et_notausf_S1':
   save-extensions: ['pdf', 'png']
@@ -270,21 +235,6 @@
   save-extensions: ['pdf', 'png']
 
 #Muon pt
-'h_muon1_pt_notausf_S1_rebinned':
-  save-extensions: ['pdf','png']
-
-'h_muon1_pt_S2_rebinned':
-  save-extensions: ['pdf','png']
-
-'h_muon1_pt_S3_rebinned':
-  save-extensions: ['pdf','png']
-
-'h_muon1_pt_S4_rebinned':
-  save-extensions: ['pdf','png']
-
-'h_muon1_pt_S5_rebinned':
-  save-extensions: ['pdf','png']
-
 'h_muon1_pt_notausf_S1':
   save-extensions: ['pdf','png']
 
@@ -328,7 +278,7 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-#Muon + MET MT
+#Lepton + MET MT
 'h_lepMET_mt_notausf_S1':
   save-extensions: ['pdf', 'png']
 
@@ -345,24 +295,6 @@
   save-extensions: ['pdf', 'png']
 
 'h_lepMET_mt_S5':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_notausf_S1':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_S1':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_S2':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_S3':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_S4':
-  save-extensions: ['pdf', 'png']
-
-'h_muMET_mt_S5':
   save-extensions: ['pdf', 'png']
 
 #tau pt
@@ -425,7 +357,7 @@
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-#Muon tau dR & System Variables
+#Lepton + tau system variables
 'h_leptau_dEta_S2':
   x-axis: "\\Delta\\eta(\\mu, \\tau_{h})"
   y-axis-format: "%1% / %2$.2f"
@@ -486,26 +418,6 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_mutau_dR_S2':
-  x-axis: "\\Delta R(\\mu, \\tau_{h})"
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_dR_S3':
-  x-axis: "\\Delta R(\\mu, \\tau_{h})"
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_dR_S4':
-  x-axis: "\\Delta R(\\mu, \\tau_{h})"
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_dR_S5':
-  x-axis: "\\Delta R(\\mu, \\tau_{h})"
-  y-axis-format: "%1% / %2$.2f"
-  save-extensions: ['pdf', 'png']
-
 #Muon tau mass
 'h_leptau_mass_S2':
   x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
@@ -541,22 +453,6 @@
 'h_leptau_mass_blind_S5':
   x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
   blinded-range: [100, 200]
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_mass_S2':
-  x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_mass_S3':
-  x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_mass_S4':
-  x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
-  save-extensions: ['pdf', 'png']
-
-'h_mutau_mass_S5':
-  x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
   save-extensions: ['pdf', 'png']
 
 #jet ht
@@ -749,6 +645,33 @@
 
 'h_bjet1_btag_S5':
   y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+#st_met
+'h_st_met_S4':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
+'h_st_met_S5':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
+'h_st_met_binwidth_S4':
+  y-axis: "Events / GeV"
+  y-axis-format: "%1%"
+  scale-option: "WIDTH"
+  rebin: 2
+  log-y: true
+  log-y-axis-range: [0.02, 200]
+  save-extensions: ['pdf', 'png']
+
+'h_st_met_binwidth_S5':
+  y-axis: "Events / GeV"
+  y-axis-format: "%1%"
+  scale-option: "WIDTH"
+  rebin: 2
+  log-y: true
+  log-y-axis-range: [0.02, 110]
   save-extensions: ['pdf', 'png']
 
 #DNN Kinematic & Topology Variables

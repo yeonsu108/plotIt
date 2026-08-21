@@ -126,8 +126,8 @@ plots:
   include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield.yml']
   #include: ['histos_dnn.yml']
-  #include: ['histos_v1.yml', 'histos_v2.yml', 'histos_reco.yml']
-  #include: ['histos_yield.yml', 'histos_v2.yml', 'histos_reco.yml']
+  #include: ['histos.yml', 'histos.yml', 'histos_reco.yml']
+  #include: ['histos_yield.yml', 'histos.yml', 'histos_reco.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]
