@@ -1,9 +1,9 @@
-plotIt/external/include
-plotIt/external/lib
-plotIt/external/share
-plotIt/external/tclap-1.2.1
-plotIt/external/yaml-cpp-yaml-cpp-0.6.2
-plotIt/plotIt
+external/include
+external/lib
+external/share
+external/tclap-1.2.1
+external/yaml-cpp-yaml-cpp-0.6.2
+plotIt
 
 *pdf
 *png
@@ -13,3 +13,7 @@ plotIt/plotIt
 *.obj
 *.so
 *.d
+configs/Run3_electron/config_Run3.yml
+configs/Run3_electron/files_Run3.yml
+configs/Run3_muon/config_Run3.yml
+configs/Run3_muon/files_Run3.yml
