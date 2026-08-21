@@ -4,9 +4,9 @@ configuration:
   luminosity-label: '%1$.1f fb^{-1} (13.6 TeV)'
   experiment: " CMS"
   experiment-label-paper: true
-  extra-label: " WIP"
+  extra-label: " "
   root: ''
-  luminosity: 109000.0 
+  luminosity: 9451 
   luminosity-error: 0.013
   error-fill-style: 3254
   error-fill-color: "#ee556270"
@@ -25,7 +25,7 @@ configuration:
   #syst-only: true
 
 files: 
-  include: ['files24.yml']
+  include: ['files.yml']
   #include: ['files_fake.yml']
 
 systematics:
@@ -66,10 +66,13 @@ systematics:
   - btagcferr1
   - btagcferr2
   - pu
+  #- prefire
   - toppt
-  - elecid
-  - elecreco
-  - electrg
+  - muid
+  - muiso
+  - mutrg
+  #- muhighpt
+  - muonhighscale
   - tauidjet
   #- tauFFstat
   #- tauFFsyst
@@ -77,23 +80,23 @@ systematics:
   - tauidjetUncert0
   - tauidjetUncert1
   - tauidjetSystalleras
-  - tauidjetSyst2024
-  - tauidjetSystdm02024
-  - tauidjetSystdm12024
-  - tauidjetSystdm102024
-  - tauidjetSystdm112024
-  - tauidjetSystTESdm02024
-  - tauidjetSystTESdm12024
-  - tauidjetSystTESdm102024
-  - tauidjetSystTESdm112024
-  - tauidjetStat1dm02024
-  - tauidjetStat1dm12024
-  - tauidjetStat1dm102024
-  - tauidjetStat1dm112024
-  - tauidjetStat2dm02024
-  - tauidjetStat2dm12024
-  - tauidjetStat2dm102024
-  - tauidjetStat2dm112024
+  - tauidjetSyst2023_postBPix
+  - tauidjetSystdm02023_postBPix
+  - tauidjetSystdm12023_postBPix
+  - tauidjetSystdm102023_postBPix
+  - tauidjetSystdm112023_postBPix
+  - tauidjetSystTESdm02023_postBPix
+  - tauidjetSystTESdm12023_postBPix
+  - tauidjetSystTESdm102023_postBPix
+  - tauidjetSystTESdm112023_postBPix
+  - tauidjetStat1dm02023_postBPix
+  - tauidjetStat1dm12023_postBPix
+  - tauidjetStat1dm102023_postBPix
+  - tauidjetStat1dm112023_postBPix
+  - tauidjetStat2dm02023_postBPix
+  - tauidjetStat2dm12023_postBPix
+  - tauidjetStat2dm102023_postBPix
+  - tauidjetStat2dm112023_postBPix
   - tauidjetHighptstat_bin1
   - tauidjetHighptstat_bin2
   - tauidjetHighptsyst
@@ -116,8 +119,6 @@ systematics:
   #- hdamp: {type: shape, on: 'TTTo'}
   #- tune: {type: shape, on: 'TTTo'}
 
-
-
 plots:
   #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
   #include: ['histos_yield.yml']
@@ -125,7 +126,7 @@ plots:
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield_S5.yml']
   #include: ['histos_dnn.yml']
-  #include: ['histos_v1.yml', 'histos_v2.yml', 'histos_reco.yml']
+  #include: ['histos_yield.yml', 'histos_v1.yml', 'histos_v2.yml', 'histos_reco.yml']
   include: ['histos_yield.yml', 'histos_v2.yml', 'histos_reco.yml']
 
 legend:

@@ -18,6 +18,20 @@
 #  labels:
 #    - {text: 'b2j3', position: [0.781, 0.806], size: 18}
 
+#'h_dnn_pred_S5':
+#  x-axis: "DNN score"
+#  y-axis: "Events"
+#  y-axis-format: "%1% / bin"
+#  log-x: true
+#  sort-by-yields: true
+#  blinded-range: [7., 99.99]
+#  save-extensions: ['pdf','png']
+#  for-yields: true
+#  yields-table-order: 0
+#  yields-title: 'DNN'
+#  signal-normalize-data: false
+
+
 'h_dnn_pred_S5':
   x-axis: "DNN score"
   y-axis: "Events"
@@ -25,7 +39,8 @@
   log-y: true
   log-x: true
   sort-by-yields: true
-  blinded-range: [7., 99.99]
+  x-axis-range: [0.01, 100.]
+  blinded-range: [5., 99.99]
   save-extensions: ['pdf','png']
   for-yields: true
   yields-table-order: 0

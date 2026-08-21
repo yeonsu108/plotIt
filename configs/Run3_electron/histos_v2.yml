@@ -1,413 +1,413 @@
 #electron multiplicities
-'h_nelepass_S1_nobtag':
+'h_nelepass_S1':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_nelepass_S2_nobtag':
+'h_nelepass_S2':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_nelepass_S3_nobtag':
+'h_nelepass_S3':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_nelepass_S4_nobtag':
+'h_nelepass_S4':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_nelepass_S5_nobtag':
+'h_nelepass_S5':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 #tau multiplicities
-'h_ncleantaupass_S1_nobtag':
+'h_ncleantaupass_notausf_S1':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleantaupass_S2_nobtag':
+'h_ncleantaupass_S2':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleantaupass_S3_nobtag':
+'h_ncleantaupass_S3':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleantaupass_S4_nobtag':
+'h_ncleantaupass_S4':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleantaupass_S5_nobtag':
+'h_ncleantaupass_S5':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 #jet multiplicities
-'h_ncleanjetspass_S1_nobtag':
+'h_ncleanjetspass_notausf_S1':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleanjetspass_S2_nobtag':
+'h_ncleanjetspass_S2':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleanjetspass_S3_nobtag':
+'h_ncleanjetspass_S3':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleanjetspass_S4_nobtag':
+'h_ncleanjetspass_S4':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
   save-extensions: ['pdf', 'png']
 
-'h_ncleanjetspass_S5_nobtag':
+'h_ncleanjetspass_S5':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 #b jet multiplicities
-'h_ncleanbjetspass_S1_nobtag':
+'h_ncleanbjetspass_notausf_S1':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
-'h_ncleanbjetspass_S2_nobtag':
+'h_ncleanbjetspass_S2':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
-'h_ncleanbjetspass_S3_nobtag':
+'h_ncleanbjetspass_S3':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
-'h_ncleanbjetspass_S4_nobtag':
+'h_ncleanbjetspass_S4':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
-'h_ncleanbjetspass_S5_nobtag':
+'h_ncleanbjetspass_S5':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 #PV
-'h_nvtx_S1_nobtag':
+'h_nvtx_notausf_S1':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_nvtx_S2_nobtag':
+'h_nvtx_S2':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_nvtx_S3_nobtag':
+'h_nvtx_S3':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_nvtx_S4_nobtag':
+'h_nvtx_S4':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_nvtx_S5_nobtag':
+'h_nvtx_S5':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 #electron pt
-'h_electron1_pt_S1_nobtag':
+'h_electron1_pt_S1':
   save-extensions: ['pdf','png']
 
-'h_electron1_pt_S2_nobtag':
+'h_electron1_pt_S2':
   save-extensions: ['pdf','png']
 
-'h_electron1_pt_S3_nobtag':
+'h_electron1_pt_S3':
   save-extensions: ['pdf','png']
 
-'h_electron1_pt_S4_nobtag':
+'h_electron1_pt_S4':
   save-extensions: ['pdf','png']
 
-'h_electron1_pt_S5_nobtag':
+'h_electron1_pt_S5':
   save-extensions: ['pdf','png']
 
 #electron eta
-'h_electron1_eta_S1_nobtag':
+'h_electron1_eta_notausf_S1':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_electron1_eta_S2_nobtag':
+'h_electron1_eta_S2':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_electron1_eta_S3_nobtag':
+'h_electron1_eta_S3':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_electron1_eta_S4_nobtag':
+'h_electron1_eta_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_electron1_eta_S5_nobtag':
+'h_electron1_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #electron + MET MT
-'h_lepMET_mt_S1_nobtag':
+'h_lepMET_mt_notausf_S1':
   save-extensions: ['pdf', 'png']
 
-'h_lepMET_mt_S2_nobtag':
+'h_lepMET_mt_S2':
   save-extensions: ['pdf', 'png']
 
-'h_lepMET_mt_S3_nobtag':
+'h_lepMET_mt_S3':
   save-extensions: ['pdf', 'png']
 
-'h_lepMET_mt_S4_nobtag':
+'h_lepMET_mt_S4':
   save-extensions: ['pdf', 'png']
 
-'h_lepMET_mt_S5_nobtag':
+'h_lepMET_mt_S5':
   save-extensions: ['pdf', 'png']
 
 #tau pt
-'h_tau1_pt_S2_nobtag':
+'h_tau1_pt_S2':
   save-extensions: ['pdf', 'png']
 
-'h_tau1_pt_S3_nobtag':
+'h_tau1_pt_S3':
   save-extensions: ['pdf', 'png']
 
-'h_tau1_pt_S4_nobtag':
+'h_tau1_pt_S4':
   save-extensions: ['pdf', 'png']
 
-'h_tau1_pt_S5_nobtag':
+'h_tau1_pt_S5':
   save-extensions: ['pdf', 'png']
 
 #tau eta
-'h_tau1_eta_S2_nobtag':
+'h_tau1_eta_S2':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_eta_S3_nobtag':
+'h_tau1_eta_S3':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_eta_S4_nobtag':
+'h_tau1_eta_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_eta_S5_nobtag':
+'h_tau1_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #tau decayMode
-'h_tau1_decayMode_S2_nobtag':
+'h_tau1_decayMode_S2':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_decayMode_S3_nobtag':
+'h_tau1_decayMode_S3':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_decayMode_S4_nobtag':
+'h_tau1_decayMode_S4':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
-'h_tau1_decayMode_S5_nobtag':
+'h_tau1_decayMode_S5':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
 #Muon tau dR
-'h_leptau_dR_S2_nobtag':
+'h_leptau_dR_S2':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_leptau_dR_S3_nobtag':
+'h_leptau_dR_S3':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_leptau_dR_S4_nobtag':
+'h_leptau_dR_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_leptau_dR_S5_nobtag':
+'h_leptau_dR_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #Muon tau mass
-'h_leptau_mass_S2_nobtag':
+'h_leptau_mass_S2':
   save-extensions: ['pdf', 'png']
 
-'h_leptau_mass_S3_nobtag':
+'h_leptau_mass_S3':
   save-extensions: ['pdf', 'png']
 
-'h_leptau_mass_S4_nobtag':
+'h_leptau_mass_S4':
   save-extensions: ['pdf', 'png']
 
-'h_leptau_mass_S5_nobtag':
+'h_leptau_mass_S5':
   save-extensions: ['pdf', 'png']
 
 #jet ht for bSF check
-'h_jet_ht_S3_nobtag':
+'h_jet_ht_S3':
   rebin: 2
   save-extensions: ['pdf', 'png']
 
-'h_jet_ht_S4_nobtag':
+'h_jet_ht_S4':
   rebin: 2
   save-extensions: ['pdf', 'png']
 
-'h_jet_ht_S5_nobtag':
+'h_jet_ht_S5':
   rebin: 2
   save-extensions: ['pdf', 'png']
 
 #jet1 pt
-'h_jet1_pt_S1_nobtag':
+'h_jet1_pt_S1':
   save-extensions: ['pdf', 'png']
 
-'h_jet1_pt_S2_nobtag':
+'h_jet1_pt_S2':
   save-extensions: ['pdf', 'png']
 
-'h_jet1_pt_S3_nobtag':
+'h_jet1_pt_S3':
   save-extensions: ['pdf', 'png']
 
-'h_jet1_pt_S4_nobtag':
+'h_jet1_pt_S4':
   save-extensions: ['pdf', 'png']
 
-'h_jet1_pt_S5_nobtag':
+'h_jet1_pt_S5':
   save-extensions: ['pdf', 'png']
 
 #jet1 eta
-'h_jet1_eta_S1_nobtag':
+'h_jet1_eta_notausf_S1':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_eta_S2_nobtag':
+'h_jet1_eta_S2':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_eta_S3_nobtag':
+'h_jet1_eta_S3':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_eta_S4_nobtag':
+'h_jet1_eta_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_eta_S5_nobtag':
+'h_jet1_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 
-'h_jet1_btag_S1_nobtag':
+'h_jet1_btag_S1':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_btag_S2_nobtag':
+'h_jet1_btag_S2':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_btag_S3_nobtag':
+'h_jet1_btag_S3':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_btag_S4_nobtag':
+'h_jet1_btag_S4':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet1_btag_S5_nobtag':
+'h_jet1_btag_S5':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 #jet2 pt
-'h_jet2_pt_S4_nobtag':
+'h_jet2_pt_S4':
   save-extensions: ['pdf', 'png']
 
-'h_jet2_pt_S5_nobtag':
+'h_jet2_pt_S5':
   save-extensions: ['pdf', 'png']
 
 #jet2 eta
-'h_jet2_eta_S4_nobtag':
+'h_jet2_eta_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet2_eta_S5_nobtag':
+'h_jet2_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #jet2 btag
-'h_jet2_btag_S4_nobtag':
+'h_jet2_btag_S4':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet2_btag_S5_nobtag':
+'h_jet2_btag_S5':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 #jet3 pt
-'h_jet3_pt_S4_nobtag':
+'h_jet3_pt_S4':
   save-extensions: ['pdf', 'png']
 
-'h_jet3_pt_S5_nobtag':
+'h_jet3_pt_S5':
   save-extensions: ['pdf', 'png']
 
 #jet3 eta
-'h_jet3_eta_S4_nobtag':
+'h_jet3_eta_S4':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-'h_jet3_eta_S5_nobtag':
+'h_jet3_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #jet3 btag
-'h_jet3_btag_S4_nobtag':
+'h_jet3_btag_S4':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
-'h_jet3_btag_S5_nobtag':
+'h_jet3_btag_S5':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
 #bjet at step5
-'h_bjet1_pt_S5_nobtag':
+'h_bjet1_pt_S5':
   save-extensions: ['pdf', 'png']
 
-'h_bjet1_eta_S5_nobtag':
+'h_bjet1_eta_S5':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
 #st_met
-'h_st_met_S4_nobtag':
+'h_st_met_S4':
   rebin: 2
   save-extensions: ['pdf', 'png']
 
-#'h_st_met_binwidth_S4_nobtag':
+#'h_st_met_binwidth_S4':
 #  y-axis: "Events / GeV"
 #  y-axis-format: "%1%"
 #  scale-option: "WIDTH"
@@ -416,11 +416,11 @@
 #  log-y-axis-range: [0.02, 200]
 #  save-extensions: ['pdf', 'png']
 #
-#'h_st_met_S5_nobtag':
+#'h_st_met_S5':
 #  rebin: 2
 #  save-extensions: ['pdf', 'png']
 #
-#'h_st_met_binwidth_S5_nobtag':
+#'h_st_met_binwidth_S5':
 #  y-axis: "Events / GeV"
 #  y-axis-format: "%1%"
 #  scale-option: "WIDTH"

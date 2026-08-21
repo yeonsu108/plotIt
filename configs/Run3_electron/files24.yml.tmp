@@ -1,86 +1,86 @@
-#'hist_TUETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTus'
-#  cross-section: 0.1139
-#  group: GLFVSTus
-#  order: 1
-#
-#'hist_TUETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVSTuv'
-#  cross-section: 0.5267
-#  group: GLFVSTuv
-#  order: 2
-#
-#'hist_TUETau-LFV-Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVSTut'
-#  cross-section: 2.411
-#  group: GLFVSTut
-#  order: 3
-#
-#'hist_TCETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTcs'
-#  cross-section: 0.007285
-#  group: GLFVSTcs
-#  order: 4
+'hist_TUETau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTus'
+  cross-section: 0.1139
+  group: GLFVSTus
+  order: 1
 
-#'hist_TCETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVSTcv'
-#  cross-section: 0.03788
-#  group: GLFVSTcv
-#  order: 5
+'hist_TUETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVSTuv'
+  cross-section: 0.5267
+  group: GLFVSTuv
+  order: 2
 
-    #'hist_TCETau-LFV-Tensor.root':
-    #  type: signal
-    #  pretty-name: 'LFVSTct'
-    #  cross-section: 0.1874
-    #  group: GLFVSTct
-    #  order: 6
-    #
-    #'hist_TTtoUETau-LFV-Scalar.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTus'
-    #  cross-section: 0.002003
-    #  group: GLFVTTus
-    #  order: 7
-    #
-    #'hist_TTtoUETau-LFV-Vector.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTuv'
-    #  cross-section: 0.01604
-    #  group: GLFVTTuv
-    #  order: 8
-    #
-    #'hist_TTtoUETau-LFV-Tensor.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTut'
-    #  cross-section: 0.09636
-    #  group: GLFVTTut
-    #  order: 9
-    #
-    #'hist_TTtoCETau-LFV-Scalar.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTcs'
-    #  cross-section: 0.002006
-    #  group: GLFVTTcs
-    #  order: 10
+'hist_TUETau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTut'
+  cross-section: 2.411
+  group: GLFVSTut
+  order: 3
 
-    #'hist_TTtoCETau-LFV-Vector.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTcv'
-    #  cross-section: 0.01583
-    #  group: GLFVTTcv
-    #  order: 11
+'hist_TCETau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTcs'
+  cross-section: 0.007285
+  group: GLFVSTcs
+  order: 4
 
-    #'hist_TTtoCETau-LFV-Tensor.root':
-    #  type: signal
-    #  pretty-name: 'LFVTTct'
-    #  cross-section: 0.09645
-    #  group: GLFVTTct
-    #  order: 12
+'hist_TCETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVSTcv'
+  cross-section: 0.03788
+  group: GLFVSTcv
+  order: 5
+
+'hist_TCETau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTct'
+  cross-section: 0.1874
+  group: GLFVSTct
+  order: 6
+
+'hist_TTtoUETau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTus'
+  cross-section: 0.002003
+  group: GLFVTTus
+  order: 7
+
+'hist_TTtoUETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVTTuv'
+  cross-section: 0.01604
+  group: GLFVTTuv
+  order: 8
+
+'hist_TTtoUETau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTut'
+  cross-section: 0.09636
+  group: GLFVTTut
+  order: 9
+
+'hist_TTtoCETau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTcs'
+  cross-section: 0.002006
+  group: GLFVTTcs
+  order: 10
+
+'hist_TTtoCETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVTTcv'
+  cross-section: 0.01583
+  group: GLFVTTcv
+  order: 11
+
+'hist_TTtoCETau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTct'
+  cross-section: 0.09645
+  group: GLFVTTct
+  order: 12
 
 'hist_Egamma.root':
   type: data
@@ -338,37 +338,37 @@
   yields-group: '6W+Jets'
   order: 43
 
-    #'hist_WtoLNu-4Jets_1J.root':
-    #  type: mc
-    #  pretty-name: 'WtoLNu'
-    #  cross-section: 10340.0
-    #  group: GWJets
-    #  yields-group: '6W+Jets'
-    #  order: 43
-    #
-    #'hist_WtoLNu-4Jets_2J.root':
-    #  type: mc
-    #  pretty-name: 'WtoLNu'
-    #  cross-section: 3312.0
-    #  group: GWJets
-    #  yields-group: '6W+Jets'
-    #  order: 43
-    #
-    #'hist_WtoLNu-4Jets_3J.root':
-    #  type: mc
-    #  pretty-name: 'WtoLNu'
-    #  cross-section: 975.2
-    #  group: GWJets
-    #  yields-group: '6W+Jets'
-    #  order: 43
-    #
-    #'hist_WtoLNu-4Jets_4J.root':
-    #  type: mc
-    #  pretty-name: 'WtoLNu'
-    #  cross-section: 464.9
-    #  group: GWJets
-    #  yields-group: '6W+Jets'
-    #  order: 43
+'hist_WtoLNu-4Jets_1J.root':
+  type: mc
+  pretty-name: 'WtoLNu'
+  cross-section: 10340.0
+  group: GWJets
+  yields-group: '6W+Jets'
+  order: 43
+
+'hist_WtoLNu-4Jets_2J.root':
+  type: mc
+  pretty-name: 'WtoLNu'
+  cross-section: 3312.0
+  group: GWJets
+  yields-group: '6W+Jets'
+  order: 43
+
+'hist_WtoLNu-4Jets_3J.root':
+  type: mc
+  pretty-name: 'WtoLNu'
+  cross-section: 975.2
+  group: GWJets
+  yields-group: '6W+Jets'
+  order: 43
+
+'hist_WtoLNu-4Jets_4J.root':
+  type: mc
+  pretty-name: 'WtoLNu'
+  cross-section: 464.9
+  group: GWJets
+  yields-group: '6W+Jets'
+  order: 43
 
 'hist_QCD_Pt15To20_EMEnriched.root':
   type: mc

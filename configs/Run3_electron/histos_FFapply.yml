@@ -1,0 +1,176 @@
+#jet multiplicities
+'h_ncleanjetspass_S5':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+
+#b jet multiplicities
+'h_ncleanbjetspass_S5':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+
+#PV
+'h_nvtx_S5':
+  y-axis-format: "%1% / bin"
+  save-extensions: ['pdf', 'png']
+
+
+#MET pt
+'h_puppimet_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#MET phi
+'h_puppimet_phi_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#Muon pt
+'h_electron1_pt_S5':
+  save-extensions: ['pdf','png']
+
+
+#Muon eta
+'h_electron1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#Muon + MET MT
+'h_lepMET_mt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#tau pt
+'h_tau1_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#tau eta
+'h_tau1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+#tau decayMode
+'h_tau1_decayMode_S5':
+  y-axis-format: "%1% / bin"
+  save-extensions: ['pdf', 'png']
+
+#Muon tau dR
+'h_leptau_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#Muon tau mass
+'h_leptau_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+#jet ht for bSF check
+'h_jet_ht_S5':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
+
+#jet1 pt
+'h_jet1_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet1 eta
+'h_jet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#jet1 btag
+'h_jet1_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+
+#jet2 pt
+'h_jet2_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet2 eta
+'h_jet2_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#jet2 btag
+'h_jet2_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 pt
+'h_jet3_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 eta
+'h_jet3_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#jet3 btag
+'h_jet3_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+
+#bjet at step5
+'h_bjet1_pt_S5':
+  save-extensions: ['pdf', 'png']
+
+'h_bjet1_eta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+
+#reco
+'h_chi2_S5':
+  x-axis-range: [0, 950]
+  y-axis-format: "%1% / %2$.0f"
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_mass_S5':
+  x-axis: 'm_{t}^{hadronic} (GeV)'
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_pt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_pt_notoppt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMW_mass_S5':
+  x-axis: 'm_{W}^{hadronic} (GeV)'
+  save-extensions: ['pdf', 'png']
+
+
+##st_met
+#'h_st_met_S5':
+#  rebin: 2
+#  save-extensions: ['pdf', 'png']
+#
+#'h_st_met_binwidth_S5':
+#  y-axis: "Events / GeV"
+#  y-axis-format: "%1%"
+#  scale-option: "WIDTH"
+#  rebin: 2
+#  log-y: true
+#  log-y-axis-range: [0.02, 110]
+#  save-extensions: ['pdf', 'png']

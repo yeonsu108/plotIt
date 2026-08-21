@@ -29,68 +29,80 @@ files:
   #include: ['files_fake.yml']
 
 systematics:
-  #- tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
-  #- other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
-  #- other_xsec2: {type: const, value: 1.1, on: 'ST_s'}
-  #- other_xsec3: {type: const, value: 1.1, on: 'ST_t'}
-  #- other_xsec5: {type: const, value: 1.1, on: 'ttH'}
-  #- other_xsec6: {type: const, value: 1.1, on: 'TTWJets'}
-  #- other_xsec7: {type: const, value: 1.1, on: 'TTZ'}
-  #- other_xsec8: {type: const, value: 1.1, on: 'WJetsToLNu_HT'}
-  #- other_xsec9: {type: const, value: 1.1, on: 'WW'}
-  #- other_xsec10: {type: const, value: 1.1, on: 'WZ'}
-  #- other_xsec11: {type: const, value: 1.1, on: 'ZZ'}
-  #- qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
+  - tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
+  - other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
+  - other_xsec2: {type: const, value: 1.1, on: 'ST_s'}
+  - other_xsec3: {type: const, value: 1.1, on: 'ST_t'}
+  - other_xsec5: {type: const, value: 1.1, on: 'ttH'}
+  - other_xsec6: {type: const, value: 1.1, on: 'TTWJets'}
+  - other_xsec7: {type: const, value: 1.1, on: 'TTZ'}
+  - other_xsec8: {type: const, value: 1.1, on: 'WJetsToLNu_HT'}
+  - other_xsec9: {type: const, value: 1.1, on: 'WW'}
+  - other_xsec10: {type: const, value: 1.1, on: 'WZ'}
+  - other_xsec11: {type: const, value: 1.1, on: 'ZZ'}
+  - qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
   #- muExtra: {type: const, value: 1.005}
-  #- tes
-  #- jer
-  #- jesHEM
-  #- jesAbsolute
-  #- jesAbsolute_2018
-  #- jesBBEC1
-  #- jesBBEC1_2018
-  #- jesFlavorQCD
-  #- jesFlavorPureGluon
-  #- jesFlavorPureQuark
-  #- jesFlavorPureCharm
-  #- jesFlavorPureBottom
-  #- jesRelativeBal
-  #- jesRelativeSample_2018
-  ##- metUnclust
-  #- btaghf
-  #- btaglf
-  #- btaghfstats1
-  #- btaglfstats1
-  #- btaghfstats2
-  #- btaglfstats2
-  #- btagcferr1
-  #- btagcferr2
-  #- pu
+  - tes
+  - jer
+  - jesHEM
+  - jesAbsolute
+  - jesAbsolute_v12
+  - jesBBEC1
+  - jesBBEC1_v12
+  - jesFlavorQCD
+  - jesFlavorPureGluon
+  - jesFlavorPureQuark
+  - jesFlavorPureCharm
+  - jesFlavorPureBottom
+  - jesRelativeBal
+  - jesRelativeSample_v12
+  - metUnclust
+  - btaghf
+  - btaglf
+  - btaghfstats1
+  - btaglfstats1
+  - btaghfstats2
+  - btaglfstats2
+  - btagcferr1
+  - btagcferr2
+  - pu
   #- prefire
-  #- toppt
-  #- muid
-  #- muiso
-  #- mutrg
+  - toppt
+  - muid
+  - muiso
+  - mutrg
   #- muhighpt
-  ##- muonhighscale
-  ##- tauidjet
+  - muonhighscale
+  - tauidjet
   #- tauFFstat
   #- tauFFsyst
   #- tauFFptdep
-  #- tauidjetUncert0
-  #- tauidjetUncert1
-  #- tauidjetSystalleras
-  #- tauidjetSystUL2018
-  #- tauidjetSystdm0UL2018
-  #- tauidjetSystdm1UL2018
-  #- tauidjetSystdm10UL2018
-  #- tauidjetSystdm11UL2018
-  #- tauidjetHighptstat_bin1
-  #- tauidjetHighptstat_bin2
-  #- tauidjetHighptsyst
-  #- tauidjetHighptextrap
-  #- tauidmu
-  #- tauidel
+  - tauidjetUncert0
+  - tauidjetUncert1
+  - tauidjetSystalleras
+  - tauidjetSyst2022_postEE
+  - tauidjetSystdm02022_postEE
+  - tauidjetSystdm12022_postEE
+  - tauidjetSystdm102022_postEE
+  - tauidjetSystdm112022_postEE
+  - tauidjetSystTESdm02022_postEE
+  - tauidjetSystTESdm12022_postEE
+  - tauidjetSystTESdm102022_postEE
+  - tauidjetSystTESdm112022_postEE
+  - tauidjetStat1dm02022_postEE
+  - tauidjetStat1dm12022_postEE
+  - tauidjetStat1dm102022_postEE
+  - tauidjetStat1dm112022_postEE
+  - tauidjetStat2dm02022_postEE
+  - tauidjetStat2dm12022_postEE
+  - tauidjetStat2dm102022_postEE
+  - tauidjetStat2dm112022_postEE
+  - tauidjetHighptstat_bin1
+  - tauidjetHighptstat_bin2
+  - tauidjetHighptsyst
+  - tauidjetHighptextrap
+  - tauidmu
+  - tauidel
   #- mescale: {type: shape, on: 'TTTo'}
   #- mescale: {type: shape, on: '_LFV'}
   #- renscale: {type: shape, on: 'TTTo'}
@@ -107,14 +119,17 @@ systematics:
   #- hdamp: {type: shape, on: 'TTTo'}
   #- tune: {type: shape, on: 'TTTo'}
 
+
+
 plots:
   #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
   #include: ['histos_yield.yml']
-  #include: ['histos_dnn.yml']
   #include: ['histos_FFcalc.yml']
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield_S5.yml']
-  include: ['histos_yield.yml', 'histos_test.yml']
+  #include: ['histos_dnn.yml']
+  #include: ['histos_yield.yml', 'histos_v1.yml', 'histos_v2.yml', 'histos_reco.yml']
+  include: ['histos_yield.yml', 'histos_v2.yml', 'histos_reco.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]

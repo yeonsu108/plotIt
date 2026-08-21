@@ -1,88 +1,88 @@
-#'hist_TUETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTus'
-#  cross-section: 0.1139
-#  group: GLFVSTus
-#  order: 1
-#
-#'hist_TUETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVSTuv'
-#  cross-section: 0.5267
-#  group: GLFVSTuv
-#  order: 2
-#
-#'hist_TUETau-LFV-Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVSTut'
-#  cross-section: 2.411
-#  group: GLFVSTut
-#  order: 3
-#
-#'hist_TCETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVSTcs'
-#  cross-section: 0.007285
-#  group: GLFVSTcs
-#  order: 4
-#
-#'hist_TCETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVSTcv'
-#  cross-section: 0.03788
-#  group: GLFVSTcv
-#  order: 5
-#
-#'hist_TCETau-LFV-Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVSTct'
-#  cross-section: 0.1874
-#  group: GLFVSTct
-#  order: 6
-#
-#'hist_TTtoUETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVTTus'
-#  cross-section: 0.002003
-#  group: GLFVTTus
-#  order: 7
-#
-#'hist_TTtoUETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVTTuv'
-#  cross-section: 0.01604
-#  group: GLFVTTuv
-#  order: 8
-#
-#'hist_TTtoUETau-LFV-Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVTTut'
-#  cross-section: 0.09636
-#  group: GLFVTTut
-#  order: 9
-#
-#'hist_TTtoCETau-LFV-Scalar.root':
-#  type: signal
-#  pretty-name: 'LFVTTcs'
-#  cross-section: 0.002006
-#  group: GLFVTTcs
-#  order: 10
-#
-#'hist_TTtoCETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVTTcv'
-#  cross-section: 0.01583
-#  group: GLFVTTcv
-#  order: 11
-#
-#'hist_TTtoCETau-LFV-Tensor.root':
-#  type: signal
-#  pretty-name: 'LFVTTct'
-#  cross-section: 0.09645
-#  group: GLFVTTct
-#  order: 12
+'hist_TUMuTau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTus'
+  cross-section: 0.1138
+  group: GLFVSTus
+  order: 1
 
-'hist_Egamma.root':
+'hist_TUMuTau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVSTuv'
+  cross-section: 0.5266
+  group: GLFVSTuv
+  order: 2
+
+'hist_TUMuTau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTut'
+  cross-section: 2.401
+  group: GLFVSTut
+  order: 3
+
+'hist_TCMuTau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVSTcs'
+  cross-section: 0.007288
+  group: GLFVSTcs
+  order: 4
+
+'hist_TCMuTau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVSTcv'
+  cross-section: 0.03753
+  group: GLFVSTcv
+  order: 5
+
+'hist_TCMuTau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVSTct'
+  cross-section: 0.1849
+  group: GLFVSTct
+  order: 6
+
+'hist_TTtoUMuTau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTus'
+  cross-section: 0.0044485
+  group: GLFVTTus
+  order: 7
+
+'hist_TTtoUMuTau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVTTuv'
+  cross-section: 0.035555
+  group: GLFVTTuv
+  order: 8
+
+'hist_TTtoUMuTau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTut'
+  cross-section: 0.21333
+  group: GLFVTTut
+  order: 9
+
+'hist_TTtoCMuTau-LFV-Scalar.root':
+  type: signal
+  pretty-name: 'LFVTTcs'
+  cross-section: 0.0044485
+  group: GLFVTTcs
+  order: 10
+
+'hist_TTtoCMuTau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVTTcv'
+  cross-section: 0.035555
+  group: GLFVTTcv
+  order: 11
+
+'hist_TTtoCMuTau-LFV-Tensor.root':
+  type: signal
+  pretty-name: 'LFVTTct'
+  cross-section: 0.21333
+  group: GLFVTTct
+  order: 12
+
+'hist_Muon.root':
   type: data
   pretty-name: 'Data'
   group: GData
@@ -327,59 +327,98 @@
   yields-group: '8VV'
   order: 28
 
-#'hist_QCD_Pt10To30_EMEnriched.root':
-#  type: mc
-#  pretty-name: 'QCD'
-#  cross-section: 6854000.0
-#  group: GQCD
-#  yields-group: '9QCD'
-#  order: 34
+    #'hist_QCD_Pt15To20_MuEnriched.root':
+    #  type: mc
+    #  pretty-name: 'QCD'
+    #  cross-section: 2982000.0
+    #  group: GQCD
+    #  yields-group: '9QCD'
+    #  order: 34
 
-'hist_QCD_Pt30To50_EMEnriched.root':
+'hist_QCD_Pt20To30_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 6686000.0
+  cross-section: 2679000.0
   group: GQCD
   yields-group: '9QCD'
-  order: 29
+  order: 35
 
-'hist_QCD_Pt50To80_EMEnriched.root':
+'hist_QCD_Pt30To50_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 2118000.0
+  cross-section: 1497000.0
   group: GQCD
   yields-group: '9QCD'
-  order: 30
+  order: 36
 
-'hist_QCD_Pt80To120_EMEnriched.root':
+'hist_QCD_Pt50To80_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 394100.0
+  cross-section: 409500.0
   group: GQCD
   yields-group: '9QCD'
-  order: 31
+  order: 37
 
-'hist_QCD_Pt120To170_EMEnriched.root':
+'hist_QCD_Pt80To120_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 72170.0
+  cross-section: 95130.0
   group: GQCD
   yields-group: '9QCD'
-  order: 32
+  order: 38
 
-'hist_QCD_Pt170To300_EMEnriched.root':
+'hist_QCD_Pt120To170_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 17920.0
+  cross-section: 22980.0
   group: GQCD
   yields-group: '9QCD'
-  order: 33
+  order: 39
 
-'hist_QCD_Pt300_EMEnriched.root':
+'hist_QCD_Pt170To300_MuEnriched.root':
   type: mc
   pretty-name: 'QCD'
-  cross-section: 1224.0
+  cross-section: 7763
   group: GQCD
   yields-group: '9QCD'
-  order: 34
+  order: 40
 
+'hist_QCD_Pt300To470_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 699.1
+  group: GQCD
+  yields-group: '9QCD'
+  order: 41
+
+'hist_QCD_Pt470To600_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 68.24
+  group: GQCD
+  yields-group: '9QCD'
+  order: 42
+
+'hist_QCD_Pt600To800_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 21.37
+  group: GQCD
+  yields-group: '9QCD'
+  order: 43
+
+'hist_QCD_Pt800To1000_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 3.913
+  group: GQCD
+  yields-group: '9QCD'
+  order: 44
+
+'hist_QCD_Pt1000_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 1.323
+  group: GQCD
+  yields-group: '9QCD'
+  order: 45

@@ -1,86 +1,86 @@
 #'hist_TUMuTau-LFV-Scalar.root':
 #  type: signal
 #  pretty-name: 'LFVSTus'
-#  cross-section: 0.076246
+#  cross-section: 0.1138
 #  group: GLFVSTus
 #  order: 1
 #
 'hist_TUMuTau-LFV-Vector.root':
   type: signal
   pretty-name: 'LFVSTuv'
-  cross-section: 0.352822
+  cross-section: 0.5266
   group: GLFVSTuv
-  order: 1
-
+  order: 2
+#
 #'hist_TUMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVSTut'
-#  cross-section: 1.60867
+#  cross-section: 2.401
 #  group: GLFVSTut
-#  order: 1
+#  order: 3
 #
 #'hist_TCMuTau-LFV-Scalar.root':
 #  type: signal
 #  pretty-name: 'LFVSTcs'
-#  cross-section: 0.00488296
+#  cross-section: 0.007288
 #  group: GLFVSTcs
-#  order: 1
+#  order: 4
 #
 #'hist_TCMuTau-LFV-Vector.root':
 #  type: signal
 #  pretty-name: 'LFVSTcv'
-#  cross-section: 0.0251451
+#  cross-section: 0.03753
 #  group: GLFVSTcv
-#  order: 3
-
+#  order: 5
+#
 #'hist_TCMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVSTct'
-#  cross-section: 0.123883
+#  cross-section: 0.1849
 #  group: GLFVSTct
-#  order: 1
+#  order: 6
 #
 #'hist_TTtoUMuTau-LFV-Scalar.root':
 #  type: signal
 #  pretty-name: 'LFVTTus'
-#  cross-section: 0.00298052
+#  cross-section: 0.0044485
 #  group: GLFVTTus
-#  order: 1
+#  order: 7
 #
 'hist_TTtoUMuTau-LFV-Vector.root':
   type: signal
   pretty-name: 'LFVTTuv'
-  cross-section: 0.023822
+  cross-section: 0.035555
   group: GLFVTTuv
-  order: 2
-
+  order: 8
+#
 #'hist_TTtoUMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVTTut'
-#  cross-section: 0.142932
+#  cross-section: 0.21333
 #  group: GLFVTTut
-#  order: 1
+#  order: 9
 #
 #'hist_TTtoCMuTau-LFV-Scalar.root':
 #  type: signal
 #  pretty-name: 'LFVTTcs'
-#  cross-section: 0.00298052
+#  cross-section: 0.0044485
 #  group: GLFVTTcs
-#  order: 1
+#  order: 10
 #
 #'hist_TTtoCMuTau-LFV-Vector.root':
 #  type: signal
 #  pretty-name: 'LFVTTcv'
-#  cross-section: 0.023822
+#  cross-section: 0.035555
 #  group: GLFVTTcv
-#  order: 4
+#  order: 11
 #
 #'hist_TTtoCMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVTTct'
-#  cross-section: 0.142932
+#  cross-section: 0.21333
 #  group: GLFVTTct
-#  order: 1
+#  order: 12
 
 'hist_Muon.root':
   type: data
@@ -327,13 +327,13 @@
   yields-group: '8VV'
   order: 28
 
-'hist_QCD_Pt15To20_MuEnriched.root':
-  type: mc
-  pretty-name: 'QCD'
-  cross-section: 2982000.0
-  group: GQCD
-  yields-group: '9QCD'
-  order: 34
+    #'hist_QCD_Pt15To20_MuEnriched.root':
+    #  type: mc
+    #  pretty-name: 'QCD'
+    #  cross-section: 2982000.0
+    #  group: GQCD
+    #  yields-group: '9QCD'
+    #  order: 34
 
 'hist_QCD_Pt20To30_MuEnriched.root':
   type: mc
