@@ -1,8 +1,88 @@
+#electron multiplicities
+'h_nelepass_notausf_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_nelepass_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_nelepass_S2':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_nelepass_S3':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_nelepass_S4':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_nelepass_S5':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+#tau multiplicities
+'h_ncleantaupass_notausf_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleantaupass_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleantaupass_S2':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleantaupass_S3':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleantaupass_S4':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleantaupass_S5':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
 #jet multiplicities
 'h_ncleanjetspass_notausf_S1':
   y-axis-format: "%1% / bin"
   log-y: true 
   sort-by-yields: true 
+  save-extensions: ['pdf', 'png']
+
+'h_ncleanjetspass_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
   save-extensions: ['pdf', 'png']
 
 'h_ncleanjetspass_S2':
@@ -32,6 +112,12 @@
 
 #b jet multiplicities
 'h_ncleanbjetspass_notausf_S1':
+  y-axis-format: "%1% / bin"
+  log-y: true
+  sort-by-yields: true
+  save-extensions: ['pdf', 'png']
+
+'h_ncleanbjetspass_S1':
   y-axis-format: "%1% / bin"
   log-y: true
   sort-by-yields: true
@@ -67,6 +153,10 @@
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
 
+'h_nvtx_S1':
+  y-axis-format: "%1% / bin"
+  save-extensions: ['pdf', 'png']
+
 'h_nvtx_S2':
   y-axis-format: "%1% / bin"
   save-extensions: ['pdf', 'png']
@@ -84,7 +174,25 @@
   save-extensions: ['pdf', 'png']
 
 
-#MET pt
+#PuppiMET pt
+'h_puppimet_pt_notausf_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_pt_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_pt_S2':
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_pt_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_pt_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_pt_S5':
+  save-extensions: ['pdf', 'png']
+
 'h_met_pt_notausf_S1':
   save-extensions: ['pdf', 'png']
 
@@ -101,7 +209,31 @@
   save-extensions: ['pdf', 'png']
 
 
-#MET phi
+#PuppiMET phi
+'h_puppimet_phi_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_phi_S1':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_phi_S2':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_phi_S3':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_phi_S4':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_puppimet_phi_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
 'h_met_phi_notausf_S1':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
@@ -122,7 +254,28 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-#Muon pt
+
+#PuppiMET sumEt
+'h_puppisum_et_notausf_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_puppisum_et_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_puppisum_et_S2':
+  save-extensions: ['pdf', 'png']
+
+'h_puppisum_et_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_puppisum_et_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_puppisum_et_S5':
+  save-extensions: ['pdf', 'png']
+
+
+#Electron pt
 'h_electron1_pt_notausf_S1_rebinned':
   save-extensions: ['pdf','png']
 
@@ -138,9 +291,10 @@
 'h_electron1_pt_S5_rebinned':
   save-extensions: ['pdf','png']
 
-
-#Muon pt
 'h_electron1_pt_notausf_S1':
+  save-extensions: ['pdf','png']
+
+'h_electron1_pt_S1':
   save-extensions: ['pdf','png']
 
 'h_electron1_pt_S2':
@@ -156,8 +310,12 @@
   save-extensions: ['pdf','png']
 
 
-#electron eta
+#Electron eta
 'h_electron1_eta_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_electron1_eta_S1':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
@@ -178,7 +336,25 @@
   save-extensions: ['pdf', 'png']
 
 
-#Muon + MET MT
+#Electron + MET MT
+'h_lepMET_mt_notausf_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_lepMET_mt_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_lepMET_mt_S2':
+  save-extensions: ['pdf', 'png']
+
+'h_lepMET_mt_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_lepMET_mt_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_lepMET_mt_S5':
+  save-extensions: ['pdf', 'png']
+
 'h_muMET_mt_notausf_S1':
   save-extensions: ['pdf', 'png']
 
@@ -227,6 +403,20 @@
   save-extensions: ['pdf', 'png']
 
 
+#tau mass
+'h_tau1_mass_S2':
+  save-extensions: ['pdf', 'png']
+
+'h_tau1_mass_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_tau1_mass_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_tau1_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+
 #tau decayMode
 'h_tau1_decayMode_S2':
   y-axis-format: "%1% / bin"
@@ -245,7 +435,67 @@
   save-extensions: ['pdf', 'png']
 
 
-#Muon tau dR
+#Electron tau dR & System Variables
+'h_leptau_dEta_S2':
+  x-axis: "\\Delta\\eta(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dEta_S3':
+  x-axis: "\\Delta\\eta(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dEta_S4':
+  x-axis: "\\Delta\\eta(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dEta_S5':
+  x-axis: "\\Delta\\eta(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dPhi_S2':
+  x-axis: "\\Delta\\phi(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dPhi_S3':
+  x-axis: "\\Delta\\phi(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dPhi_S4':
+  x-axis: "\\Delta\\phi(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dPhi_S5':
+  x-axis: "\\Delta\\phi(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dR_S2':
+  x-axis: "\\Delta R(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dR_S3':
+  x-axis: "\\Delta R(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dR_S4':
+  x-axis: "\\Delta R(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_dR_S5':
+  x-axis: "\\Delta R(e, \\tau_{h})"
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
 'h_mutau_dR_S2':
   x-axis: "\\Delta R(e, \\tau_{h})"
   y-axis-format: "%1% / %2$.2f"
@@ -267,7 +517,43 @@
   save-extensions: ['pdf', 'png']
 
 
-#Muon tau mass
+#Electron tau mass
+'h_leptau_mass_S2':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_S3':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_S4':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_S5':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_blind_S2':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  blinded-range: [100, 200]
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_blind_S3':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  blinded-range: [100, 200]
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_blind_S4':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  blinded-range: [100, 200]
+  save-extensions: ['pdf', 'png']
+
+'h_leptau_mass_blind_S5':
+  x-axis: "Mass of e + \\tau_{h} (GeV)"
+  blinded-range: [100, 200]
+  save-extensions: ['pdf', 'png']
+
 'h_mutau_mass_S2':
   x-axis: "Mass of e + \\tau_{h} (GeV)"
   save-extensions: ['pdf', 'png']
@@ -285,7 +571,19 @@
   save-extensions: ['pdf', 'png']
 
 
-#jet ht for bSF check
+#jet ht
+'h_jet_ht_notausf_S1':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
+'h_jet_ht_S1':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
+'h_jet_ht_S2':
+  rebin: 2
+  save-extensions: ['pdf', 'png']
+
 'h_jet_ht_S3':
   rebin: 2
   save-extensions: ['pdf', 'png']
@@ -301,6 +599,9 @@
 
 #jet1 pt
 'h_jet1_pt_notausf_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_pt_S1':
   save-extensions: ['pdf', 'png']
 
 'h_jet1_pt_S2':
@@ -321,6 +622,10 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
+'h_jet1_eta_S1':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
 'h_jet1_eta_S2':
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
@@ -338,8 +643,32 @@
   save-extensions: ['pdf', 'png']
 
 
+#jet1 mass
+'h_jet1_mass_notausf_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_mass_S1':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_mass_S2':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_mass_S3':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_mass_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+
 #jet1 btag
 'h_jet1_btag_notausf_S1':
+  y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+'h_jet1_btag_S1':
   y-axis-format: "%1% / %2$.2f units"
   save-extensions: ['pdf', 'png']
 
@@ -378,6 +707,14 @@
   save-extensions: ['pdf', 'png']
 
 
+#jet2 mass
+'h_jet2_mass_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_jet2_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+
 #jet2 btag
 'h_jet2_btag_S4':
   y-axis-format: "%1% / %2$.2f units"
@@ -406,6 +743,14 @@
   save-extensions: ['pdf', 'png']
 
 
+#jet3 mass
+'h_jet3_mass_S4':
+  save-extensions: ['pdf', 'png']
+
+'h_jet3_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+
 #jet3 btag
 'h_jet3_btag_S4':
   y-axis-format: "%1% / %2$.2f units"
@@ -424,29 +769,99 @@
   y-axis-format: "%1% / %2$.2f"
   save-extensions: ['pdf', 'png']
 
-##st_met
-#'h_st_met_S4':
-#  rebin: 2
-#  save-extensions: ['pdf', 'png']
-#
-#'h_st_met_binwidth_S4':
-#  y-axis: "Events / GeV"
-#  y-axis-format: "%1%"
-#  scale-option: "WIDTH"
-#  rebin: 2
-#  log-y: true
-#  log-y-axis-range: [0.02, 200]
-#  save-extensions: ['pdf', 'png']
-#
-#'h_st_met_S5':
-#  rebin: 2
-#  save-extensions: ['pdf', 'png']
-#
-#'h_st_met_binwidth_S5':
-#  y-axis: "Events / GeV"
-#  y-axis-format: "%1%"
-#  scale-option: "WIDTH"
-#  rebin: 2
-#  log-y: true
-#  log-y-axis-range: [0.02, 110]
-#  save-extensions: ['pdf', 'png']
+'h_bjet1_mass_S5':
+  save-extensions: ['pdf', 'png']
+
+'h_bjet1_btag_S5':
+  y-axis-format: "%1% / %2$.2f units"
+  save-extensions: ['pdf', 'png']
+
+
+#DNN Kinematic & Topology Variables
+'h_lepmet_dPhi_notausf_S1':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lepmet_dPhi_S2':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lepmet_dPhi_S3':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lepmet_dPhi_S4':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lepmet_dPhi_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_taumet_dPhi_S2':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_taumet_dPhi_S3':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_taumet_dPhi_S4':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_taumet_dPhi_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lepbjet_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_taubjet_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_lfv_top_mass_S5':
+  x-axis: "m(e + \\tau_{h} + b) (GeV)"
+  save-extensions: ['pdf', 'png']
+
+
+#Top Mass Reconstruction Variables (chi2)
+'h_chi2_S5':
+  x-axis-range: [0, 950]
+  y-axis-format: "%1% / %2$.0f"
+  blinded-range: [1, 49]
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_mass_S5':
+  x-axis: 'm_{t}^{hadronic} (GeV)'
+  blinded-range: [100, 250]
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_pt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
+  blinded-range: [300, 399]
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMTop_pt_notoppt_S5':
+  x-axis: 't_{hadronic} p_{T} (GeV)'
+  blinded-range: [300, 399]
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_SMW_mass_S5':
+  x-axis: 'm_{W}^{hadronic} (GeV)'
+  blinded-range: [30, 130]
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_wqq_dEta_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_wqq_dPhi_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
+
+'h_chi2_wqq_dR_S5':
+  y-axis-format: "%1% / %2$.2f"
+  save-extensions: ['pdf', 'png']
