@@ -456,10 +456,6 @@
   save-extensions: ['pdf', 'png']
 
 #jet ht
-'h_jet_ht_notausf_S1':
-  rebin: 2
-  save-extensions: ['pdf', 'png']
-
 'h_jet_ht_S1':
   rebin: 2
   save-extensions: ['pdf', 'png']

@@ -114,7 +114,6 @@
 'hist_DYto2E-2Jets_MLL-10-50.root':
   type: mc
   pretty-name: 'DYJets'
-    #cross-section: 21140
   cross-section: 7046.7
   group: GZJets
   yields-group: '4Z+Jets'
@@ -131,7 +130,6 @@
 'hist_DYto2Mu-2Jets_MLL-10-50.root':
   type: mc
   pretty-name: 'DYJets'
-    #cross-section: 21190
   cross-section: 7063.3
   group: GZJets
   yields-group: '4Z+Jets'
@@ -148,7 +146,6 @@
 'hist_DYto2Tau-2Jets_MLL-10-50.root':
   type: mc
   pretty-name: 'DYJets'
-    #cross-section: 21160
   cross-section: 7053.3
   group: GZJets
   yields-group: '4Z+Jets'
