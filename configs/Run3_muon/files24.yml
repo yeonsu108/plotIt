@@ -287,6 +287,22 @@
   yields-group: '7tt+X'
   order: 37
 
+'hist_TTWtoQQ.root':
+  type: mc
+  pretty-name: 'TTWtoQQ'
+  cross-section: 0.4678
+  group: GttV
+  yields-group: '7tt+X'
+  order: 38
+
+'hist_TTZtoQQ.root':
+  type: mc
+  pretty-name: 'TTZtoQQ'
+  cross-section: 0.6337
+  group: GttV
+  yields-group: '7tt+X'
+  order: 39
+
 'hist_WW.root':
   type: mc
   pretty-name: 'WW'
