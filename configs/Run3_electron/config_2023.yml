@@ -57,14 +57,11 @@ systematics:
   - jesRelativeBal
   - jesRelativeSample_v12
   - metUnclust
-  - btaghf
-  - btaglf
-  - btaghfstats1
-  - btaglfstats1
-  - btaghfstats2
-  - btaglfstats2
-  - btagcferr1
-  - btagcferr2
+  - btagcorr
+  - btaguncorr
+  - btagstat
+  - btagtype3
+  - btagbfrag
   - pu
   - toppt
   - elecid
