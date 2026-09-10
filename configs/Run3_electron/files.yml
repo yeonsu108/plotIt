@@ -5,12 +5,12 @@
 #  group: GLFVSTus
 #  order: 1
 #
-#'hist_TUETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVSTuv'
-#  cross-section: 0.5267
-#  group: GLFVSTuv
-#  order: 2
+'hist_TUETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVSTuv'
+  cross-section: 0.5267
+  group: GLFVSTuv
+  order: 2
 #
 #'hist_TUETau-LFV-Tensor.root':
 #  type: signal
@@ -47,12 +47,12 @@
 #  group: GLFVTTus
 #  order: 7
 #
-#'hist_TTtoUETau-LFV-Vector.root':
-#  type: signal
-#  pretty-name: 'LFVTTuv'
-#  cross-section: 0.01604
-#  group: GLFVTTuv
-#  order: 8
+'hist_TTtoUETau-LFV-Vector.root':
+  type: signal
+  pretty-name: 'LFVTTuv'
+  cross-section: 0.01604
+  group: GLFVTTuv
+  order: 8
 #
 #'hist_TTtoUETau-LFV-Tensor.root':
 #  type: signal

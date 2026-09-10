@@ -29,8 +29,8 @@ files:
   #include: ['files_fake.yml']
 
 systematics:
-  - tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
-  - other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
+  - tt_xsec: {type: const, value: 1.048, on: 'TTto'}
+  - other_xsec1: {type: const, value: 1.1, on: 'DY'}
   - other_xsec2: {type: const, value: 1.1, on: 'ST_s'}
   - other_xsec3: {type: const, value: 1.1, on: 'ST_t'}
   - other_xsec5: {type: const, value: 1.1, on: 'ttH'}
@@ -59,11 +59,7 @@ systematics:
   - metUnclust
   - btagcorr
   - btaguncorr
-  - btagstat
-  - btagtype3
-  - btagbfrag
   - pu
-  #- prefire
   - toppt
   - muid
   - muiso
@@ -71,9 +67,9 @@ systematics:
   #- muhighpt
   - muonhighscale
   - tauidjet
-  #- tauFFstat
-  #- tauFFsyst
-  #- tauFFptdep
+  - tauFFstat
+  - tauFFsyst
+  - tauFFptdep
   - tauidjetUncert0
   - tauidjetUncert1
   - tauidjetSystalleras
@@ -119,14 +115,12 @@ systematics:
 
 
 plots:
-  #include: ['histos_yield.yml', 'histos_control.yml', 'histos_reco.yml']
-  #include: ['histos_yield.yml']
   #include: ['histos_FFcalc.yml']
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield_S5.yml']
   #include: ['histos_dnn.yml']
-  #include: ['histos_yield.yml', 'histos.yml', 'histos.yml', 'histos_reco.yml']
-  include: ['histos_yield.yml', 'histos.yml', 'histos_reco.yml']
+  include: ['histos_yield.yml']
+  #include: ['histos_yield.yml', 'histos.yml', 'histos_reco.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]

@@ -33,6 +33,7 @@
 
 #Muon pt
 'h_muon1_pt_S5':
+  blinded-range: [180, 199]
   save-extensions: ['pdf','png']
 
 
@@ -49,6 +50,7 @@
 
 #tau pt
 'h_tau1_pt_S5':
+  blinded-range: [120, 199]
   save-extensions: ['pdf', 'png']
 
 
@@ -64,12 +66,16 @@
 
 #Muon tau dR
 'h_leptau_dR_S5':
+  x-axis: "\\Delta R(\\mu, \\tau_{h})"
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [2.5, 3.9]
   save-extensions: ['pdf', 'png']
 
 
 #Muon tau mass
-'h_leptau_mass_S5':
+'h_leptau_mass_blind_S5':
+  x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
+  blinded-range: [350, 499]
   save-extensions: ['pdf', 'png']
 
 #jet ht for bSF check
@@ -142,22 +148,27 @@
 'h_chi2_S5':
   x-axis-range: [0, 950]
   y-axis-format: "%1% / %2$.0f"
+  blinded-range: [1, 49]
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_mass_S5':
   x-axis: 'm_{t}^{hadronic} (GeV)'
+  blinded-range: [100, 250]
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_pt_S5':
   x-axis: 't_{hadronic} p_{T} (GeV)'
+  blinded-range: [300, 399]
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMTop_pt_notoppt_S5':
   x-axis: 't_{hadronic} p_{T} (GeV)'
+  blinded-range: [300, 399]
   save-extensions: ['pdf', 'png']
 
 'h_chi2_SMW_mass_S5':
   x-axis: 'm_{W}^{hadronic} (GeV)'
+  blinded-range: [30, 130]
   save-extensions: ['pdf', 'png']
 
 

@@ -232,6 +232,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_puppisum_et_S5':
+  blinded-range: [1, 4.99]
   save-extensions: ['pdf', 'png']
 
 #Electron pt
@@ -251,6 +252,7 @@
   save-extensions: ['pdf','png']
 
 'h_electron1_pt_S5':
+  blinded-range: [180, 199]
   save-extensions: ['pdf','png']
 
 #Electron eta
@@ -295,6 +297,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_lepMET_mt_S5':
+  blinded-range: [300, 399]
   save-extensions: ['pdf', 'png']
 
 #tau pt
@@ -308,6 +311,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_tau1_pt_S5':
+  blinded-range: [120, 199]
   save-extensions: ['pdf', 'png']
 
 #tau eta
@@ -416,6 +420,7 @@
 'h_leptau_dR_S5':
   x-axis: "\\Delta R(e, \\tau_{h})"
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [2.5, 3.9]
   save-extensions: ['pdf', 'png']
 
 #Electron tau mass
@@ -452,7 +457,7 @@
 
 'h_leptau_mass_blind_S5':
   x-axis: "Mass of e + \\tau_{h} (GeV)"
-  blinded-range: [100, 200]
+  blinded-range: [350, 499]
   save-extensions: ['pdf', 'png']
 
 #jet ht
@@ -689,6 +694,7 @@
 
 'h_lepmet_dPhi_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [2, 3.1]
   save-extensions: ['pdf', 'png']
 
 'h_taumet_dPhi_S2':
@@ -709,10 +715,12 @@
 
 'h_lepbjet_dR_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [1.5, 4]
   save-extensions: ['pdf', 'png']
 
 'h_taubjet_dR_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [1.5, 3.9]
   save-extensions: ['pdf', 'png']
 
 'h_lfv_top_mass_S5':
@@ -756,4 +764,5 @@
 
 'h_chi2_wqq_dR_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [0, 1.5]
   save-extensions: ['pdf', 'png']

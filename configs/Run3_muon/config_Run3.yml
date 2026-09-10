@@ -59,15 +59,15 @@ systematics:
   - jesRelativeSample_v12
   - btagcorr
   - btaguncorr
-  - btagstat
-  - btagtype3
-  - btagbfrag
   - pu
   - toppt
   - muid
   - muiso
   - mutrg
   - tauidjet
+  - tauFFstat
+  - tauFFsyst
+  - tauFFptdep
   - tauidjetUncert0
   - tauidjetUncert1
   - tauidjetSystalleras
@@ -94,6 +94,19 @@ systematics:
   - tauidjetHighptextrap
   - tauidmu
   - tauidel
+  - mescale: {type: shape, on: 'TTto'}
+  - mescale: {type: shape, on: '-LFV-'}
+  - renscale: {type: shape, on: 'TTto'}
+  - renscale: {type: shape, on: '-LFV-'}
+  - facscale: {type: shape, on: 'TTto'}
+  - facscale: {type: shape, on: '-LFV-'}
+  - isr: {type: shape, on: 'TTto'}
+  - isr: {type: shape, on: '-LFV-'}
+  - fsr: {type: shape, on: 'TTto'}
+  - fsr: {type: shape, on: '-LFV-'}
+  - pdfalphas: {type: shape, on: 'TTto'}
+  - tt_xsec: {type: const, value: 1.048, on: 'TTto'}
+  - other_xsec1: {type: const, value: 1.1, on: 'DY'}
   - tauidjetSyst2022_postEE
   - tauidjetSystdm02022_postEE
   - tauidjetSystdm12022_postEE
@@ -147,4 +160,4 @@ systematics:
   - tauidjetStat2dm112024
 
 plots:
-  include: ['histos_dnn.yml']
+  include: ['histos_yield.yml']

@@ -25,14 +25,14 @@
 #  cross-section: 0.007288
 #  group: GLFVSTcs
 #  order: 4
-
+#
 #'hist_TCMuTau-LFV-Vector.root':
 #  type: signal
 #  pretty-name: 'LFVSTcv'
 #  cross-section: 0.03753
 #  group: GLFVSTcv
 #  order: 5
-
+#
 #'hist_TCMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVSTct'
@@ -67,14 +67,14 @@
 #  cross-section: 0.0044485
 #  group: GLFVTTcs
 #  order: 10
-
+#
 #'hist_TTtoCMuTau-LFV-Vector.root':
 #  type: signal
 #  pretty-name: 'LFVTTcv'
 #  cross-section: 0.035555
 #  group: GLFVTTcv
 #  order: 11
-
+#
 #'hist_TTtoCMuTau-LFV-Tensor.root':
 #  type: signal
 #  pretty-name: 'LFVTTct'
