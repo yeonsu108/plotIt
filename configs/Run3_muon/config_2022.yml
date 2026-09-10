@@ -31,33 +31,28 @@ files:
   #include: ['files_fake.yml']
 
 systematics:
-  - tt_xsec: {type: const, value: 1.044, on: 'TTTo'}
-  - other_xsec1: {type: const, value: 1.1, on: 'DYJetsToLL'}
-  - other_xsec2: {type: const, value: 1.1, on: 'ST_s'}
-  - other_xsec3: {type: const, value: 1.1, on: 'ST_t'}
-  - other_xsec5: {type: const, value: 1.1, on: 'ttH'}
-  - other_xsec6: {type: const, value: 1.1, on: 'TTWJets'}
-  - other_xsec7: {type: const, value: 1.1, on: 'TTZ'}
-  - other_xsec8: {type: const, value: 1.1, on: 'WJetsToLNu_HT'}
-  - other_xsec9: {type: const, value: 1.1, on: 'WW'}
-  - other_xsec10: {type: const, value: 1.1, on: 'WZ'}
-  - other_xsec11: {type: const, value: 1.1, on: 'ZZ'}
+  - tt_xsec: {type: const, value: 1.05, on: '(hist_TTto|TT[tT]o)'}
+  - singleTop_xsec: {type: const, value: 1.25, on: '(hist_T[Bb]|hist_TQ|hist_TW|hist_Tbar|ST_)'}
+  - ttH_xsec: {type: const, value: 1.20, on: '(hist_TTH|ttH)'}
+  - ttW_xsec: {type: const, value: 1.068, on: '(hist_TTW|TTW)'}
+  - ttZ_xsec: {type: const, value: 1.096, on: '(hist_TTZ|TTZ)'}
+  - wjets_xsec: {type: const, value: 1.30, on: '(hist_Wto|WJets)'}
+  - diboson_xsec: {type: const, value: 1.30, on: '(hist_WW|hist_WZ|hist_ZZ|WW|WZ|ZZ)'}
+  - dy_xsec: {type: const, value: 1.30, on: '(hist_DY|DYJets|DY)'}
   - qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
   #- muExtra: {type: const, value: 1.005}
   - tes
   - jer
-  - jesHEM
   - jesAbsolute
-  - jesAbsolute_v12
+  - jesAbsolute_2022
   - jesBBEC1
-  - jesBBEC1_v12
-  - jesFlavorQCD
+  - jesBBEC1_2022
   - jesFlavorPureGluon
   - jesFlavorPureQuark
   - jesFlavorPureCharm
   - jesFlavorPureBottom
   - jesRelativeBal
-  - jesRelativeSample_v12
+  - jesRelativeSample_2022
   - metUnclust
   - btagcorr
   - btaguncorr
@@ -72,7 +67,6 @@ systematics:
   - tauidjet
   - tauFFstat
   - tauFFsyst
-  - tauFFptdep
   - tauidjetUncert0
   - tauidjetUncert1
   - tauidjetSystalleras
@@ -99,17 +93,12 @@ systematics:
   - tauidjetHighptextrap
   - tauidmu
   - tauidel
-  - mescale: {type: shape, on: 'TTto'}
-  - mescale: {type: shape, on: '-LFV-'}
-  - renscale: {type: shape, on: 'TTto'}
-  - renscale: {type: shape, on: '-LFV-'}
-  - facscale: {type: shape, on: 'TTto'}
-  - facscale: {type: shape, on: '-LFV-'}
-  - isr: {type: shape, on: 'TTto'}
-  - isr: {type: shape, on: '-LFV-'}
-  - fsr: {type: shape, on: 'TTto'}
-  - fsr: {type: shape, on: '-LFV-'}
-  - pdfalphas: {type: shape, on: 'TTto'}
+  - mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - renscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - facscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - isr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - fsr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   ##- pdfenv: {type: shape, on: 'TTTo'}
   ##- pdfenv: {type: shape, on: '_LFV'}
   #- hdamp: {type: shape, on: 'TTTo'}

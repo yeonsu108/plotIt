@@ -6,7 +6,7 @@ configuration:
   experiment-label-paper: true
   extra-label: " WIP"
   root: ''
-  luminosity: 61897.1
+  luminosity: 170897.1
   luminosity-error: 0.016
   error-fill-style: 3254
   error-fill-color: "#ee556270"
@@ -37,4 +37,118 @@ legend:
 groups:
   include: ['groups.yml']
   #include: ['groups_merged.yml']
+
+systematics:
+  - tt_xsec: {type: const, value: 1.05, on: '(hist_TTto|TT[tT]o)'}
+  - singleTop_xsec: {type: const, value: 1.25, on: '(hist_T[Bb]|hist_TQ|hist_TW|hist_Tbar|ST_)'}
+  - ttH_xsec: {type: const, value: 1.20, on: '(hist_TTH|ttH)'}
+  - ttW_xsec: {type: const, value: 1.068, on: '(hist_TTW|TTW)'}
+  - ttZ_xsec: {type: const, value: 1.096, on: '(hist_TTZ|TTZ)'}
+  - wjets_xsec: {type: const, value: 1.30, on: '(hist_Wto|WJets)'}
+  - diboson_xsec: {type: const, value: 1.30, on: '(hist_WW|hist_WZ|hist_ZZ|WW|WZ|ZZ)'}
+  - dy_xsec: {type: const, value: 1.30, on: '(hist_DY|DYJets|DY)'}
+  - qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
+  - tes
+  - jer
+  - jesAbsolute
+  - jesBBEC1
+  - jesFlavorPureGluon
+  - jesFlavorPureQuark
+  - jesFlavorPureCharm
+  - jesFlavorPureBottom
+  - jesRelativeBal
+  - metUnclust
+  - btagcorr
+  - btaguncorr
+  - pu
+  - toppt
+  - elecid
+  - elecreco
+  - electrg
+  - tauidjet
+  - tauFFstat
+  - tauFFsyst
+  - tauidjetUncert0
+  - tauidjetUncert1
+  - tauidjetSystalleras
+  - tauidjetSyst2022_preEE
+  - tauidjetSystdm02022_preEE
+  - tauidjetSystdm12022_preEE
+  - tauidjetSystdm102022_preEE
+  - tauidjetSystdm112022_preEE
+  - tauidjetSystTESdm02022_preEE
+  - tauidjetSystTESdm12022_preEE
+  - tauidjetSystTESdm102022_preEE
+  - tauidjetSystTESdm112022_preEE
+  - tauidjetStat1dm02022_preEE
+  - tauidjetStat1dm12022_preEE
+  - tauidjetStat1dm102022_preEE
+  - tauidjetStat1dm112022_preEE
+  - tauidjetStat2dm02022_preEE
+  - tauidjetStat2dm12022_preEE
+  - tauidjetStat2dm102022_preEE
+  - tauidjetStat2dm112022_preEE
+  - tauidjetHighptstat_bin1
+  - tauidjetHighptstat_bin2
+  - tauidjetHighptsyst
+  - tauidjetHighptextrap
+  - tauidmu
+  - tauidel
+  - mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - renscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - facscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - isr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - fsr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
+  - tauidjetSyst2022_postEE
+  - tauidjetSystdm02022_postEE
+  - tauidjetSystdm12022_postEE
+  - tauidjetSystdm102022_postEE
+  - tauidjetSystdm112022_postEE
+  - tauidjetSystTESdm02022_postEE
+  - tauidjetSystTESdm12022_postEE
+  - tauidjetSystTESdm102022_postEE
+  - tauidjetSystTESdm112022_postEE
+  - tauidjetStat1dm02022_postEE
+  - tauidjetStat1dm12022_postEE
+  - tauidjetStat1dm102022_postEE
+  - tauidjetStat1dm112022_postEE
+  - tauidjetStat2dm02022_postEE
+  - tauidjetStat2dm12022_postEE
+  - tauidjetStat2dm102022_postEE
+  - tauidjetStat2dm112022_postEE
+  - tauidjetSyst2023_preBPix
+  - tauidjetSystdm02023_preBPix
+  - tauidjetSystdm12023_preBPix
+  - tauidjetSystdm102023_preBPix
+  - tauidjetSystdm112023_preBPix
+  - tauidjetSystTESdm02023_preBPix
+  - tauidjetSystTESdm12023_preBPix
+  - tauidjetSystTESdm102023_preBPix
+  - tauidjetSystTESdm112023_preBPix
+  - tauidjetStat1dm02023_preBPix
+  - tauidjetStat1dm12023_preBPix
+  - tauidjetStat1dm102023_preBPix
+  - tauidjetStat1dm112023_preBPix
+  - tauidjetStat2dm02023_preBPix
+  - tauidjetStat2dm12023_preBPix
+  - tauidjetStat2dm102023_preBPix
+  - tauidjetStat2dm112023_preBPix
+  - tauidjetSyst2024
+  - tauidjetSystdm02024
+  - tauidjetSystdm12024
+  - tauidjetSystdm102024
+  - tauidjetSystdm112024
+  - tauidjetSystTESdm02024
+  - tauidjetSystTESdm12024
+  - tauidjetSystTESdm102024
+  - tauidjetSystTESdm112024
+  - tauidjetStat1dm02024
+  - tauidjetStat1dm12024
+  - tauidjetStat1dm102024
+  - tauidjetStat1dm112024
+  - tauidjetStat2dm02024
+  - tauidjetStat2dm12024
+  - tauidjetStat2dm102024
+  - tauidjetStat2dm112024
 
