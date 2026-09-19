@@ -88,12 +88,12 @@ systematics:
   - tauidjetHighptextrap
   - tauidmu
   - tauidel
-  #- mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
-  #- renscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
-  #- facscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
-  #- isr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
-  #- fsr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
-  #- pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
+  - mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - renscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - facscale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - isr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - fsr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
+  - pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   ##- pdfenv: {type: shape, on: 'TTTo'}
   ##- pdfenv: {type: shape, on: '_LFV'}
   - hdamp: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
@@ -105,8 +105,8 @@ plots:
   #include: ['histos_FFapply.yml', 'histos_yield_S5.yml']
   #include: ['histos_yield_S5.yml']
   #include: ['histos_dnn.yml']
-  include: ['histos_yield.yml']
-  #include: ['histos_yield.yml', 'histos.yml', 'histos_reco.yml']
+  #include: ['histos_yield.yml']
+  include: ['histos_yield.yml', 'histos.yml', 'histos_reco.yml']
 
 legend:
   #position: [0.18, 0.70, 0.96, 0.88]
