@@ -101,6 +101,8 @@ systematics:
   - isr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
   - fsr: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}
   - pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
+  - hdamp: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
+  - tune: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   - tauidjetSyst2022_postEE
   - tauidjetSystdm02022_postEE
   - tauidjetSystdm12022_postEE

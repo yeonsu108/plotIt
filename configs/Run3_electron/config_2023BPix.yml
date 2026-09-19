@@ -96,8 +96,8 @@ systematics:
   #- pdfalphas: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   ##- pdfenv: {type: shape, on: 'TTTo'}
   ##- pdfenv: {type: shape, on: '_LFV'}
-  #- hdamp: {type: shape, on: 'TTTo'}
-  #- tune: {type: shape, on: 'TTTo'}
+  - hdamp: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
+  - tune: {type: shape, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
 
 
 plots:
