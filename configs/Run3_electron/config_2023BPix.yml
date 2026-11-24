@@ -6,7 +6,7 @@ configuration:
   experiment-label-paper: true
   extra-label: " "
   root: ''
-  luminosity: 9451 
+  luminosity: 9680.0  # CMS_PdmVRun3Analysis.pdf p.10: 9.68 (D) = 9.68 fb^-1, normtag_PHYSICS.json
   luminosity-error: 0.013
   error-fill-style: 3254
   error-fill-color: "#ee556270"
@@ -29,7 +29,7 @@ files:
   #include: ['files_fake.yml']
 
 systematics:
-  - tt_xsec: {type: const, value: 1.05, on: '(hist_TTto|TT[tT]o)'}
+  - tt_xsec: {type: const, value: 1.05, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   - singleTop_xsec: {type: const, value: 1.25, on: '(hist_T[Bb]|hist_TQ|hist_TW|hist_Tbar|ST_)'}
   - ttH_xsec: {type: const, value: 1.20, on: '(hist_TTH|ttH)'}
   - ttW_xsec: {type: const, value: 1.068, on: '(hist_TTW|TTW)'}
@@ -42,34 +42,44 @@ systematics:
   - tes
   - jer
   - jesAbsolute
-  - jesAbsolute_2023
+  - jesAbsolute_2023BPix
   - jesBBEC1
-  - jesBBEC1_2023
+  - jesBBEC1_2023BPix
+  - jesEC2
+  - jesEC2_2023BPix
+  - jesHF
+  - jesHF_2023BPix
   - jesFlavorPureGluon
   - jesFlavorPureQuark
   - jesFlavorPureCharm
   - jesFlavorPureBottom
   - jesRelativeBal
-  - jesRelativeSample_2023
+  - jesRelativeSample_2023BPix
   - metUnclust
-  - btagcorr
-  - btaguncorr
+  - btagSFbc_correlated
+  - btagSFbc_2023BPix
+  - btagSFlight_correlated
+  - btagSFlight_2023BPix
   - pu
   - toppt
-  - elecid
-  - elecreco
+  - elecid_stat
+  - elecid_syst
+  - elecreco_stat
+  - elecreco_syst
   - electrg
-  - tauidjet
+  - elescale
+  - elesmear
+  #- tauidjet
   - tauFFstat
   - tauFFsyst
-  - tauidjetUncert0
-  - tauidjetUncert1
+  #- tauidjetUncert0
+  #- tauidjetUncert1
   - tauidjetSystalleras
   - tauidjetSyst2023_postBPix
-  - tauidjetSystdm02023_postBPix
-  - tauidjetSystdm12023_postBPix
-  - tauidjetSystdm102023_postBPix
-  - tauidjetSystdm112023_postBPix
+  #- tauidjetSystdm02023_postBPix
+  #- tauidjetSystdm12023_postBPix
+  #- tauidjetSystdm102023_postBPix
+  #- tauidjetSystdm112023_postBPix
   - tauidjetSystTESdm02023_postBPix
   - tauidjetSystTESdm12023_postBPix
   - tauidjetSystTESdm102023_postBPix
@@ -82,10 +92,10 @@ systematics:
   - tauidjetStat2dm12023_postBPix
   - tauidjetStat2dm102023_postBPix
   - tauidjetStat2dm112023_postBPix
-  - tauidjetHighptstat_bin1
-  - tauidjetHighptstat_bin2
-  - tauidjetHighptsyst
-  - tauidjetHighptextrap
+  #- tauidjetHighptstat_bin1
+  #- tauidjetHighptstat_bin2
+  #- tauidjetHighptsyst
+  #- tauidjetHighptextrap
   - tauidmu
   - tauidel
   - mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}

@@ -73,9 +73,6 @@
 
 
 #Muon tau mass
-'h_leptau_mass_S5':
-  save-extensions: ['pdf', 'png']
-
 'h_leptau_mass_blind_S5':
   x-axis: "Mass of e + \\tau_{h} (GeV)"
   blinded-range: [350, 499]

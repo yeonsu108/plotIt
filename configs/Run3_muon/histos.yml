@@ -232,6 +232,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_puppisum_et_S5':
+  blinded-range: [1, 4.99]
   save-extensions: ['pdf', 'png']
 
 #Muon pt
@@ -296,6 +297,7 @@
   save-extensions: ['pdf', 'png']
 
 'h_lepMET_mt_S5':
+  blinded-range: [300, 399]
   save-extensions: ['pdf', 'png']
 
 #tau pt
@@ -692,6 +694,7 @@
 
 'h_lepmet_dPhi_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [2, 3.1]
   save-extensions: ['pdf', 'png']
 
 'h_taumet_dPhi_S2':
@@ -713,15 +716,15 @@
 
 'h_lepbjet_dR_S5':
   y-axis-format: "%1% / %2$.2f"
-  blinded-range: [1.5, 3.5]
+  blinded-range: [1.5, 4]
   save-extensions: ['pdf', 'png']
 
 'h_taubjet_dR_S5':
   y-axis-format: "%1% / %2$.2f"
-  blinded-range: [1.5, 3.5]
+  blinded-range: [1.5, 3.9]
   save-extensions: ['pdf', 'png']
 
-'h_lfv_top_mass_S5':
+'h_leptaubjet1_mass_S5':
   x-axis: "m(\\mu + \\tau_{h} + b) (GeV)"
   save-extensions: ['pdf', 'png']
 
@@ -762,5 +765,5 @@
 
 'h_chi2_wqq_dR_S5':
   y-axis-format: "%1% / %2$.2f"
-  blinded-range: [0.1, 1.5]
+  blinded-range: [0, 1.5]
   save-extensions: ['pdf', 'png']

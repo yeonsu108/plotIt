@@ -711,6 +711,7 @@
 
 'h_taumet_dPhi_S5':
   y-axis-format: "%1% / %2$.2f"
+  blinded-range: [0, 0.4]
   save-extensions: ['pdf', 'png']
 
 'h_lepbjet_dR_S5':
@@ -723,7 +724,7 @@
   blinded-range: [1.5, 3.9]
   save-extensions: ['pdf', 'png']
 
-'h_lfv_top_mass_S5':
+'h_leptaubjet1_mass_S5':
   x-axis: "m(e + \\tau_{h} + b) (GeV)"
   save-extensions: ['pdf', 'png']
 

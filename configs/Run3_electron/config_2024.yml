@@ -6,8 +6,8 @@ configuration:
   experiment-label-paper: true
   extra-label: " WIP"
   root: ''
-  luminosity: 109000.0 
-  luminosity-error: 0.013
+  luminosity: 109820.0  # CMS_PdmVRun3Analysis.pdf p.7: 7.26+7.98+11.42+28.04+38.07+5.49+11.56 = 109.82 fb^-1, Era B excluded
+  luminosity-error: 0.016
   error-fill-style: 3254
   error-fill-color: "#ee556270"
   staterror-fill-style: 3145
@@ -29,7 +29,7 @@ files:
   #include: ['files_fake.yml']
 
 systematics:
-  - tt_xsec: {type: const, value: 1.05, on: '(hist_TTto|TT[tT]o)'}
+  - tt_xsec: {type: const, value: 1.05, on: 'hist_TTto(2L2Nu|LNu2Q|4Q)'}
   - singleTop_xsec: {type: const, value: 1.25, on: '(hist_T[Bb]|hist_TQ|hist_TW|hist_Tbar|ST_)'}
   - ttH_xsec: {type: const, value: 1.20, on: '(hist_TTH|ttH)'}
   - ttW_xsec: {type: const, value: 1.068, on: '(hist_TTW|TTW)'}
@@ -45,6 +45,10 @@ systematics:
   - jesAbsolute_2024
   - jesBBEC1
   - jesBBEC1_2024
+  - jesEC2
+  - jesEC2_2024
+  - jesHF
+  - jesHF_2024
   - jesFlavorPureGluon
   - jesFlavorPureQuark
   - jesFlavorPureCharm
@@ -52,40 +56,46 @@ systematics:
   - jesRelativeBal
   - jesRelativeSample_2024
   - metUnclust
-  - btagcorr
-  - btaguncorr
+  - btagSFbc_correlated
+  - btagSFbc_2024
+  - btagSFlight_correlated
+  - btagSFlight_2024
   - pu
   - toppt
-  - elecid
-  - elecreco
+  - elecid_stat
+  - elecid_syst
+  - elecreco_stat
+  - elecreco_syst
   - electrg
-  - tauidjet
+  - elescale
+  - elesmear
+  #- tauidjet
   - tauFFstat
   - tauFFsyst
-  - tauidjetUncert0
-  - tauidjetUncert1
-  - tauidjetSystalleras
-  - tauidjetSyst2024
-  - tauidjetSystdm02024
-  - tauidjetSystdm12024
-  - tauidjetSystdm102024
-  - tauidjetSystdm112024
-  - tauidjetSystTESdm02024
-  - tauidjetSystTESdm12024
-  - tauidjetSystTESdm102024
-  - tauidjetSystTESdm112024
+  #- tauidjetUncert0
+  #- tauidjetUncert1
+  #- tauidjetSystalleras
+  #- tauidjetSyst2024
+  #- tauidjetSystdm02024
+  #- tauidjetSystdm12024
+  #- tauidjetSystdm102024
+  #- tauidjetSystdm112024
+  #- tauidjetSystTESdm02024
+  #- tauidjetSystTESdm12024
+  #- tauidjetSystTESdm102024
+  #- tauidjetSystTESdm112024
   - tauidjetStat1dm02024
   - tauidjetStat1dm12024
   - tauidjetStat1dm102024
   - tauidjetStat1dm112024
-  - tauidjetStat2dm02024
-  - tauidjetStat2dm12024
-  - tauidjetStat2dm102024
-  - tauidjetStat2dm112024
-  - tauidjetHighptstat_bin1
-  - tauidjetHighptstat_bin2
-  - tauidjetHighptsyst
-  - tauidjetHighptextrap
+  #- tauidjetStat2dm02024
+  #- tauidjetStat2dm12024
+  #- tauidjetStat2dm102024
+  #- tauidjetStat2dm112024
+  #- tauidjetHighptstat_bin1
+  #- tauidjetHighptstat_bin2
+  #- tauidjetHighptsyst
+  #- tauidjetHighptextrap
   - tauidmu
   - tauidel
   - mescale: {type: shape, on: '(hist_TTto(2L2Nu|LNu2Q|4Q)|-LFV-)'}

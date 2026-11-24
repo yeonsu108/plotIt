@@ -90,7 +90,7 @@
 'hist_TTtoLNu2Q.root':
   type: mc
   pretty-name: 'TTtoLNu2Q'
-  cross-section: 405.75
+  cross-section: 405.75  # 923.6 * 2 * 0.3258 * 0.6742 (13.6 TeV NNLO+NNLL)
   group: Gttlj
   yields-group: '2\ttbar LJ'
   order: 6
@@ -98,7 +98,7 @@
 'hist_TTto2L2Nu.root':
   type: mc
   pretty-name: 'TTTo2L2Nu'
-  cross-section: 98.04
+  cross-section: 98.04  # 923.6 * 0.3258^2 (13.6 TeV NNLO+NNLL)
   group: Gttll
   yields-group: '1\ttbar LL'
   order: 7
@@ -106,7 +106,7 @@
 'hist_TTto4Q.root':
   type: mc
   pretty-name: 'TTto4Q'
-  cross-section: 419.82
+  cross-section: 419.82  # 923.6 * 0.6742^2 (13.6 TeV NNLO+NNLL)
   group: Gttjj
   yields-group: '3\ttbar Had'
   order: 8
@@ -130,7 +130,7 @@
 'hist_TBbar_s-channel.root':
   type: mc
   pretty-name: 'SingleTops'
-  cross-section: 2.278
+  cross-section: 2.360  # 7.244 * 0.3258 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 9
@@ -138,7 +138,7 @@
 'hist_TbarB_s-channel.root':
   type: mc
   pretty-name: 'SingleTops'
-  cross-section: 1.43
+  cross-section: 1.477  # 4.534 * 0.3258 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 10
@@ -146,7 +146,7 @@
 #'hist_TBbarQ_t-channel.root':
 #  type: mc
 #  pretty-name: 'SingleTopt'
-#  cross-section: 123.8
+#  cross-section: 145.0  # LHCPhysics 13.6 TeV NNLO inclusive
 #  group: GSingleT
 #  yields-group: '5Single Top'
 #  order: 11
@@ -154,7 +154,7 @@
 #'hist_TbarBQ_t-channel.root':
 #  type: mc
 #  pretty-name: 'SingleTbart'
-#  cross-section: 75.47
+#  cross-section: 87.2  # LHCPhysics 13.6 TeV NNLO inclusive
 #  group: GSingleT
 #  yields-group: '5Single Top'
 #  order: 12
@@ -162,7 +162,7 @@
 'hist_TQbarto2Q-t-channel.root':
   type: mc
   pretty-name: 'SingleTopt'
-  cross-section: 87.75
+  cross-section: 97.76  # 145.0 * 0.6742 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 13
@@ -170,7 +170,7 @@
 'hist_TQbartoLNu-t-channel.root':
   type: mc
   pretty-name: 'SingleTopt'
-  cross-section: 42.25
+  cross-section: 47.24  # 145.0 * 0.3258 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 14
@@ -178,7 +178,7 @@
 'hist_TbarQto2Q-t-channel.root':
   type: mc
   pretty-name: 'SingleTbart'
-  cross-section: 53.028
+  cross-section: 58.79  # 87.2 * 0.6742 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 15
@@ -186,7 +186,7 @@
 'hist_TbarQtoLNu-t-channel.root':
   type: mc
   pretty-name: 'SingleTbart'
-  cross-section: 25.532
+  cross-section: 28.41  # 87.2 * 0.3258 (LHCPhysics 13.6 TeV NNLO)
   group: GSingleT
   yields-group: '5Single Top'
   order: 16
@@ -194,7 +194,7 @@
 'hist_TWminusto2L2Nu.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 4.00
+  cross-section: 4.665  # 43.95 * 0.3258^2 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 17
@@ -202,7 +202,7 @@
 'hist_TWminusto4Q.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 16.00
+  cross-section: 19.977  # 43.95 * 0.6742^2 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 18
@@ -210,7 +210,7 @@
 'hist_TWminustoLNu2Q.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 16.00
+  cross-section: 19.308  # 43.95 * 2 * 0.3258 * 0.6742 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 19
@@ -218,7 +218,7 @@
 'hist_TbarWplusto2L2Nu.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 4.01
+  cross-section: 4.665  # 43.95 * 0.3258^2 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 20
@@ -226,7 +226,7 @@
 'hist_TbarWplusto4Q.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 16.02
+  cross-section: 19.977  # 43.95 * 0.6742^2 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 21
@@ -234,7 +234,7 @@
 'hist_TbarWplustoLNu2Q.root':
   type: mc
   pretty-name: 'SingleTbartW'
-  cross-section: 16.02
+  cross-section: 19.308  # 43.95 * 2 * 0.3258 * 0.6742 (LHCPhysics 13.6 TeV NLO+NNLL)
   group: GSingleT
   yields-group: '5Single Top'
   order: 22
@@ -258,7 +258,7 @@
 'hist_TTHto2B.root':
   type: mc
   pretty-name: 'TTHto2B'
-  cross-section: 0.5742
+  cross-section: 0.3344  # 0.5742 * 0.5824 (BR H->bb)
   group: GttV
   yields-group: '7tt+X'
   order: 25
@@ -266,7 +266,7 @@
 'hist_TTHtoNon2B.root':
   type: mc
   pretty-name: 'TTHtoNon2B'
-  cross-section: 0.5742
+  cross-section: 0.2398  # 0.5742 * 0.4176 (BR H->non-bb)
   group: GttV
   yields-group: '7tt+X'
   order: 26
@@ -327,13 +327,13 @@
   yields-group: '8VV'
   order: 28
 
-    #'hist_QCD_Pt15To20_MuEnriched.root':
-    #  type: mc
-    #  pretty-name: 'QCD'
-    #  cross-section: 2982000.0
-    #  group: GQCD
-    #  yields-group: '9QCD'
-    #  order: 34
+'hist_QCD_Pt15To20_MuEnriched.root':
+  type: mc
+  pretty-name: 'QCD'
+  cross-section: 2982000.0
+  group: GQCD
+  yields-group: '9QCD'
+  order: 34
 
 'hist_QCD_Pt20To30_MuEnriched.root':
   type: mc

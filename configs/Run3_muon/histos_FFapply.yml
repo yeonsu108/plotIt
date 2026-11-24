@@ -45,6 +45,7 @@
 
 #Muon + MET MT
 'h_lepMET_mt_S5':
+  blinded-range: [300, 399]
   save-extensions: ['pdf', 'png']
 
 
