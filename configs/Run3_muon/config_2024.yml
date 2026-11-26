@@ -38,7 +38,7 @@ systematics:
   - diboson_xsec: {type: const, value: 1.30, on: '(hist_WW|hist_WZ|hist_ZZ|WW|WZ|ZZ)'}
   - dy_xsec: {type: const, value: 1.30, on: '(hist_DY|DYJets|DY)'}
   - qcd_xsec: {type: const, value: 1.5, on: 'QCD'}
-  #- muExtra: {type: const, value: 1.005}
+  - muExtra: {type: const, value: 1.005}  # TOP-23-008: 0.5% phase-space extrapolation
   - tes
   - jer
   - jesAbsolute

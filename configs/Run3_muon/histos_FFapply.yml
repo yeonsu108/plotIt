@@ -77,6 +77,7 @@
 'h_leptau_mass_blind_S5':
   x-axis: "Mass of \\mu + \\tau_{h} (GeV)"
   blinded-range: [350, 499]
+  show-onlyoverflow: true
   save-extensions: ['pdf', 'png']
 
 #jet ht for bSF check
