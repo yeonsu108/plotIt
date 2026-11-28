@@ -1022,8 +1022,10 @@ namespace plotIt {
         //float tm = 1. - gPad->GetTopMargin();
         float bm = gPad->GetBottomMargin();
 
-        x_start = (rm - lm) * ((x_start - gPad->GetUxmin()) / (gPad->GetUxmax() - gPad->GetUxmin())) + lm;
-        x_end = (rm - lm) * ((x_end - gPad->GetUxmin()) / (gPad->GetUxmax() - gPad->GetUxmin())) + lm;
+        if (!(plot.log_y && plot.log_x)) {
+            x_start = (rm - lm) * ((x_start - gPad->GetUxmin()) / (gPad->GetUxmax() - gPad->GetUxmin())) + lm;
+            x_end = (rm - lm) * ((x_end - gPad->GetUxmin()) / (gPad->GetUxmax() - gPad->GetUxmin())) + lm;
+        }
 
         Position legend_position = plot.legend_position;
         y_start = bm;

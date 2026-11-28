@@ -4,6 +4,7 @@
   y-axis-format: "%1% / bin"
   log-y: true
   log-x: true
+  x-axis-range: [0.01, 100.]
   sort-by-yields: true
   blinded-range: [5., 99.99]
   save-extensions: ['pdf','png']
